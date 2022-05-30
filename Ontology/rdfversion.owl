@@ -394,16 +394,16 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol">
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P138_represents"/>
-        <rdfs:domain>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isSymbolOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+        <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol"/>
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulation"/>
                 </owl:unionOf>
             </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol"/>
-        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">This relation links an image to the Symbol depicted</rdfs:comment>
         <rdfs:label xml:lang="en">Has Symbol</rdfs:label>
     </owl:ObjectProperty>
@@ -579,6 +579,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isIntrinsicMeaningOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isIntrinsicMeaningOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedIntrinsicMeanig"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition"/>
+        <rdfs:comment xml:lang="en">Inverse property of recognized intrinsic meaning</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Intrinsic Meaning Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isInvenzioneOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isInvenzioneOf">
@@ -681,7 +693,7 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition"/>
-        <rdfs:comment xml:lang="en">Inverse property of recognizedArtisticMotif</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse property of recognized artistic motif</rdfs:comment>
         <rdfs:label xml:lang="en">Is Recognized Artistic Motif Of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -695,6 +707,24 @@
         <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition"/>
         <rdfs:comment xml:lang="en">Inverse property of recognizedComposition</rdfs:comment>
         <rdfs:label xml:lang="en">Is Recognized Composition Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isSymbolOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isSymbolOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol"/>
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+        <rdfs:comment xml:lang="en">Inverse property of has symbol</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Symbol Of</rdfs:label>
     </owl:ObjectProperty>
     
 

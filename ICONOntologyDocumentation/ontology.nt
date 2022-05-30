@@ -1,0 +1,924 @@
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://www.w3.org/2002/07/owl#imports> <http://erlangen-crm.org/current/> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/emmedi/hico/2020-03-31> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://www.w3.org/2002/07/owl#imports> <https://www.w3id.org/simulation/ontology/> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://purl.org/dc/elements/1.1/contributor> "Aldo Gangemi"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://purl.org/dc/elements/1.1/contributor> "Marieke van Erp"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://purl.org/dc/elements/1.1/creator> "Bruno Sartini" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://purl.org/dc/elements/1.1/creator> "Sofia Baroncini" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://purl.org/dc/terms/issued> "April 12th, 2022"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://purl.org/dc/terms/title> "ICON Ontology"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://purl.org/vocab/vann/preferredNamespacePrefix> "icon"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://purl.org/vocab/vann/preferredNamespaceUri> "tbd"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol> <http://www.w3.org/2001/XMLSchema#citation> "Waitingforthepaper"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2001/XMLSchema#citation
+<http://www.w3.org/2001/XMLSchema#citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#aboutWorkOfArt
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#aboutWorkOfArt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#aboutWorkOfArt> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#aboutWorkOfArt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#aboutWorkOfArt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#aboutWorkOfArt> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates each Recognition directly to the artwork. In this way, it is possible to retrieve easily all the interpretations about an artwork. Therefore, it a highly recommended good practice to declare it for each interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#aboutWorkOfArt> <http://www.w3.org/2000/01/rdf-schema#label> "About Work Of Art"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#associatedForm
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#associatedForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#associatedForm> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P140_assigned_attribute_to> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#associatedForm> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPureFormOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#associatedForm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#associatedForm> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#associatedForm> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates a Pure Form to the Pre-iconographical Recognition that describes it at the first level of interpretation." .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#associatedForm> <http://www.w3.org/2000/01/rdf-schema#label> "Associated Form"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This Property links an invenzione with its components, which may vary from Characters, Events, Named Objects, Places to Personifications, Symbols according to the kind of Invenzione is being described."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> <http://www.w3.org/2000/01/rdf-schema#label> "Composed Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasArtisticMotif
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasArtisticMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an Intrinsic Meaning to the Artistic Motif recognized at the first level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this Artistic Motif, and not only to the general artwork."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Has Artistic Motif"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P138_represents> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Character depicted"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "Has Character"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasComposition
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasComposition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasComposition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasComposition> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an Intrinsic Meaning to the Composition recognized at the first level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this Composition, and not only to the general artwork."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasComposition> <http://www.w3.org/2000/01/rdf-schema#label> "Has Composition"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCompositionalStructure
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCompositionalStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCompositionalStructure> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCompositionalStructureOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CompositionalStructure> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation describes the arrangement of the Artistic Motifs composing the Composition. It is suggested to use it only when they are arranged in a relevant observable structure (e.g. pyramidal, oblique)" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Has Compositional Structure"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCopiedMotif
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCopiedMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCopiedMotif> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCopiedMotifOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCopiedMotif> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCopiedMotif> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCopiedMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates to the act of Formal Motif Recognition the Artistic Motif representing the copied visual pattern. To be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCopiedMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Has Copied Motif"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P138_represents> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isEventOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Event depicted"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Has Event"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P138_represents> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isExpressionalMeaningOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links the Expressional Meaning recognized to the Artistic Motif" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Has Expressional Meaning"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P138_represents> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isFactualMeaningOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links the Factual Meaning recognized (Actions or Natural Elements) to the Artistic Motif" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Has Factual Meaning"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasImage
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasImage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasImage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasImage> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an Intrinsic Meaning to the Image recognized at the second level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this Image, and not only to the general artwork."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasImage> <http://www.w3.org/2000/01/rdf-schema#label> "Has Image"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasInvenzione
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasInvenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasInvenzione> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isInvenzioneOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasInvenzione> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasInvenzione> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasInvenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an Intrinsic Meaning to the Invenzione recognized at the second level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this invenzione, and not only to the general artwork."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasInvenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Has Invenzione"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P138_represents> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isNamedObjectOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Named Object depicted"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#label> "Has Named Object"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPart
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P106_is_composed_of> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#partOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links a Composition to the Artistic Motifs of which it consists."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "Has Part"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P138_represents> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPersonificationOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Personification depicted"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification> <http://www.w3.org/2000/01/rdf-schema#label> "Has Personification"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P138_represents> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPlaceOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Place depicted"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Has Place"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPrototypicalMotifOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition> .
+_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif> <http://www.w3.org/2000/01/rdf-schema#range> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#onClass> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#unionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates to the act of Formal Motif Recognition the Artistic Motif from which the visual pattern derives. It should be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Has Prototypical Motif"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasRecAttribute
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasRecAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasRecAttribute> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecAttributeOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasRecAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasRecAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasRecAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation identifies objects belonging to the level 1 as fundamental for the recognition of a certain subject. It is suggested that the Artistic Motif of the object is included in the Composition corresponding to the subject."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasRecAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "Has Rec Attribute"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P138_represents> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#unionOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/Simulation> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Symbol depicted"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol> <http://www.w3.org/2000/01/rdf-schema#label> "Has Symbol"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecognition
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of AboutWorkOfArt"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Interpreted By Recognition"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecogniton
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecogniton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecogniton> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of aboutWorkOfArt"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecogniton> <http://www.w3.org/2000/01/rdf-schema#label> "Interpreted By Recogniton"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasCharacter"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasSymbol"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Character Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCompositionalStructureOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCompositionalStructureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCompositionalStructureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasCompositionalStructure"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCompositionalStructureOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Compositional Structure Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isConceptualObjectOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isConceptualObjectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isConceptualObjectOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedConceptualObject> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isConceptualObjectOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of recognizedConceptualObject"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isConceptualObjectOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Conceptual Object Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCopiedMotifOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCopiedMotifOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCopiedMotifOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasCopiedMotif"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCopiedMotifOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Copied Motif Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCulturalPhenomenonOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCulturalPhenomenonOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCulturalPhenomenonOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedCulturalPhenomenon> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCulturalPhenomenonOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of recognizedCulturalPhenomenon"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCulturalPhenomenonOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Cultural Phenomenon Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isEventOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isEventOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isEventOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasEvent"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isEventOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Event Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isExpressionalMeaningOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isExpressionalMeaningOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isExpressionalMeaningOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasExpressionalMeaning"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isExpressionalMeaningOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Expressional Meaning Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isFactualMeaningOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isFactualMeaningOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isFactualMeaningOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasFactualMeaning"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isFactualMeaningOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Factual Meaning Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isIconographicallyRecognizedBy
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isIconographicallyRecognizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isIconographicallyRecognizedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isIconographicallyRecognizedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of recognizedImage"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isIconographicallyRecognizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "Is Iconographically Recognized By"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isInvenzioneOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isInvenzioneOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isInvenzioneOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasInvenzione"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isInvenzioneOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Invenzione Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isListedIn
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isListedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isListedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isListedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#unionOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalDescription> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalSynthesis> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalDescription> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isListedIn> <http://www.w3.org/2000/01/rdf-schema#label> "Is Listed In"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isNamedObjectOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isNamedObjectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isNamedObjectOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasNamedObject"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isNamedObjectOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Named Object Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPersonificationOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPersonificationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPersonificationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasPersonification"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPersonificationOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Personification Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPlaceOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPlaceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasPlace"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Place Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPrototypicalMotifOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPrototypicalMotifOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPrototypicalMotifOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasPrototypicalMotif"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPrototypicalMotifOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Prototypical Motif Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPureFormOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPureFormOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPureFormOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of associatedForm"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPureFormOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Pure Form Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecAttributeOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecAttributeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecAttributeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasRecAttribute"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecAttributeOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Rec Attribute Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of recognizedInvenzione"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Recogn Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedArtisticMotifOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedArtisticMotifOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedArtisticMotifOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedArtisticMotifOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of recognizedArtisticMotif"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedArtisticMotifOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Recognized Artistic Motif Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedCompositionOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedCompositionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedCompositionOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedCompositionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of recognizedComposition"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedCompositionOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Recognized Composition Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#partOf
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasPart"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "Part Of"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P141_assigned> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Artistic Motif to the Pre-iconographical Recognition that recognizes it at the first level of interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Artistic Motif"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P141_assigned> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Composition"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedConceptualObject
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedConceptualObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedConceptualObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedConceptualObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://erlangen-crm.org/current/E28_Conceptual_Object> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedConceptualObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation expresses the Concept that is related to the Intrinsic Meaning"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedConceptualObject> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Conceptual Object"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedCulturalPhenomenon
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedCulturalPhenomenon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedCulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedCulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedCulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation expresses the Cultural Phenomenon that is related to the Intrinsic Meaning"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedCulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Cultural Phenomenon"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedGenre
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedGenre> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P141_assigned> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedGenre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedGenre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtGenre> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedGenre> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Genre"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedGenre> <http://www.w3.org/2002/07/owl#deprecated> "since new version 25/03"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P141_assigned> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Image to the Iconographical Recognition that recognizes it at the second level of interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Image"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedIntrinsicMeanig
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedIntrinsicMeanig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedIntrinsicMeanig> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedIntrinsicMeanig> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedIntrinsicMeanig> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedIntrinsicMeanig> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Intrinsic Meaning to the Iconological Recognition that recognizes it at the third level of interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedIntrinsicMeanig> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Intrinsic Meanig"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P141_assigned> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Invenzione to the Iconographical Recognition that recognizes it at the second level of interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Invenzione"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#refersToArtisticMotif
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#refersToArtisticMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P140_assigned_attribute_to> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#range> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#unionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates a Composition or an Artistic Motif to the Iconographical Recognition that describes it at the second level of interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Refers To Artistic Motif"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://www.w3.org/ns/prov-o-inverses#regionDescription
+<https://www.w3.org/ns/prov-o-inverses#regionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3.org/ns/prov-o-inverses#regionDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm> .
+<https://www.w3.org/ns/prov-o-inverses#regionDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://erlangen-crm.org/current/E39_Actor
+<http://erlangen-crm.org/current/E39_Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/Subject> .
+# 
+# http://erlangen-crm.org/current/E53_Place
+<http://erlangen-crm.org/current/E53_Place> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place> .
+# 
+# http://erlangen-crm.org/current/E5_Event
+<http://erlangen-crm.org/current/E5_Event> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> .
+<http://erlangen-crm.org/current/E5_Event> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event> .
+# 
+# http://purl.org/emmedi/hico/InterpretationAct
+<http://purl.org/emmedi/hico/InterpretationAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/vir#IC16_Personification
+<http://w3id.org/vir#IC16_Personification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/vir#IC16_Personification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/Subject> .
+# 
+# http://w3id.org/vir#IC1_Iconographical_Atom
+<http://w3id.org/vir#IC1_Iconographical_Atom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/vir#IC1_Iconographical_Atom> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event> .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E5_Event> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action> <http://www.w3.org/2000/01/rdf-schema#comment> "An event as recognized at level 1 of interpretation, e.g. a man who lifts one hand or a man riding a horse. Generally, all the actions should be described by this class.  When an action is identified, it is suggested to create a Composition with all the elements involved in this action"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Allegory
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Allegory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Allegory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Allegory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#unionOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Allegory> <http://www.w3.org/2000/01/rdf-schema#comment> "An Allegory is a cohese combination of images that represent either symbols of personifications. Allegories are recognized in the context of iconographical recognition; their recognition can be included in an Iconographical Description. This definition of Allegory has been taken from Panofsky's Studies in Iconology (1939). Nevertheless, also a story can have a symbolical meaning. In this case, it is suggested to associate a Story to the images describing its content, an allegory  to the images describing the story and the symbolical meaning associated to it. E.g.: the fall of Phaeton was generally considered as an allegory of the fate of every temerarius (Panofsky 1939, p. 218). Therefore, the image identifying Phaeton is linked both to the Allegory and to the Story."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Allegory> <http://www.w3.org/2000/01/rdf-schema#label> "Allegory"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtGenre
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtGenre> <http://www.w3.org/2000/01/rdf-schema#label> "Art Genre"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtGenre> <http://www.w3.org/2002/07/owl#deprecated> "since new version 25/03" .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E36_Visual_Item> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#unionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#onClass> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#unionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid44 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality> .
+_:genid49 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "An ArtisticMotif is the output of a Pre Iconographic Recognition. It is a N-ary relationship class linking the physical unique representation depicted in an artwork to the corresponding real world meaning recognized. Each artistic motif describes exactly one meaning among: Natural Element, Action, Expression Quality. Qualities (e.g. colors) can be expressed.\nThe N-ary structure allow first of all to maintain the distinction between the particular representation belonging to the artwork considered and the general meaning of which the representation is an expression. Furthermore, it allows to carefully describe in detail what is represented in the visual representation, since it gives the chance to identify uniquely details of objects and iconographies."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Artistic Motif"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E36_Visual_Item> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork> <http://www.w3.org/2000/01/rdf-schema#comment> "The artwork is a visual representation that may be relevant from an iconographical or an iconological point of view, carried by a physical cultural object (crm:E22_Human-Made_Object) usually created by a person."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork> <http://www.w3.org/2000/01/rdf-schema#label> "Artwork"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Attitude
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Attitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Attitude> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Attitude> <http://www.w3.org/2000/01/rdf-schema#label> "Attitude"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Belief
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Belief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Belief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Belief> <http://www.w3.org/2000/01/rdf-schema#label> "Belief"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E39_Actor> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/Subject> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "A Character is a real or imaginary being identifiable as a subject in the Iconographical Analysis (level 2 of interpretation)"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Va messo come sottoclasse di frbroo:F38_Character" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E36_Visual_Item> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif> .
+_:genid50 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Composition is a jointly of ArtisticMotif having a meaning. It can be recognized as corresponding to the same image at the second level or interpretation, or can explicit groupings of level 1 elements that the descriptor considers significant. Its is suggested to express the level 1 elements involved every time that there is an action (e.g. the action \"lifting\" in the context of \"man lifting a woman\" should be grouped in a composition including the artistic motifs corresponding respectively to \"man\", \"woman, \"lifting\")"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition> <http://www.w3.org/2000/01/rdf-schema#label> "Composition"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CompositionalStructure
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CompositionalStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "The compositional structure identifies relevant structures that can be recognized in the layout of Artistic Motifs in a Composition, e.g. pyramidal, symmetrical."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Compositional Structure"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#comment> "The cultural phenomenon entity expresses the cultural, social and historical aspects of which the work of art can be document. The iconographical evolution of subjects can have a cultural meaning as well. Also the personal characteristics of the artist, or of the patron, can be involved (Wittkower, Van Straten). The cultural phenomena are the object of investigation of an iconological interpretation (Van Straten, 2012, p. 12), which is considered, in the current work, a level 3 interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Phenomenon"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalValue
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalValue> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Value"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/Subject> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An Event is an action that is depicted as subject by an artwork. It differs from the first level Action since it requires deeper interpretation to be identified. For example, the act of hurling the Trident (Action) held by Neptune in some iconographies is interpreted as the act of calming the storm (Event) provoked by Juno in Virgil's Aeneid book 1. Furthermore, an Event is linked to a icon:Image, and not to a icon:Artistic Motif. This class includes also events having a proper identity, such as historical events (e.g. the Battle of Cascina)."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E1_CRM_Entity> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "An Expression Quality corresponds to the \"expressional subject matter\" described by Panofsky (1939), which belongs, along with the factual ones, to the Primary or natural subject matter of a work of art. Indeed, it individuates, by way of example, emotions, an atmosphere, the character of a person."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "maybe crm:E1_Entity" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Expressional Quality"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "The act of recognizing that subjects depicted by different artworks has the same formal motifs although the content represented may be different. The need of the usage of this class emerged from a bottom-up approach, rather than Panofsky's theory. It describes that certain subjects are prototypes of others, including preliminary drawings, but also cases in which another artist copied only the composition or gestures from another artwork. This recognition can link every specific part of a representation to the specific prototypes. The relation is between level 1 objects, i.e. Artistic Motifs and Composition, since it describes a formal aspect. Example of usage: if Hercules carrying the Boar is the prototype for a Christ carrying a deer, symbol of the human souls, it's possible to relate directly the boar represented in the former artwork to the deer represented in the latter."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Formal Motif Recognition"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalDescription
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://erlangen-crm.org/current/P70_documents> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "An Iconographical Description is the enumeration of iconographical recognitions of images or invenzioni recognized by one or more agents. It is thus a collection of triples. It is the summary of what would be called in Panofsky's term the second level of interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Iconographical Description"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Iconographical Recognition is a n-ary relationship class that links the artwork described (and, if available, the Artistic Motifs recognized at the previous level along with their compositions) to the Images recognized, or directly to the Invenzione that results from the grouping of the subject depicted by each single image. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Iconographical Recognition"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalSynthesis
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalSynthesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalSynthesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalSynthesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://erlangen-crm.org/current/P70_documents> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalSynthesis> <http://www.w3.org/2000/01/rdf-schema#comment> "An Iconographical Synthesis is the enumeration of iconological recognitions of intrinsic meanings recognized by one or more agents concerning a work of art. It is thus a collection of triples. It is the summary of what would be called in Panofsky's term the third level of interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalSynthesis> <http://www.w3.org/2000/01/rdf-schema#label> "Iconographical Synthesis"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "An Iconological Recognition is a n-ary relationship class that links the artwork described (and optionally all the subjects represented at the first and second level of interpretation) to the Intrinsic Meanings recognized. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed. This class can represent: (1) the third level act of Interpretation described by Panofsky (1939), without a distinction between a overall artwork symbolic meaning and a societal aspect, (2) the third and second level described by Van Straten, according to the value associated to the intrinsic meaning, (3) the iconic act of interpretation described by Imdahl (2012), when the intrinsic meaning is directly linked to level 1 characteristics of the image."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Iconological Recognition"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E36_Visual_Item> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#unionOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#onClass> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#unionOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulation> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid55 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place> .
+_:genid60 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification> .
+_:genid62 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject> .
+_:genid64 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event> .
+_:genid66 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character> .
+_:genid68 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Image is a reification class linking the identified second level subject (namely: Characters, Events, Places, Named Objects, Symbols and Personifications) to the specific interpretation that recognizes it. It represents the subject depicted as a manifestation in the specific artwork taken into account, in contrast to the second level subjects cited and Invenzione, identifying iconographies from an abstract and general point of view. This distinction between the general subject level and the artwork-specific one is functional to identify the variants of a subject in relation to the specific context."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E31_Document> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "The Interpretation Description is a class collecting all the triples describing each recognition in each level that shares a unique interpretative perspective. For example, it allows to collect claims agreeing each other or to describe the situation in which an art historian attributes to other art historians some details of the general interpretation he claims. Recognitions in disagree with each other should be documented in different descriptions. For example, the interpretation made in 1699 recognising Regnaudin's statuette as depicting \"Time carrying off the Truth\" is listed in a different description form the interpretation recognising \"The rape of Cybele\" as its subject (Wittkower)."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretation Description"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "Reification class linking the identified cultural phenomenon or deeper meaning to the whole artwork or to the specific part of its representation and to the interpretation that identifies it. From a theoretical point of view, it corresponds to the manifestation in the specific artwork of the concepts and cultural phenomena identified by the iconological analysis. The terminology is taken from Panofsky (1939, 1955)."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Intrinsic Meaning"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E1_CRM_Entity> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "An Invenzione, term taken from Panofsky's Studies in Iconology (1939), is the subject matter represented by the combination of the single images recognized. The recognition of an Invenzione happens in the context of the iconographical recognition and it is included in the Iconographical Description. This definition slightly differs from the Panofsky's one: while he describes an invenzione as a form expressing the subject, we consider it as an individual belonging to the \"sphere of secondary or conventional subject matter, viz., the world of specific themes or concepts manifested in images [...]\". This new definition has been introduced to allow to formalize and recognize subjects represented in different artworks. Nevertheless, the identity of form and subject is already included in the definition of the class Artwork. Story and Allegory are subclasses of Invenzione."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "maybe Entity" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Invenzione"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E1_CRM_Entity> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/Subject> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A named object is a non-living unique element that is often used as an attribute for the recognition of specific characters or as the individuals of a more general concept class. (e.g. Bible for the Book class)"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "maybe E1" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject> <http://www.w3.org/2000/01/rdf-schema#label> "Named Object"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E1_CRM_Entity> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Comprises objects, human being, natural elements that can be experienced. They are recognized at the first level of interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement> <http://www.w3.org/2000/01/rdf-schema#comment> "maybe E1" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Element"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/vir#IC16_Personification> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification> <http://www.w3.org/2000/01/rdf-schema#comment> "A representation of a concept through a human figure"@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification> <http://www.w3.org/2000/01/rdf-schema#comment> "Allinea a vir:IC16_Personification" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification> <http://www.w3.org/2000/01/rdf-schema#label> "Personification"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "An identified ambientation, e.g. the city of Bologna, which is recognized as a Level 2 subject. The recognition of a generic city is formally represented by the Natural Element class (level 1)."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalDescription
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#unionOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://erlangen-crm.org/current/P70_documents> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A Pre-iconographical description is the enumeration of the Pre-Iconographical Recognitions of a certain work of art, performed by one or more agents. It is thus a collection of triples constituting the documentation of the interpretation at level 1. The term and its definition is taken from Panofsky's Studies in Iconology (1939)."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Preiconographical Description"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Pre-iconographical recognition is a n-ary relationship class that links the artwork described (and optionally the Pure Forms composing it) to the Artistic Motifs recognized as carrier of meaning at the first level of analysis. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Preiconographical Recognition"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm> <http://www.w3.org/2000/01/rdf-schema#comment> "A pure form represents the physical portion of the work of art in which artistic motifs are found. It has been introduced as a way to include the results of analysis performed by computational agents, that are able to classify images and give image coordinates for specific recognition. It is not recommended to be used by manual annotators or in any case in which the coordinates of the image of the work of art are not considered. If available, the Pure form can represent the region of an image identified by IIIF Image API."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm> <http://www.w3.org/2000/01/rdf-schema#comment> "equivalent to vir:IC_IconographicalAtom" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm> <http://www.w3.org/2000/01/rdf-schema#label> "Pure Form"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E13_Attribute_Assignment> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/emmedi/hico/InterpretationAct> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> <http://www.w3.org/2000/01/rdf-schema#comment> "A recognition, in the context of this ontology, is an interpretation act made by an agent (biological or electronic being) that links works of arts to something related to their content. More specific recognitions are available as subclasses for specific types of recognition according to the level of interpretation."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> <http://www.w3.org/2000/01/rdf-schema#comment> "subclass of hico:InterpretationAct" .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition> <http://www.w3.org/2000/01/rdf-schema#label> "Recognition"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Story
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#unionOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Story> <http://www.w3.org/2000/01/rdf-schema#comment> "A story is a cohese combination of images that represent narrative elements such as Characters, Places, Events, Named Objects. The recognition of a story happens in the context of an Iconographical Recognition, and it is included in an Iconographical Description. As the super class Invenzione, it concerns the word of the subject matter. It is not necessary to have multiple images to compose a story."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Story> <http://www.w3.org/2000/01/rdf-schema#label> "Story"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.w3id.org/simulation/ontology/Simulation> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E90_Symbolic_Object> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/Subject> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol> <http://www.w3.org/2000/01/rdf-schema#comment> "A Symbol is the class representing the unity of a symbol and its symbolic meaning that can be expressed by an Image. The represented object (Simulacrum) and the symbolical meaning expressed (Reality Counterpart) along with the type of relation linking them if further represented by the Simulation Ontology."@en .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol> <http://www.w3.org/2000/01/rdf-schema#label> "Symbol"@en .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Tendency
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Tendency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Tendency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon> .
+<http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Tendency> <http://www.w3.org/2000/01/rdf-schema#label> "Tendency"@en .
+# 
+# https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty
+<https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/arco/ontology/context-description/Subject
+<https://w3id.org/arco/ontology/context-description/Subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

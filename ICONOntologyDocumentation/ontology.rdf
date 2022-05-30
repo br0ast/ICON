@@ -1,0 +1,1445 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#"
+     xml:base="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dct="https://www.w3.org/1999/xhtml/vocab#dct:"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://www.w3.org/1999/xhtml/vocab#"
+     xmlns:schema="http://schema.org/"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol">
+        <owl:imports rdf:resource="http://erlangen-crm.org/current/"/>
+        <owl:imports rdf:resource="http://purl.org/emmedi/hico/2020-03-31"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <owl:imports rdf:resource="https://www.w3id.org/simulation/ontology/"/>
+        <dc:contributor xml:lang="en">Aldo Gangemi</dc:contributor>
+        <dc:contributor xml:lang="en">Marieke van Erp</dc:contributor>
+        <dc:creator>Bruno Sartini</dc:creator>
+        <dc:creator>Sofia Baroncini</dc:creator>
+        <terms:issued xml:lang="en">April 12th, 2022</terms:issued>
+        <terms:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:title xml:lang="en">ICON Ontology</terms:title>
+        <vann:preferredNamespacePrefix xml:lang="en">icon</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri xml:lang="en">tbd</vann:preferredNamespaceUri>
+        <xsd:citation xml:lang="en">Waitingforthepaper</xsd:citation>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#citation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema#citation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality -->
+
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#aboutWorkOfArt -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#aboutWorkOfArt">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecognition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork"/>
+        <rdfs:comment xml:lang="en">This relation associates each Recognition directly to the artwork. In this way, it is possible to retrieve easily all the interpretations about an artwork. Therefore, it a highly recommended good practice to declare it for each interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">About Work Of Art</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#associatedForm -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#associatedForm">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P140_assigned_attribute_to"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPureFormOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm"/>
+        <rdfs:comment>This relation associates a Pure Form to the Pre-iconographical Recognition that describes it at the first level of interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Associated Form</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">This Property links an invenzione with its components, which may vary from Characters, Events, Named Objects, Places to Personifications, Symbols according to the kind of Invenzione is being described.</rdfs:comment>
+        <rdfs:label xml:lang="en">Composed Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasArtisticMotif -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasArtisticMotif">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+        <rdfs:comment xml:lang="en">This relation links an Intrinsic Meaning to the Artistic Motif recognized at the first level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this Artistic Motif, and not only to the general artwork.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Artistic Motif</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P138_represents"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character"/>
+        <rdfs:comment xml:lang="en">This relation links an image to the Character depicted</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Character</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasComposition -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasComposition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition"/>
+        <rdfs:comment xml:lang="en">This relation links an Intrinsic Meaning to the Composition recognized at the first level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this Composition, and not only to the general artwork.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Composition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCompositionalStructure -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCompositionalStructure">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCompositionalStructureOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CompositionalStructure"/>
+        <rdfs:comment>This relation describes the arrangement of the Artistic Motifs composing the Composition. It is suggested to use it only when they are arranged in a relevant observable structure (e.g. pyramidal, oblique)</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Compositional Structure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCopiedMotif -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCopiedMotif">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCopiedMotifOf"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">This relation associates to the act of Formal Motif Recognition the Artistic Motif representing the copied visual pattern. To be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Copied Motif</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P138_represents"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isEventOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event"/>
+        <rdfs:comment xml:lang="en">This relation links an image to the Event depicted</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P138_represents"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isExpressionalMeaningOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality"/>
+        <rdfs:comment>This relation links the Expressional Meaning recognized to the Artistic Motif</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Expressional Meaning</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P138_represents"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isFactualMeaningOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>This relation links the Factual Meaning recognized (Actions or Natural Elements) to the Artistic Motif</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Factual Meaning</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasImage -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasImage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+        <rdfs:comment xml:lang="en">This relation links an Intrinsic Meaning to the Image recognized at the second level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this Image, and not only to the general artwork.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Image</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasInvenzione -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasInvenzione">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isInvenzioneOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione"/>
+        <rdfs:comment xml:lang="en">This relation links an Intrinsic Meaning to the Invenzione recognized at the second level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this invenzione, and not only to the general artwork.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Invenzione</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P138_represents"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isNamedObjectOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject"/>
+        <rdfs:comment xml:lang="en">This relation links an image to the Named Object depicted</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Named Object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106_is_composed_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#partOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+        <rdfs:comment xml:lang="en">This relation links a Composition to the Artistic Motifs of which it consists.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P138_represents"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPersonificationOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification"/>
+        <rdfs:comment xml:lang="en">This relation links an image to the Personification depicted</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Personification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P138_represents"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPlaceOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place"/>
+        <rdfs:comment xml:lang="en">This relation links an image to the Place depicted</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Place</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPrototypicalMotifOf"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPrototypicalMotif"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">This relation associates to the act of Formal Motif Recognition the Artistic Motif from which the visual pattern derives. It should be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Prototypical Motif</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasRecAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasRecAttribute">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecAttributeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+        <rdfs:comment xml:lang="en">This relation identifies objects belonging to the level 1 as fundamental for the recognition of a certain subject. It is suggested that the Artistic Motif of the object is included in the Composition corresponding to the subject.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Rec Attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P138_represents"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
+        <rdfs:comment xml:lang="en">This relation links an image to the Symbol depicted</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Symbol</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecognition -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecognition">
+        <rdfs:comment xml:lang="en">Inverse property of AboutWorkOfArt</rdfs:comment>
+        <rdfs:label xml:lang="en">Interpreted By Recognition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecogniton -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#interpretedByRecogniton">
+        <rdfs:comment xml:lang="en">Inverse property of aboutWorkOfArt</rdfs:comment>
+        <rdfs:label xml:lang="en">Interpreted By Recogniton</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCharacterOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasCharacter</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse property of hasSymbol</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Character Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCompositionalStructureOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCompositionalStructureOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasCompositionalStructure</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Compositional Structure Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isConceptualObjectOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isConceptualObjectOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedConceptualObject"/>
+        <rdfs:comment xml:lang="en">Inverse property of recognizedConceptualObject</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Conceptual Object Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCopiedMotifOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCopiedMotifOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasCopiedMotif</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Copied Motif Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCulturalPhenomenonOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isCulturalPhenomenonOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedCulturalPhenomenon"/>
+        <rdfs:comment xml:lang="en">Inverse property of recognizedCulturalPhenomenon</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Cultural Phenomenon Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isEventOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isEventOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasEvent</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Event Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isExpressionalMeaningOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isExpressionalMeaningOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasExpressionalMeaning</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Expressional Meaning Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isFactualMeaningOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isFactualMeaningOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasFactualMeaning</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Factual Meaning Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isIconographicallyRecognizedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isIconographicallyRecognizedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage"/>
+        <rdfs:comment xml:lang="en">Inverse property of recognizedImage</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Iconographically Recognized By</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isInvenzioneOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isInvenzioneOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasInvenzione</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Invenzione Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isListedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isListedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalDescription"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalSynthesis"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalDescription"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">Is Listed In</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isNamedObjectOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isNamedObjectOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasNamedObject</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Named Object Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPersonificationOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPersonificationOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasPersonification</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Personification Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPlaceOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPlaceOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasPlace</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Place Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPrototypicalMotifOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPrototypicalMotifOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasPrototypicalMotif</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Prototypical Motif Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPureFormOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isPureFormOf">
+        <rdfs:comment xml:lang="en">Inverse property of associatedForm</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Pure Form Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecAttributeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecAttributeOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasRecAttribute</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Rec Attribute Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione"/>
+        <rdfs:comment xml:lang="en">Inverse property of recognizedInvenzione</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Recogn Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedArtisticMotifOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedArtisticMotifOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif"/>
+        <rdfs:comment xml:lang="en">Inverse property of recognizedArtisticMotif</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Recognized Artistic Motif Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedCompositionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#isRecognizedCompositionOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition"/>
+        <rdfs:comment xml:lang="en">Inverse property of recognizedComposition</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Recognized Composition Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#partOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#partOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasPart</rdfs:comment>
+        <rdfs:label xml:lang="en">Part Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedArtisticMotif">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P141_assigned"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+        <rdfs:comment xml:lang="en">This relation associates the Artistic Motif to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recognized Artistic Motif</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedComposition">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P141_assigned"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition"/>
+        <rdfs:comment xml:lang="en">This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recognized Composition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedConceptualObject -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedConceptualObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning"/>
+        <rdfs:range rdf:resource="http://erlangen-crm.org/current/E28_Conceptual_Object"/>
+        <rdfs:comment xml:lang="en">This relation expresses the Concept that is related to the Intrinsic Meaning</rdfs:comment>
+        <rdfs:label xml:lang="en">Recognized Conceptual Object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedCulturalPhenomenon -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedCulturalPhenomenon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon"/>
+        <rdfs:comment xml:lang="en">This relation expresses the Cultural Phenomenon that is related to the Intrinsic Meaning</rdfs:comment>
+        <rdfs:label xml:lang="en">Recognized Cultural Phenomenon</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedGenre -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedGenre">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P141_assigned"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtGenre"/>
+        <rdfs:label xml:lang="en">Recognized Genre</rdfs:label>
+        <owl:deprecated xml:lang="en">since new version 25/03</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedImage">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P141_assigned"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image"/>
+        <rdfs:comment xml:lang="en">This relation associates the Image to the Iconographical Recognition that recognizes it at the second level of interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recognized Image</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedIntrinsicMeanig -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedIntrinsicMeanig">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning"/>
+        <rdfs:comment xml:lang="en">This relation associates the Intrinsic Meaning to the Iconological Recognition that recognizes it at the third level of interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recognized Intrinsic Meanig</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#recognizedInvenzione">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P141_assigned"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione"/>
+        <rdfs:comment xml:lang="en">This relation associates the Invenzione to the Iconographical Recognition that recognizes it at the second level of interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recognized Invenzione</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#refersToArtisticMotif -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#refersToArtisticMotif">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P140_assigned_attribute_to"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">This relation associates a Composition or an Artistic Motif to the Iconographical Recognition that describes it at the second level of interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Refers To Artistic Motif</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.w3.org/ns/prov-o-inverses#regionDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.w3.org/ns/prov-o-inverses#regionDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://erlangen-crm.org/current/E39_Actor -->
+
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E39_Actor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://erlangen-crm.org/current/E53_Place -->
+
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E53_Place">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://erlangen-crm.org/current/E5_Event -->
+
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E5_Event">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/emmedi/hico/InterpretationAct -->
+
+
+    <owl:Class rdf:about="http://purl.org/emmedi/hico/InterpretationAct"/>
+    
+
+
+    <!-- http://w3id.org/vir#IC16_Personification -->
+
+
+    <owl:Class rdf:about="http://w3id.org/vir#IC16_Personification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/vir#IC1_Iconographical_Atom -->
+
+
+    <owl:Class rdf:about="http://w3id.org/vir#IC1_Iconographical_Atom">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event -->
+
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E5_Event"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <rdfs:comment xml:lang="en">An event as recognized at level 1 of interpretation, e.g. a man who lifts one hand or a man riding a horse. Generally, all the actions should be described by this class.  When an action is identified, it is suggested to create a Composition with all the elements involved in this action</rdfs:comment>
+        <rdfs:label xml:lang="en">Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Allegory -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Allegory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Allegory is a cohese combination of images that represent either symbols of personifications. Allegories are recognized in the context of iconographical recognition; their recognition can be included in an Iconographical Description. This definition of Allegory has been taken from Panofsky&apos;s Studies in Iconology (1939). Nevertheless, also a story can have a symbolical meaning. In this case, it is suggested to associate a Story to the images describing its content, an allegory  to the images describing the story and the symbolical meaning associated to it. E.g.: the fall of Phaeton was generally considered as an allegory of the fate of every temerarius (Panofsky 1939, p. 218). Therefore, the image identifying Phaeton is linked both to the Allegory and to the Story.</rdfs:comment>
+        <rdfs:label xml:lang="en">Allegory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtGenre -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtGenre">
+        <rdfs:label xml:lang="en">Art Genre</rdfs:label>
+        <owl:deprecated>since new version 25/03</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E36_Visual_Item"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasExpressionalMeaning"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasFactualMeaning"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Action"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An ArtisticMotif is the output of a Pre Iconographic Recognition. It is a N-ary relationship class linking the physical unique representation depicted in an artwork to the corresponding real world meaning recognized. Each artistic motif describes exactly one meaning among: Natural Element, Action, Expression Quality. Qualities (e.g. colors) can be expressed.
+The N-ary structure allow first of all to maintain the distinction between the particular representation belonging to the artwork considered and the general meaning of which the representation is an expression. Furthermore, it allows to carefully describe in detail what is represented in the visual representation, since it gives the chance to identify uniquely details of objects and iconographies.</rdfs:comment>
+        <rdfs:label xml:lang="en">Artistic Motif</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Artwork">
+        <owl:equivalentClass rdf:resource="https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty"/>
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E36_Visual_Item"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:comment xml:lang="en">The artwork is a visual representation that may be relevant from an iconographical or an iconological point of view, carried by a physical cultural object (crm:E22_Human-Made_Object) usually created by a person.</rdfs:comment>
+        <rdfs:label xml:lang="en">Artwork</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Attitude -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Attitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon"/>
+        <rdfs:label xml:lang="en">Attitude</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Belief -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Belief">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon"/>
+        <rdfs:label xml:lang="en">Belief</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E39_Actor"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
+        <rdfs:comment xml:lang="en">A Character is a real or imaginary being identifiable as a subject in the Iconographical Analysis (level 2 of interpretation)</rdfs:comment>
+        <rdfs:comment>Va messo come sottoclasse di frbroo:F38_Character</rdfs:comment>
+        <rdfs:label xml:lang="en">Character</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Composition">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E36_Visual_Item"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ArtisticMotif"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Composition is a jointly of ArtisticMotif having a meaning. It can be recognized as corresponding to the same image at the second level or interpretation, or can explicit groupings of level 1 elements that the descriptor considers significant. Its is suggested to express the level 1 elements involved every time that there is an action (e.g. the action &quot;lifting&quot; in the context of &quot;man lifting a woman&quot; should be grouped in a composition including the artistic motifs corresponding respectively to &quot;man&quot;, &quot;woman, &quot;lifting&quot;)</rdfs:comment>
+        <rdfs:label xml:lang="en">Composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CompositionalStructure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CompositionalStructure">
+        <rdfs:comment xml:lang="en">The compositional structure identifies relevant structures that can be recognized in the layout of Artistic Motifs in a Composition, e.g. pyramidal, symmetrical.</rdfs:comment>
+        <rdfs:label xml:lang="en">Compositional Structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon">
+        <rdfs:comment xml:lang="en">The cultural phenomenon entity expresses the cultural, social and historical aspects of which the work of art can be document. The iconographical evolution of subjects can have a cultural meaning as well. Also the personal characteristics of the artist, or of the patron, can be involved (Wittkower, Van Straten). The cultural phenomena are the object of investigation of an iconological interpretation (Van Straten, 2012, p. 12), which is considered, in the current work, a level 3 interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cultural Phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalValue -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon"/>
+        <rdfs:label xml:lang="en">Cultural Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
+        <rdfs:comment xml:lang="en">An Event is an action that is depicted as subject by an artwork. It differs from the first level Action since it requires deeper interpretation to be identified. For example, the act of hurling the Trident (Action) held by Neptune in some iconographies is interpreted as the act of calming the storm (Event) provoked by Juno in Virgil&apos;s Aeneid book 1. Furthermore, an Event is linked to a icon:Image, and not to a icon:Artistic Motif. This class includes also events having a proper identity, such as historical events (e.g. the Battle of Cascina).</rdfs:comment>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#ExpressionalQuality">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E1_CRM_Entity"/>
+        <rdfs:comment xml:lang="en">An Expression Quality corresponds to the &quot;expressional subject matter&quot; described by Panofsky (1939), which belongs, along with the factual ones, to the Primary or natural subject matter of a work of art. Indeed, it individuates, by way of example, emotions, an atmosphere, the character of a person.</rdfs:comment>
+        <rdfs:comment>maybe crm:E1_Entity</rdfs:comment>
+        <rdfs:label xml:lang="en">Expressional Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition"/>
+        <rdfs:comment xml:lang="en">The act of recognizing that subjects depicted by different artworks has the same formal motifs although the content represented may be different. The need of the usage of this class emerged from a bottom-up approach, rather than Panofsky&apos;s theory. It describes that certain subjects are prototypes of others, including preliminary drawings, but also cases in which another artist copied only the composition or gestures from another artwork. This recognition can link every specific part of a representation to the specific prototypes. The relation is between level 1 objects, i.e. Artistic Motifs and Composition, since it describes a formal aspect. Example of usage: if Hercules carrying the Boar is the prototype for a Christ carrying a deer, symbol of the human souls, it&apos;s possible to relate directly the boar represented in the former artwork to the deer represented in the latter.</rdfs:comment>
+        <rdfs:label xml:lang="en">Formal Motif Recognition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalDescription -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalDescription">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://erlangen-crm.org/current/P70_documents"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Iconographical Description is the enumeration of iconographical recognitions of images or invenzioni recognized by one or more agents. It is thus a collection of triples. It is the summary of what would be called in Panofsky&apos;s term the second level of interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Iconographical Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition"/>
+        <rdfs:comment xml:lang="en">A Iconographical Recognition is a n-ary relationship class that links the artwork described (and, if available, the Artistic Motifs recognized at the previous level along with their compositions) to the Images recognized, or directly to the Invenzione that results from the grouping of the subject depicted by each single image. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Iconographical Recognition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalSynthesis -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconographicalSynthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://erlangen-crm.org/current/P70_documents"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Iconographical Synthesis is the enumeration of iconological recognitions of intrinsic meanings recognized by one or more agents concerning a work of art. It is thus a collection of triples. It is the summary of what would be called in Panofsky&apos;s term the third level of interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Iconographical Synthesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IconologicalRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition"/>
+        <rdfs:comment xml:lang="en">An Iconological Recognition is a n-ary relationship class that links the artwork described (and optionally all the subjects represented at the first and second level of interpretation) to the Intrinsic Meanings recognized. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed. This class can represent: (1) the third level act of Interpretation described by Panofsky (1939), without a distinction between a overall artwork symbolic meaning and a societal aspect, (2) the third and second level described by Van Straten, according to the value associated to the intrinsic meaning, (3) the iconic act of interpretation described by Imdahl (2012), when the intrinsic meaning is directly linked to level 1 characteristics of the image.</rdfs:comment>
+        <rdfs:label xml:lang="en">Iconological Recognition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Image">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E36_Visual_Item"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasCharacter"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasEvent"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasNamedObject"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPersonification"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasPlace"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#hasSymbol"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol"/>
+                                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulation"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Image is a reification class linking the identified second level subject (namely: Characters, Events, Places, Named Objects, Symbols and Personifications) to the specific interpretation that recognizes it. It represents the subject depicted as a manifestation in the specific artwork taken into account, in contrast to the second level subjects cited and Invenzione, identifying iconographies from an abstract and general point of view. This distinction between the general subject level and the artwork-specific one is functional to identify the variants of a subject in relation to the specific context.</rdfs:comment>
+        <rdfs:label xml:lang="en">Image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E31_Document"/>
+        <rdfs:comment xml:lang="en">The Interpretation Description is a class collecting all the triples describing each recognition in each level that shares a unique interpretative perspective. For example, it allows to collect claims agreeing each other or to describe the situation in which an art historian attributes to other art historians some details of the general interpretation he claims. Recognitions in disagree with each other should be documented in different descriptions. For example, the interpretation made in 1699 recognising Regnaudin&apos;s statuette as depicting &quot;Time carrying off the Truth&quot; is listed in a different description form the interpretation recognising &quot;The rape of Cybele&quot; as its subject (Wittkower).</rdfs:comment>
+        <rdfs:label xml:lang="en">Interpretation Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#IntrinsicMeaning">
+        <rdfs:comment xml:lang="en">Reification class linking the identified cultural phenomenon or deeper meaning to the whole artwork or to the specific part of its representation and to the interpretation that identifies it. From a theoretical point of view, it corresponds to the manifestation in the specific artwork of the concepts and cultural phenomena identified by the iconological analysis. The terminology is taken from Panofsky (1939, 1955).</rdfs:comment>
+        <rdfs:label xml:lang="en">Intrinsic Meaning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E1_CRM_Entity"/>
+        <rdfs:comment xml:lang="en">An Invenzione, term taken from Panofsky&apos;s Studies in Iconology (1939), is the subject matter represented by the combination of the single images recognized. The recognition of an Invenzione happens in the context of the iconographical recognition and it is included in the Iconographical Description. This definition slightly differs from the Panofsky&apos;s one: while he describes an invenzione as a form expressing the subject, we consider it as an individual belonging to the &quot;sphere of secondary or conventional subject matter, viz., the world of specific themes or concepts manifested in images [...]&quot;. This new definition has been introduced to allow to formalize and recognize subjects represented in different artworks. Nevertheless, the identity of form and subject is already included in the definition of the class Artwork. Story and Allegory are subclasses of Invenzione.</rdfs:comment>
+        <rdfs:comment>maybe Entity</rdfs:comment>
+        <rdfs:label xml:lang="en">Invenzione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E1_CRM_Entity"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
+        <rdfs:comment xml:lang="en">A named object is a non-living unique element that is often used as an attribute for the recognition of specific characters or as the individuals of a more general concept class. (e.g. Bible for the Book class)</rdfs:comment>
+        <rdfs:comment>maybe E1</rdfs:comment>
+        <rdfs:label xml:lang="en">Named Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NaturalElement">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E1_CRM_Entity"/>
+        <rdfs:comment xml:lang="en">Comprises objects, human being, natural elements that can be experienced. They are recognized at the first level of interpretation.</rdfs:comment>
+        <rdfs:comment>maybe E1</rdfs:comment>
+        <rdfs:label xml:lang="en">Natural Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Personification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/vir#IC16_Personification"/>
+        <rdfs:comment xml:lang="en">A representation of a concept through a human figure</rdfs:comment>
+        <rdfs:comment>Allinea a vir:IC16_Personification</rdfs:comment>
+        <rdfs:label xml:lang="en">Personification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place">
+        <rdfs:comment xml:lang="en">An identified ambientation, e.g. the city of Bologna, which is recognized as a Level 2 subject. The recognition of a generic city is formally represented by the Natural Element class (level 1).</rdfs:comment>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalDescription -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalDescription">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#InterpretationDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://erlangen-crm.org/current/P70_documents"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#FormalMotifRecognition"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Pre-iconographical description is the enumeration of the Pre-Iconographical Recognitions of a certain work of art, performed by one or more agents. It is thus a collection of triples constituting the documentation of the interpretation at level 1. The term and its definition is taken from Panofsky&apos;s Studies in Iconology (1939).</rdfs:comment>
+        <rdfs:label xml:lang="en">Preiconographical Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PreiconographicalRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition"/>
+        <rdfs:comment xml:lang="en">A Pre-iconographical recognition is a n-ary relationship class that links the artwork described (and optionally the Pure Forms composing it) to the Artistic Motifs recognized as carrier of meaning at the first level of analysis. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Preiconographical Recognition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#PureForm">
+        <rdfs:comment xml:lang="en">A pure form represents the physical portion of the work of art in which artistic motifs are found. It has been introduced as a way to include the results of analysis performed by computational agents, that are able to classify images and give image coordinates for specific recognition. It is not recommended to be used by manual annotators or in any case in which the coordinates of the image of the work of art are not considered. If available, the Pure form can represent the region of an image identified by IIIF Image API.</rdfs:comment>
+        <rdfs:comment>equivalent to vir:IC_IconographicalAtom</rdfs:comment>
+        <rdfs:label xml:lang="en">Pure Form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Recognition">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E13_Attribute_Assignment"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/emmedi/hico/InterpretationAct"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+        <rdfs:comment xml:lang="en">A recognition, in the context of this ontology, is an interpretation act made by an agent (biological or electronic being) that links works of arts to something related to their content. More specific recognitions are available as subclasses for specific types of recognition according to the level of interpretation.</rdfs:comment>
+        <rdfs:comment>subclass of hico:InterpretationAct</rdfs:comment>
+        <rdfs:label xml:lang="en">Recognition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Story -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Story">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Invenzione"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Character"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Event"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#NamedObject"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#composedOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Place"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A story is a cohese combination of images that represent narrative elements such as Characters, Places, Events, Named Objects. The recognition of a story happens in the context of an Iconographical Recognition, and it is included in an Iconographical Description. As the super class Invenzione, it concerns the word of the subject matter. It is not necessary to have multiple images to compose a story.</rdfs:comment>
+        <rdfs:label xml:lang="en">Story</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Symbol">
+        <owl:equivalentClass rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E90_Symbolic_Object"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
+        <rdfs:comment xml:lang="en">A Symbol is the class representing the unity of a symbol and its symbolic meaning that can be expressed by an Image. The represented object (Simulacrum) and the symbolical meaning expressed (Reality Counterpart) along with the type of relation linking them if further represented by the Simulation Ontology.</rdfs:comment>
+        <rdfs:label xml:lang="en">Symbol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Tendency -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#Tendency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/4/iconsymbol#CulturalPhenomenon"/>
+        <rdfs:label xml:lang="en">Tendency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/Subject -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/context-description/Subject"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -26,12 +26,15 @@
         <dc:contributor xml:lang="en">Marieke van Erp</dc:contributor>
         <dc:creator>Bruno Sartini</dc:creator>
         <dc:creator>Sofia Baroncini</dc:creator>
+        <dcterms:created xml:lang="en">April 12th, 2022</dcterms:created>
         <dcterms:issued xml:lang="en">April 12th, 2022</dcterms:issued>
         <dcterms:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+        <dcterms:publisher xml:lang="en">Bruno Sartini</dcterms:publisher>
         <dcterms:title xml:lang="en">ICON Ontology</dcterms:title>
         <vann:preferredNamespacePrefix xml:lang="en">icon</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri xml:lang="en">tbd</vann:preferredNamespaceUri>
-        <xsd:citation xml:lang="en">Waitingforthepaper</xsd:citation>
+        <schema:citation xml:lang="en">tbd</schema:citation>
+        <rdfs:comment xml:lang="en">The ICON ontology deals with high granularity art interpretation. It was developed by conceptualizing Panofsky&apos;s theory of levels of interpretation, therefore artworks can be described according to Pre-iconographical, Iconographical and Iconological information.</rdfs:comment>
     </owl:Ontology>
     
 

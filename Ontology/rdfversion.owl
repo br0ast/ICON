@@ -1368,6 +1368,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/#Place">
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E53_Place"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
         <rdfs:comment xml:lang="en">An identified ambientation, e.g. the city of Bologna, which is recognized as a Level 2 subject. The recognition of a generic city is formally represented by the Natural Element class (level 1).</rdfs:comment>
         <rdfs:label xml:lang="en">Place (ICON)</rdfs:label>
     </owl:Class>

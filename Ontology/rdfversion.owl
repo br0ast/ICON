@@ -1313,6 +1313,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
     <!-- https://w3id.org/icon/ontology/#IntrinsicMeaning -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/#IntrinsicMeaning">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E36_Visual_Item"/>
         <rdfs:comment xml:lang="en">Reification class linking the identified cultural phenomenon or deeper meaning to the whole artwork or to the specific part of its representation and to the interpretation that identifies it. From a theoretical point of view, it corresponds to the manifestation in the specific artwork of the concepts and cultural phenomena identified by the iconological analysis. The terminology is taken from Panofsky (1939, 1955).</rdfs:comment>
         <rdfs:label xml:lang="en">Intrinsic Meaning</rdfs:label>
     </owl:Class>

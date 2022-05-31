@@ -424,7 +424,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/#ArtisticMotif"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/#IntrinsicMeaning"/>
         <rdfs:comment>Inverse property of has artistic motif</rdfs:comment>
-        <rdfs:comment xml:lang="en">Is artistic motif of</rdfs:comment>
+        <rdfs:label xml:lang="en">Is artistic motif of</rdfs:label>
     </owl:ObjectProperty>
     
 

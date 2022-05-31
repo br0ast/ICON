@@ -18,6 +18,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://w3id.org/icon/ontology/">
+        <owl:versionIRI rdf:resource="https://w3id.org/icon/ontology/1.0.0/"/>
         <owl:imports rdf:resource="http://erlangen-crm.org/current/"/>
         <owl:imports rdf:resource="http://purl.org/emmedi/hico/2020-03-31"/>
         <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
@@ -35,6 +36,9 @@
         <vann:preferredNamespaceUri xml:lang="en">https://w3id.org/icon/ontology/</vann:preferredNamespaceUri>
         <schema:citation xml:lang="en">Sartini B. and Baroncini S. Icon Ontology. https://w3id.org/icon/ontology</schema:citation>
         <rdfs:comment xml:lang="en">The ICON ontology deals with high granularity art interpretation. It was developed by conceptualizing Panofsky&apos;s theory of levels of interpretation, therefore artworks can be described according to Pre-iconographical, Iconographical and Iconological information.</rdfs:comment>
+        <owl:backwardCompatibleWith xml:lang="en">First version</owl:backwardCompatibleWith>
+        <owl:priorVersion xml:lang="en">First version</owl:priorVersion>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -88,6 +92,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://w3id.org/vir#K4_is_visual_prototype_of -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/vir#K4_is_visual_prototype_of"/>
     
 
 
@@ -191,6 +201,7 @@
     <!-- https://w3id.org/icon/ontology/#hasCopiedMotif -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/#hasCopiedMotif">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/vir#K4_is_visual_prototype_of"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/#isCopiedMotifOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/#FormalMotifRecognition"/>
         <rdfs:range>
@@ -347,6 +358,7 @@
     <!-- https://w3id.org/icon/ontology/#hasPrototypicalMotif -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/#hasPrototypicalMotif">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/vir#K4_is_visual_prototype_of"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/#isPrototypicalMotifOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/#FormalMotifRecognition"/>
         <rdfs:range>
@@ -411,6 +423,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/#isArtisticMotifOf">
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/#ArtisticMotif"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/#IntrinsicMeaning"/>
+        <rdfs:comment>Inverse property of has artistic motif</rdfs:comment>
+        <rdfs:comment xml:lang="en">Is artistic motif of</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -432,6 +446,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/#isCompositionOf">
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/#Composition"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/#IntrinsicMeaning"/>
+        <rdfs:comment xml:lang="en">Inverse property of has composition</rdfs:comment>
+        <rdfs:label xml:lang="en">Is composition of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -579,6 +595,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/#isImageOf">
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/#Image"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/#IntrinsicMeaning"/>
+        <rdfs:comment xml:lang="en">Inverse property of has image</rdfs:comment>
+        <rdfs:label xml:lang="en">Is image of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -797,6 +815,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P141_assigned"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/#Recognition"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/#ArtGenre"/>
+        <rdfs:comment xml:lang="en">This property is substituted by the the solution adopted by linked.art using crm:P2_has_type as follows: &lt;subject&gt;, crm:P2_has_type, &lt;specific style term&gt;.  &lt;specific style term&gt; crm:P2_has_type, &lt;http://vocab.getty.edu/aat/300015646&gt; # the AAT term indicating the concept of style.</rdfs:comment>
         <rdfs:label xml:lang="en">Recognized Genre</rdfs:label>
         <owl:deprecated xml:lang="en">since new version 25/03</owl:deprecated>
     </owl:ObjectProperty>
@@ -1016,6 +1035,7 @@
     <!-- https://w3id.org/icon/ontology/#ArtGenre -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/#ArtGenre">
+        <rdfs:comment xml:lang="en">This class is substituted by the the solution adopted by linked.art using crm:P2_has_type as follows: &lt;subject&gt;, crm:P2_has_type, &lt;specific style term&gt;.  &lt;specific style term&gt; crm:P2_has_type, &lt;http://vocab.getty.edu/aat/300015646&gt; # the AAT term indicating the concept of style.</rdfs:comment>
         <rdfs:label xml:lang="en">Art Genre</rdfs:label>
         <owl:deprecated>since new version 25/03</owl:deprecated>
     </owl:Class>
@@ -1071,6 +1091,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/#Attitude">
         <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/#CulturalPhenomenon"/>
+        <rdfs:comment xml:lang="en">Example term taken from Panofsky&apos;s studies, can be used as a specification of a cultural phenomemon if it can be considered an Attitude</rdfs:comment>
         <rdfs:label xml:lang="en">Attitude</rdfs:label>
     </owl:Class>
     
@@ -1080,6 +1101,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/#Belief">
         <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/#CulturalPhenomenon"/>
+        <rdfs:comment xml:lang="en">Example term taken from Panofsky&apos;s studies, can be used as a specification of a cultural phenomemon if it can be considered a Belief</rdfs:comment>
         <rdfs:label xml:lang="en">Belief</rdfs:label>
     </owl:Class>
     
@@ -1136,6 +1158,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/#CulturalValue">
         <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/#CulturalPhenomenon"/>
+        <rdfs:comment xml:lang="en">Example term taken from Panofsky&apos;s studies, can be used as a specification of a cultural phenomemon if it can be considered a CulturalValue</rdfs:comment>
         <rdfs:label xml:lang="en">Cultural Value</rdfs:label>
     </owl:Class>
     
@@ -1454,6 +1477,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/#Tendency">
         <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/#CulturalPhenomenon"/>
+        <rdfs:comment xml:lang="en">Example term taken from Panofsky&apos;s studies, can be used as a specification of a cultural phenomemon if it can be considered a tendency</rdfs:comment>
         <rdfs:label xml:lang="en">Tendency</rdfs:label>
     </owl:Class>
     

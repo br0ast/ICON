@@ -21,6 +21,7 @@
 	dcat:keyword "iconology" , "iconography" , "art interpretation", "art history", "artworks";
 	owl:versionInfo "0.0.1" ; 
 	dct:creator <https://orcid.org/0000-0002-5636-8328> ;
+    dct:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
     prov:wasDerivedFrom <http://www.worldcat.org/oclc/265570808> ;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG> .
 

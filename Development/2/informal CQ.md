@@ -23,9 +23,7 @@ Retrieve the iconographical descriptions that have been made on `ART1195`.
 
 #### Expected Results
 
-*
-*
-*
+
 
 #### CQ 2.1.2
 

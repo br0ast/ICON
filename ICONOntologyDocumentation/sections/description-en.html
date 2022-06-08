@@ -18,8 +18,28 @@
 
     <h3 id="level1"> Level 1</h3>
         <h4> Pre-iconographical Recognition</h3>
-        <h4> Formal Motif Recognition Recognition</h3>
+            <p>In a pre-iconographical recognition, the agent (interpreter) recognizes some artistic motifs in a work of art. These artistic motifs are associated phisically to a portion of the painting (call Pure form) and conceptually to natural elements, actions, qualities and expressional qualities.</p>
+            <p>According to Panofsky's theory [1], all the elements cited above can be part of this level of interpretation (pre-iconographical). As the term says, these are all the elements that are recognized before an iconographic interpretation. As to say, before recognizing the Virgin Mary (or at the same time), an interpreter might recognize a woman on a work of art. At the same time, before recognizing Excalibur one might recognize a sword.
+                Natural elements in fact represent general elements that are usually recognized through our experience of the world and do not require specific iconographic knowledge. A person that might not recognize the Virgin Mary is still more likely to recognize a woman in a painting, given that they had experience in seeing how women look like in their experience of the world. A specific quality might also be recognized on this level, like for example a color or a shape of a specific element.
+                Actions are also recognizable, such as running, fighting, and they also are recognized through our experience of the world. Finally, expressional qualities such as emotion, gestures can also be recognized on this level. Artistic motifs that represent these recognized elements can be grouped together inside compositions. A composition contains a series of artistic motif and it can also be specified how the artistic motif are grouped inside the composition through a compositional structure. </p>
+                <p>With our ontologies, Pre-iconographical recognitions can be described as it follows.
+                    From the n-ary relationship class <i>PreiconographicalRecognition</i>, you can link the recognized artistic motif, expressed with the <i>ArtisticMotif</i> class, with the property <i>recognizedArtisticMotif</i>.
+                    A composition can also be linked to a Pre-iconographical Recognition with the property <i>recognizedComposition</i>. To indicate the physical portion of the painting in which said composition or artistic motif is, you can associate the Pure form (class <i>PureForm</i>) to the recognition through the property <i>associatedForm</i>. You can furtherly expand the <i>PureForm</i> class by adding either boundary boxes (which can be the result of an automatic recognition through computer vision algorithms) or by adding a IIIF [2] specification of the image of the painting (that selects the pure form) through the data property <i>hasRegionDescription</i>.
+                    A composition is linked to the Artistic Motif that are part of it through the <i>hasPart</i> property. Its compositional structure (<i>CompositionalStructure</i> class) can be linked to it with the property <i>hasCompositionalStructure</i>. Finally, artistic motif can be associated to the classes <i>NaturalElement</i>, <i>Action</i>, <i>dul:Quality</i>, <i>ExpressionalMeaning</i> respectively with the properties <i>hasNaturalMeaning</i> (for natural elements and actions), <i>dul:hasQuality</i>, <i>hasExpressionalMeaning</i>.
+                </p>
+                
+            </p>
+        <h4> Formal Motif Recognition</h3>
+        <p>In a formal motif recognition, the interpreter recognizes that a specific artistic motif (or composition) might have been copied from a prototypical artistic motif of another artwork.
+            To express this concept in ICON, from the class <i>Formal Motif Recognition</i>, the prototypical motif used as an inspiration is linked to it through the property <i>hasPrototypicalMotif</i>. The copied motif, that takes inspiration from the prototypical one, is linked to the <i>FormalMotifRecognition</i> class using the property <i>hasCopiedMotif</i>.
+        </p>
+        
+        <p> Multiple Formal Motif Recognitions and Pre-iconographical recognitions can be grouped together inside a Pre-iconographical Description. A pre-iconographical description thus covers all the pre-iconographical aspects of an artwork recognized by one or more interpretation(s). The class <i>PreiconographicalDescription</i> is linked to the classes <i>PreiconographicalRecognition</i> and <i>FormalMotifRecognition</i> through the cidoc crm property <i>crm:P70_Documents</i></p>
+        <p>Both Pre-iconographical Recognitions and Formal Motif Recognitions classes and properties can be seen in figure X. Figure Y formalizes an example of these recognitions using the ontology.</p>
 
 
     <h3 id="level2"> Level 2</h3>
+    <h4>Iconographical Recognition</h4>
+    
     <h3 id="level3"> Level 3</h3>
+    <h4>Iconological Recognition</h4>

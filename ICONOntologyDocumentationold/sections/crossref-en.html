@@ -25,9 +25,6 @@ This section provides details for each class and property defined by ICON Ontolo
          <a href="#Belief" title="https://w3id.org/icon/ontology/#Belief">Belief</a>
       </li>
       <li>
-         <a href="#http://iflastandards.info/ns/fr/frbr/frbroo/F38" title="http://iflastandards.info/ns/fr/frbr/frbroo/F38">Character</a>
-      </li>
-      <li>
          <a href="#Character" title="https://w3id.org/icon/ontology/#Character">Character</a>
       </li>
       <li>
@@ -56,13 +53,19 @@ This section provides details for each class and property defined by ICON Ontolo
             title="https://w3id.org/icon/ontology/#FormalMotifRecognition">Formal Motif Recognition</a>
       </li>
       <li>
+         <a href="#https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty"
+            title="https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty">
+            <span>historic or artistic property</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://w3id.org/vir#IC1_Iconographical_Atom" title="http://w3id.org/vir#IC1_Iconographical_Atom">
             <span>i c1 iconographical atom</span>
          </a>
       </li>
       <li>
-         <a href="#http://w3id.org/vir#IC11_Personification" title="http://w3id.org/vir#IC11_Personification">
-            <span>i c11 personification</span>
+         <a href="#http://w3id.org/vir#IC16_Personification" title="http://w3id.org/vir#IC16_Personification">
+            <span>i c16 personification</span>
          </a>
       </li>
       <li>
@@ -212,8 +215,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#isRecAttributeOf"
-               title="https://w3id.org/icon/ontology/#isRecAttributeOf">Is Rec Attribute Of</a>
+            <a href="#isRecAttributeOf" title="https://w3id.org/icon/ontology/#isRecAttributeOf">Is Rec Attribute Of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isRecognizedArtisticMotifOf"
                title="https://w3id.org/icon/ontology/#isRecognizedArtisticMotifOf">Is Recognized Artistic Motif Of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isArtisticMotifOf"
@@ -302,27 +304,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://iflastandards.info/ns/fr/frbr/frbroo/F38">
-      <h3>Character<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://iflastandards.info/ns/fr/frbr/frbroo/F38</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="http://erlangen-crm.org/current/E28_Conceptual_Object"
-               target="_blank"
-               title="http://erlangen-crm.org/current/E28_Conceptual_Object">e28 conceptual object</a>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#Character" title="https://w3id.org/icon/ontology/#Character">Character</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Character">
       <h3>Character<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -336,11 +317,22 @@ The N-ary structure allow first of all to maintain the distinction between the p
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://iflastandards.info/ns/fr/frbr/frbroo/F38" title="http://iflastandards.info/ns/fr/frbr/frbroo/F38">Character</a>
-            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/arco/ontology/context-description/Subject"
+            <a href="http://erlangen-crm.org/current/E39_Actor"
+               target="_blank"
+               title="http://erlangen-crm.org/current/E39_Actor">e39 actor</a>, <a href="https://w3id.org/arco/ontology/context-description/Subject"
                target="_blank"
                title="https://w3id.org/arco/ontology/context-description/Subject">subject</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isCharacterOf" title="https://w3id.org/icon/ontology/#isCharacterOf">Is Character Of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasCharacter" title="https://w3id.org/icon/ontology/#hasCharacter">Has Character</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -473,12 +465,20 @@ The N-ary structure allow first of all to maintain the distinction between the p
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://erlangen-crm.org/current/E89_Propositional_Object"
-               target="_blank"
-               title="http://erlangen-crm.org/current/E89_Propositional_Object">e89 propositional object</a>, <a href="https://w3id.org/arco/ontology/context-description/Subject"
+            <a href="https://w3id.org/arco/ontology/context-description/Subject"
                target="_blank"
                title="https://w3id.org/arco/ontology/context-description/Subject">subject</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isEventOf" title="https://w3id.org/icon/ontology/#isEventOf">Is Event Of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasEvent" title="https://w3id.org/icon/ontology/#hasEvent">Has Event</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -545,6 +545,21 @@ The N-ary structure allow first of all to maintain the distinction between the p
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty">
+      <h3>historic or artistic property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Artwork" title="https://w3id.org/icon/ontology/#Artwork">Artwork</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://w3id.org/vir#IC1_Iconographical_Atom">
       <h3>i c1 iconographical atom<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -560,13 +575,13 @@ The N-ary structure allow first of all to maintain the distinction between the p
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://w3id.org/vir#IC11_Personification">
-      <h3>i c11 personification<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="http://w3id.org/vir#IC16_Personification">
+      <h3>i c16 personification<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://w3id.org/vir#IC11_Personification</p>
+         <strong>IRI:</strong> http://w3id.org/vir#IC16_Personification</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -674,8 +689,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#recognizedIntrinsicMeaning"
-               title="https://w3id.org/icon/ontology/#recognizedIntrinsicMeaning">Recognized Intrinsic Meaning</a>
+            <a href="#recognizedIntrinsicMeanig"
+               title="https://w3id.org/icon/ontology/#recognizedIntrinsicMeanig">Recognized Intrinsic Meanig</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -727,8 +742,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
             <sup class="type-op" title="object property">op</sup>, <a href="#isPersonificationOf"
                title="https://w3id.org/icon/ontology/#isPersonificationOf">Is Personification Of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOf" title="https://w3id.org/icon/ontology/#isPlaceOf">Is Place Of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isRecAttributeOf"
-               title="https://w3id.org/icon/ontology/#isRecAttributeOf">Is Rec Attribute Of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isRecAttributeOf" title="https://w3id.org/icon/ontology/#isRecAttributeOf">Is Rec Attribute Of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isSymbolOf" title="https://w3id.org/icon/ontology/#isSymbolOf">Is Symbol Of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#recognizedImage" title="https://w3id.org/icon/ontology/#recognizedImage">Recognized Image</a>
             <sup class="type-op" title="object property">op</sup>
@@ -772,7 +786,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
       <p>
          <strong>IRI:</strong> https://w3id.org/icon/ontology/#IntrinsicMeaning</p>
       <div class="comment">
-         <span class="markdown">N-ary relatioship class linking the identified cultural phenomenon or deeper meaning to the whole artwork or to the specific part of its representation and to the interpretation that identifies it. From a theoretical point of view, it corresponds to the manifestation in the specific artwork of the concepts and cultural phenomena identified by the iconological analysis. The terminology is taken from Panofsky (1939, 1955).</span>
+         <span class="markdown">Reification class linking the identified cultural phenomenon or deeper meaning to the whole artwork or to the specific part of its representation and to the interpretation that identifies it. From a theoretical point of view, it corresponds to the manifestation in the specific artwork of the concepts and cultural phenomena identified by the iconological analysis. The terminology is taken from Panofsky (1939, 1955).</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -806,8 +820,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
                title="https://w3id.org/icon/ontology/#isArtisticMotifOf">Is artistic motif of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isCompositionOf" title="https://w3id.org/icon/ontology/#isCompositionOf">Is composition of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isImageOf" title="https://w3id.org/icon/ontology/#isImageOf">Is image of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#recognizedIntrinsicMeaning"
-               title="https://w3id.org/icon/ontology/#recognizedIntrinsicMeaning">Recognized Intrinsic Meaning</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#recognizedIntrinsicMeanig"
+               title="https://w3id.org/icon/ontology/#recognizedIntrinsicMeanig">Recognized Intrinsic Meanig</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -865,12 +879,22 @@ The N-ary structure allow first of all to maintain the distinction between the p
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://erlangen-crm.org/current/E89_Propositional_Object"
+            <a href="http://erlangen-crm.org/current/E1_CRM_Entity"
                target="_blank"
-               title="http://erlangen-crm.org/current/E89_Propositional_Object">e89 propositional object</a>, <a href="https://w3id.org/arco/ontology/context-description/Subject"
+               title="http://erlangen-crm.org/current/E1_CRM_Entity">e1 c r m entity</a>, <a href="https://w3id.org/arco/ontology/context-description/Subject"
                target="_blank"
                title="https://w3id.org/arco/ontology/context-description/Subject">subject</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isNamedObjectOf" title="https://w3id.org/icon/ontology/#isNamedObjectOf">Is Named Object Of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasNamedObject" title="https://w3id.org/icon/ontology/#hasNamedObject">Has Named Object</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -906,9 +930,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://erlangen-crm.org/current/E89_Propositional_Object"
-               target="_blank"
-               title="http://erlangen-crm.org/current/E89_Propositional_Object">e89 propositional object</a>, <a href="#http://w3id.org/vir#IC11_Personification" title="http://w3id.org/vir#IC11_Personification">i c11 personification</a>
+            <a href="#http://w3id.org/vir#IC16_Personification" title="http://w3id.org/vir#IC16_Personification">i c16 personification</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -938,12 +960,22 @@ The N-ary structure allow first of all to maintain the distinction between the p
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://erlangen-crm.org/current/E89_Propositional_Object"
+            <a href="http://erlangen-crm.org/current/E53_Place"
                target="_blank"
-               title="http://erlangen-crm.org/current/E89_Propositional_Object">e89 propositional object</a>, <a href="https://w3id.org/arco/ontology/context-description/Subject"
+               title="http://erlangen-crm.org/current/E53_Place">e53 place</a>, <a href="https://w3id.org/arco/ontology/context-description/Subject"
                target="_blank"
                title="https://w3id.org/arco/ontology/context-description/Subject">subject</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isPlaceOf" title="https://w3id.org/icon/ontology/#isPlaceOf">Is Place Of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPlace" title="https://w3id.org/icon/ontology/#hasPlace">Has Place</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1016,8 +1048,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
          <dt>is in domain of</dt>
          <dd>
             <a href="#isPureFormOf" title="https://w3id.org/icon/ontology/#isPureFormOf">Is Pure Form Of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#regionDescription"
-               title="https://w3id.org/icon/ontology/#regionDescription">region description</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://www.w3.org/ns/prov-o-inverses#regionDescription"
+               title="https://www.w3.org/ns/prov-o-inverses#regionDescription">region description</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1065,16 +1097,12 @@ The N-ary structure allow first of all to maintain the distinction between the p
          <dd>
             <a href="#aboutWorkOfArt" title="https://w3id.org/icon/ontology/#aboutWorkOfArt">About Work Of Art</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#recognizedGenre" title="https://w3id.org/icon/ontology/#recognizedGenre">Recognized Genre</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/spar/cito/citesAsEvidence" title="http://purl.org/spar/cito/citesAsEvidence">cites as evidence</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/spar/cito/citesForInformation" title="http://purl.org/spar/cito/citesForInformation">cites for information</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/spar/cito/givesSupportTo" title="http://purl.org/spar/cito/givesSupportTo">gives support to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#interpretedByRecognition"
                title="https://w3id.org/icon/ontology/#interpretedByRecognition">Interpreted By Recognition</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/spar/cito/givesSupportTo" title="http://purl.org/spar/cito/givesSupportTo">gives support to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1154,22 +1182,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
          <a href="#associatedForm" title="https://w3id.org/icon/ontology/#associatedForm">Associated Form</a>
       </li>
       <li>
-         <a href="#http://purl.org/spar/cito/citesAsEvidence" title="http://purl.org/spar/cito/citesAsEvidence">
-            <span>cites as evidence</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/spar/cito/citesForInformation" title="http://purl.org/spar/cito/citesForInformation">
-            <span>cites for information</span>
-         </a>
-      </li>
-      <li>
          <a href="#composedOf" title="https://w3id.org/icon/ontology/#composedOf">Composed Of</a>
-      </li>
-      <li>
-         <a href="#http://purl.org/spar/cito/givesSupportTo" title="http://purl.org/spar/cito/givesSupportTo">
-            <span>gives support to</span>
-         </a>
       </li>
       <li>
          <a href="#hasArtisticMotif" title="https://w3id.org/icon/ontology/#hasArtisticMotif">Has Artistic Motif</a>
@@ -1303,8 +1316,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
          <a href="#isPureFormOf" title="https://w3id.org/icon/ontology/#isPureFormOf">Is Pure Form Of</a>
       </li>
       <li>
-         <a href="#isRecAttributeOf"
-            title="https://w3id.org/icon/ontology/#isRecAttributeOf">Is Rec Attribute Of</a>
+         <a href="#isRecAttributeOf" title="https://w3id.org/icon/ontology/#isRecAttributeOf">Is Rec Attribute Of</a>
       </li>
       <li>
          <a href="#isRecognOf" title="https://w3id.org/icon/ontology/#isRecognOf">Is Recogn Of</a>
@@ -1346,8 +1358,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
          <a href="#recognizedImage" title="https://w3id.org/icon/ontology/#recognizedImage">Recognized Image</a>
       </li>
       <li>
-         <a href="#recognizedIntrinsicMeaning"
-            title="https://w3id.org/icon/ontology/#recognizedIntrinsicMeaning">Recognized Intrinsic Meaning</a>
+         <a href="#recognizedIntrinsicMeanig"
+            title="https://w3id.org/icon/ontology/#recognizedIntrinsicMeanig">Recognized Intrinsic Meanig</a>
       </li>
       <li>
          <a href="#recognizedInvenzione"
@@ -1429,52 +1441,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/spar/cito/citesAsEvidence">
-      <h3>cites as evidence<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/spar/cito/citesAsEvidence</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Recognition" title="https://w3id.org/icon/ontology/#Recognition">Recognition</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://erlangen-crm.org/current/E89_Propositional_Object"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E89_Propositional_Object">e89 propositional object</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/spar/cito/citesForInformation">
-      <h3>cites for information<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/spar/cito/citesForInformation</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Recognition" title="https://w3id.org/icon/ontology/#Recognition">Recognition</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://erlangen-crm.org/current/E73_Information_Object"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E73_Information_Object">e73 information object</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="composedOf">
       <h3>Composed Of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1494,37 +1460,19 @@ The N-ary structure allow first of all to maintain the distinction between the p
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://erlangen-crm.org/current/E19_Physical_Object"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E19_Physical_Object">e19 physical object</a> 
-               <span class="logic">or</span> 
-               <a href="http://erlangen-crm.org/current/E39_Actor"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E39_Actor">e39 actor</a> 
-               <span class="logic">or</span> 
-               <a href="http://erlangen-crm.org/current/E53_Place"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E53_Place">e53 place</a> 
-               <span class="logic">or</span> 
-               <a href="http://erlangen-crm.org/current/E5_Event"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E5_Event">e5 event</a> 
-               <span class="logic">or</span> 
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event">event</a> 
-               <span class="logic">or</span> 
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place">place</a> 
-               <span class="logic">or</span> 
                <a href="#Character" title="https://w3id.org/icon/ontology/#Character">Character</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Event" title="https://w3id.org/icon/ontology/#Event">Event</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#NamedObject" title="https://w3id.org/icon/ontology/#NamedObject">Named Object</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Personification" title="https://w3id.org/icon/ontology/#Personification">Personification (ICON)</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Place" title="https://w3id.org/icon/ontology/#Place">Place (ICON)</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Symbol" title="https://w3id.org/icon/ontology/#Symbol">Symbol</a>
@@ -1534,28 +1482,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
             <dd>
                <a href="#takesPartIn" title="https://w3id.org/icon/ontology/#takesPartIn">Takes part in</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/spar/cito/givesSupportTo">
-      <h3>gives support to<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/spar/cito/givesSupportTo</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Recognition" title="https://w3id.org/icon/ontology/#Recognition">Recognition</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Recognition" title="https://w3id.org/icon/ontology/#Recognition">Recognition</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1617,10 +1543,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://erlangen-crm.org/current/E39_Actor"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E39_Actor">e39 actor</a> 
-               <span class="logic">or</span> 
                <a href="#Character" title="https://w3id.org/icon/ontology/#Character">Character</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -1761,13 +1683,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://erlangen-crm.org/current/E5_Event"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E5_Event">e5 event</a> 
-               <span class="logic">or</span> 
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event">event</a>
+               <a href="#Event" title="https://w3id.org/icon/ontology/#Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
@@ -1948,10 +1865,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://erlangen-crm.org/current/E19_Physical_Object"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E19_Physical_Object">e19 physical object</a> 
-               <span class="logic">or</span> 
                <a href="#NamedObject" title="https://w3id.org/icon/ontology/#NamedObject">Named Object</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -2063,13 +1976,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://erlangen-crm.org/current/E53_Place"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E53_Place">e53 place</a> 
-               <span class="logic">or</span> 
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place">place</a>
+               <a href="#Place" title="https://w3id.org/icon/ontology/#Place">Place (ICON)</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
@@ -2145,8 +2053,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#isRecAttributeOf"
-                  title="https://w3id.org/icon/ontology/#isRecAttributeOf">Is Rec Attribute Of</a>
+               <a href="#isRecAttributeOf" title="https://w3id.org/icon/ontology/#isRecAttributeOf">Is Rec Attribute Of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -2267,10 +2174,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://erlangen-crm.org/current/E39_Actor"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E39_Actor">e39 actor</a> 
-               <span class="logic">or</span> 
                <a href="#Character" title="https://w3id.org/icon/ontology/#Character">Character</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -2464,10 +2367,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://erlangen-crm.org/current/E5_Event"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E5_Event">e5 event</a> 
-               <span class="logic">or</span> 
                <a href="#Event" title="https://w3id.org/icon/ontology/#Event">Event</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -2679,8 +2578,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#recognizedIntrinsicMeaning"
-                  title="https://w3id.org/icon/ontology/#recognizedIntrinsicMeaning">Recognized Intrinsic Meaning</a>
+               <a href="#recognizedIntrinsicMeanig"
+                  title="https://w3id.org/icon/ontology/#recognizedIntrinsicMeanig">Recognized Intrinsic Meanig</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -2731,10 +2630,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://erlangen-crm.org/current/E19_Physical_Object"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E19_Physical_Object">e19 physical object</a> 
-               <span class="logic">or</span> 
                <a href="#NamedObject" title="https://w3id.org/icon/ontology/#NamedObject">Named Object</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -2796,13 +2691,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://erlangen-crm.org/current/E53_Place"
-                  target="_blank"
-                  title="http://erlangen-crm.org/current/E53_Place">e53 place</a> 
-               <span class="logic">or</span> 
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place">place</a>
+               <a href="#Place" title="https://w3id.org/icon/ontology/#Place">Place (ICON)</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -3294,13 +3184,13 @@ The N-ary structure allow first of all to maintain the distinction between the p
          </dl>
       </div>
    </div>
-   <div class="entity" id="recognizedIntrinsicMeaning">
-      <h3>Recognized Intrinsic Meaning<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="recognizedIntrinsicMeanig">
+      <h3>Recognized Intrinsic Meanig<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/icon/ontology/#recognizedIntrinsicMeaning</p>
+         <strong>IRI:</strong> https://w3id.org/icon/ontology/#recognizedIntrinsicMeanig</p>
       <div class="comment">
          <span class="markdown">This relation associates the Intrinsic Meaning to the Iconological Recognition that recognizes it at the third level of interpretation.</span>
       </div>
@@ -3460,19 +3350,19 @@ The N-ary structure allow first of all to maintain the distinction between the p
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#regionDescription"
-            title="https://w3id.org/icon/ontology/#regionDescription">
+         <a href="#https://www.w3.org/ns/prov-o-inverses#regionDescription"
+            title="https://www.w3.org/ns/prov-o-inverses#regionDescription">
             <span>region description</span>
          </a>
       </li>
    </ul>
-   <div class="entity" id="regionDescription">
+   <div class="entity" id="https://www.w3.org/ns/prov-o-inverses#regionDescription">
       <h3>region description<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/icon/ontology/#regionDescription</p>
+         <strong>IRI:</strong> https://www.w3.org/ns/prov-o-inverses#regionDescription</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>

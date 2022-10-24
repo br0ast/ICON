@@ -1,5 +1,5 @@
 # ICON
-Repository dedicated to the development and release of ICON, an ontology that deals with high granularity artistic interpretation.
+Repository dedicated to the development and release of ICON, an ontology that deals with high granularity artistic interpretations.
 
 
 In **Development** you'll find all the design iterations untertaken to create the ontology along with the unit tests.

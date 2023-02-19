@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="https://w3id.org/icon/ontology/"
      xml:base="https://w3id.org/icon/ontology/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:crm="http://erlangen-crm.org/current/"
      xmlns:dct="https://www.w3.org/1999/xhtml/vocab#dct:"
      xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
@@ -28,18 +29,35 @@
         <dc:contributor xml:lang="en">Marieke van Erp</dc:contributor>
         <dc:creator>Bruno Sartini</dc:creator>
         <dc:creator>Sofia Baroncini</dc:creator>
+        <dcterms:bibliographicCitation xml:lang="en">Sartini B. and Baroncini S. Icon Ontology. https://w3id.org/icon/ontology</dcterms:bibliographicCitation>
         <dcterms:created xml:lang="en">April 12th, 2022</dcterms:created>
         <dcterms:issued xml:lang="en">April 12th, 2022</dcterms:issued>
         <dcterms:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</dcterms:license>
         <dcterms:publisher xml:lang="en">Bruno Sartini</dcterms:publisher>
+        <dcterms:source xml:lang="en">The top down development of this ontology followed these sources:
+
+Erwin Panofsky. 1972. Studies in iconology: humanistic themes in the art of the Renaissance. Westview Press, Boulder, Colo. OCLC: 1151325340.
+
+Max Imdahl. 2012. Iconica. L’intuizione delle immagini. Aisthesis. Pratiche, linguaggi e saperi dell’estetico (2012).
+
+Roelof van Straten. 2012. An introduction to iconography (2 ed.). Routledge, London, England.
+
+Its development followed these methodologies:
+
+Silvio Peroni. 2016. A Simplified Agile Methodology for Ontology Development.. In Proceedings of the 13th OWL: Experiences and
+Directions Workshop and 5th OWL reasoner evaluation workshop (OWLED-ORE 2016). Springer, Cham, Switzerland, 55–69. https://doi.org/10.6084/M9.FIGSHARE.3189769.V2
+
+Valentina Presutti, Enrico Daga, Aldo Gangemi, and Eva Blomqvist. 2009. EXtreme Design with Content Ontology Design Patterns. In
+Proceedings of the 2009 International Conference on Ontology Patterns - Volume 516 (Washington DC) (WOP’09). CEUR-WS.org, Aachen,
+DEU, 83–97.</dcterms:source>
         <dcterms:title xml:lang="en">ICON Ontology</dcterms:title>
         <vann:preferredNamespacePrefix xml:lang="en">icon</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri xml:lang="en">https://w3id.org/icon/ontology/</vann:preferredNamespaceUri>
-        <schema:citation xml:lang="en">Sartini B. and Baroncini S. Icon Ontology. https://w3id.org/icon/ontology</schema:citation>
         <rdfs:comment xml:lang="en">The ICON ontology deals with high granularity art interpretation. It was developed by conceptualizing Panofsky&apos;s theory of levels of interpretation, therefore artworks can be described according to Pre-iconographical, Iconographical and Iconological information.</rdfs:comment>
         <owl:backwardCompatibleWith xml:lang="en">First version</owl:backwardCompatibleWith>
         <owl:priorVersion xml:lang="en">1.0</owl:priorVersion>
         <owl:versionInfo xml:lang="en">1.1.0</owl:versionInfo>
+        <ns:status xml:lang="en">work in progress</ns:status>
     </owl:Ontology>
     
 
@@ -52,6 +70,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
@@ -73,6 +97,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
@@ -82,6 +112,12 @@
     <!-- http://www.w3.org/2001/XMLSchema#citation -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema#citation"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#status"/>
     
 
 
@@ -1047,6 +1083,9 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">This data property can be used to link an artistic motif or a composition with their coordinates in the image of the artwork in which they are recognized. These coordinates could indicate the bounding boxes of the detections of a computer vision algorithms or could also be the IIIF URI that selects the part of the image of the painting in which the artistic motif or the composition are found</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:label xml:lang="en">Region Description</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2101,8 +2140,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Composition">
-        <rdfs:comment xml:lang="en">A Composition is a jointly of ArtisticMotif having a meaning. It can be recognized as corresponding to the same image at the second level or interpretation, or can explicit groupings of level 1 elements that the descriptor considers significant. Its is suggested to express the level 1 elements involved every time that there is an action (e.g. the action &quot;lifting&quot; in the context of &quot;man lifting a woman&quot; should be grouped in a composition including the artistic motifs corresponding respectively to &quot;man&quot;, &quot;woman, &quot;lifting&quot;)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">A Composition is a jointly of ArtisticMotif having a meaning. It can be recognized as corresponding to the same image at the second level or interpretation, or can explicit groupings of level 1 elements that the descriptor considers significant. Its is suggested to express the level 1 elements involved every time that there is an action (e.g. the action &quot;lifting&quot; in the context of &quot;man lifting a woman&quot; should be grouped in a composition including the artistic motifs corresponding respectively to &quot;man&quot;, &quot;woman, &quot;lifting&quot;)</rdfs:comment>
         <rdfs:label xml:lang="en">Composition</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Event">
@@ -2121,9 +2160,9 @@ The N-ary structure allow first of all to maintain the distinction between the p
         <rdfs:comment xml:lang="en">Image is a reification class linking the identified second level subject (namely: Characters, Events, Places, Named Objects, Symbols and Personifications) to the specific interpretation that recognizes it. It represents the subject depicted as a manifestation in the specific artwork taken into account, in contrast to the second level subjects cited and Invenzione, identifying iconographies from an abstract and general point of view. This distinction between the general subject level and the artwork-specific one is functional to identify the variants of a subject in relation to the specific context.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/InterpretationDescription">
+        <rdfs:comment xml:lang="en">The Interpretation Description is a class collecting all the triples describing each recognition in each level that shares a unique interpretative perspective. For example, it allows to collect claims agreeing each other or to describe the situation in which an art historian attributes to other art historians some details of the general interpretation he claims. Recognitions in disagree with each other should be documented in different descriptions. For example, the interpretation made in 1699 recognising Regnaudin&apos;s statuette as depicting &quot;Time carrying off the Truth&quot; is listed in a different description form the interpretation recognising &quot;The rape of Cybele&quot; as its subject (Wittkower).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Interpretation Description</rdfs:label>
-        <rdfs:comment xml:lang="en">The Interpretation Description is a class collecting all the triples describing each recognition in each level that shares a unique interpretative perspective. For example, it allows to collect claims agreeing each other or to describe the situation in which an art historian attributes to other art historians some details of the general interpretation he claims. Recognitions in disagree with each other should be documented in different descriptions. For example, the interpretation made in 1699 recognising Regnaudin&apos;s statuette as depicting &quot;Time carrying off the Truth&quot; is listed in a different description form the interpretation recognising &quot;The rape of Cybele&quot; as its subject (Wittkower).</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/IntrinsicMeaning">
         <rdfs:comment xml:lang="en">N-ary relatioship class linking the identified cultural phenomenon or deeper meaning to the whole artwork or to the specific part of its representation and to the interpretation that identifies it. From a theoretical point of view, it corresponds to the manifestation in the specific artwork of the concepts and cultural phenomena identified by the iconological analysis. The terminology is taken from Panofsky (1939, 1955).</rdfs:comment>
@@ -2216,8 +2255,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasSymbol">
-        <rdfs:comment xml:lang="en">This relation links an image to the Symbol depicted</rdfs:comment>
         <rdfs:label xml:lang="en">Has Symbol</rdfs:label>
+        <rdfs:comment xml:lang="en">This relation links an image to the Symbol depicted</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedArtisticMotif">
@@ -2227,8 +2266,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedComposition">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:comment xml:lang="en">This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
         <rdfs:label xml:lang="en">Recognized Composition</rdfs:label>
+        <rdfs:comment xml:lang="en">This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedImage">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>

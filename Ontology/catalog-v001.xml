@@ -2,8 +2,8 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/2004/02/skos/core#"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1676810943168" name="duplicate:https://w3id.org/icon/ontology/" uri="rdfversion.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1676810943168" name="duplicate:https://w3id.org/icon/ontology/" uri="rdfversionn.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1676810943168" name="duplicate:https://w3id.org/icon/ontology/" uri="version1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1676839376282" name="duplicate:https://w3id.org/icon/ontology/" uri="rdfversion.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1676839376282" name="duplicate:https://w3id.org/icon/ontology/" uri="rdfversionn.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1676839376282" name="duplicate:https://w3id.org/icon/ontology/" uri="version1.owl"/>
     </group>
 </catalog>

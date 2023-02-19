@@ -370,13 +370,10 @@ DEU, 83–97.</dcterms:source>
     <!-- https://w3id.org/icon/ontology/hasPart -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasPart">
-        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106_is_composed_of"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/partOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/Composition"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/ArtisticMotif"/>
-        <rdfs:comment xml:lang="en">This relation links a Composition to the Artistic Motifs of which it consists.</rdfs:comment>
-        <rdfs:label xml:lang="en">Has Part (ICON)</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1883,7 +1880,7 @@ DEU, 83–97.</dcterms:source>
     <!-- https://w3id.org/icon/ontology/Event -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/Event">
-        <skos:broadMatch rdf:resource="http://erlangen-crm.org/current/E89_Propositional_Object"/>
+        <skos:related rdf:resource="http://erlangen-crm.org/current/E89_Propositional_Object"/>
     </owl:NamedIndividual>
     
 
@@ -1913,7 +1910,7 @@ DEU, 83–97.</dcterms:source>
     <!-- https://w3id.org/icon/ontology/InterpretationDescription -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/InterpretationDescription">
-        <skos:narrowMatch rdf:resource="http://erlangen-crm.org/current/E31_Document"/>
+        <skos:broadMatch rdf:resource="http://erlangen-crm.org/current/E31_Document"/>
     </owl:NamedIndividual>
     
 
@@ -1937,7 +1934,7 @@ DEU, 83–97.</dcterms:source>
     <!-- https://w3id.org/icon/ontology/NamedObject -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/NamedObject">
-        <skos:broadMatch rdf:resource="http://erlangen-crm.org/current/E89_Propositional_Object"/>
+        <skos:related rdf:resource="http://erlangen-crm.org/current/E89_Propositional_Object"/>
     </owl:NamedIndividual>
     
 
@@ -1961,7 +1958,7 @@ DEU, 83–97.</dcterms:source>
     <!-- https://w3id.org/icon/ontology/Place -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/Place">
-        <skos:broadMatch rdf:resource="http://erlangen-crm.org/current/E89_Propositional_Object"/>
+        <skos:related rdf:resource="http://erlangen-crm.org/current/E89_Propositional_Object"/>
     </owl:NamedIndividual>
     
 
@@ -2034,6 +2031,14 @@ DEU, 83–97.</dcterms:source>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/hasNamedObject">
         <skos:broadMatch rdf:resource="http://erlangen-crm.org/current/P138_represents"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/icon/ontology/hasPart -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/hasPart">
+        <skos:broadMatch rdf:resource="http://erlangen-crm.org/current/P106_is_composed_of"/>
     </owl:NamedIndividual>
     
 
@@ -2115,8 +2120,8 @@ DEU, 83–97.</dcterms:source>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Action">
         <rdfs:comment xml:lang="en">An event as recognized at level 1 of interpretation, e.g. a man who lifts one hand or a man riding a horse. Generally, all the actions should be described by this class.  When an action is identified, it is suggested to create a Composition with all the elements involved in this action</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Action (ICON)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Allegory">
         <rdfs:label xml:lang="en">Allegory</rdfs:label>
@@ -2135,8 +2140,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Character">
-        <rdfs:label xml:lang="en">Character</rdfs:label>
         <rdfs:comment xml:lang="en">A Character is a real or imaginary being identifiable as a subject in the Iconographical Analysis (level 2 of interpretation)</rdfs:comment>
+        <rdfs:label xml:lang="en">Character</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Composition">
@@ -2151,8 +2156,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/ExpressionalQuality">
         <rdfs:label xml:lang="en">Expressional Quality</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:comment xml:lang="en">An Expression Quality corresponds to the &quot;expressional subject matter&quot; described by Panofsky (1939), which belongs, along with the factual ones, to the Primary or natural subject matter of a work of art. Indeed, it individuates, by way of example, emotions, an atmosphere, the character of a person.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Image">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
@@ -2239,6 +2244,11 @@ The N-ary structure allow first of all to maintain the distinction between the p
         <rdfs:label xml:lang="en">Has Named Object</rdfs:label>
         <rdfs:comment xml:lang="en">This relation links an image to the Named Object depicted</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPart">
+        <rdfs:comment xml:lang="en">This relation links a Composition to the Artistic Motifs of which it consists.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Part (ICON)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPersonification">
         <rdfs:comment xml:lang="en">This relation links an image to the Personification depicted</rdfs:comment>
         <rdfs:label xml:lang="en">Has Personification</rdfs:label>
@@ -2255,8 +2265,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasSymbol">
-        <rdfs:label xml:lang="en">Has Symbol</rdfs:label>
         <rdfs:comment xml:lang="en">This relation links an image to the Symbol depicted</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Symbol</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedArtisticMotif">
@@ -2266,8 +2276,8 @@ The N-ary structure allow first of all to maintain the distinction between the p
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedComposition">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Recognized Composition</rdfs:label>
         <rdfs:comment xml:lang="en">This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recognized Composition</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedImage">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>

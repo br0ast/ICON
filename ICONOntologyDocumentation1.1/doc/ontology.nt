@@ -1,5 +1,5 @@
 <https://w3id.org/icon/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/icon/ontology/2.0.0/> .
+<https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/icon/ontology/1.1.0/> .
 <https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://erlangen-crm.org/current/> .
 <https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/emmedi/hico/2020-03-31> .
 <https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
@@ -9,21 +9,18 @@
 <https://w3id.org/icon/ontology/> <http://purl.org/dc/elements/1.1/contributor> "Marieke van Erp"@en .
 <https://w3id.org/icon/ontology/> <http://purl.org/dc/elements/1.1/creator> "Bruno Sartini" .
 <https://w3id.org/icon/ontology/> <http://purl.org/dc/elements/1.1/creator> "Sofia Baroncini" .
-<https://w3id.org/icon/ontology/> <http://purl.org/dc/terms/bibliographicCitation> "Sartini B. and Baroncini S. Icon Ontology. https://w3id.org/icon/ontology"@en .
 <https://w3id.org/icon/ontology/> <http://purl.org/dc/terms/created> "April 12th, 2022"@en .
 <https://w3id.org/icon/ontology/> <http://purl.org/dc/terms/issued> "April 12th, 2022"@en .
 <https://w3id.org/icon/ontology/> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"@en .
 <https://w3id.org/icon/ontology/> <http://purl.org/dc/terms/publisher> "Bruno Sartini"@en .
-<https://w3id.org/icon/ontology/> <http://purl.org/dc/terms/source> "The top down development of this ontology followed these sources:\n\nErwin Panofsky. 1972. Studies in iconology: humanistic themes in the art of the Renaissance. Westview Press, Boulder, Colo. OCLC: 1151325340.\n\nMax Imdahl. 2012. Iconica. L’intuizione delle immagini. Aisthesis. Pratiche, linguaggi e saperi dell’estetico (2012).\n\nRoelof van Straten. 2012. An introduction to iconography (2 ed.). Routledge, London, England.\n\nIts development followed these methodologies:\n\nSilvio Peroni. 2016. A Simplified Agile Methodology for Ontology Development.. In Proceedings of the 13th OWL: Experiences and\nDirections Workshop and 5th OWL reasoner evaluation workshop (OWLED-ORE 2016). Springer, Cham, Switzerland, 55–69. https://doi.org/10.6084/M9.FIGSHARE.3189769.V2\n\nValentina Presutti, Enrico Daga, Aldo Gangemi, and Eva Blomqvist. 2009. EXtreme Design with Content Ontology Design Patterns. In\nProceedings of the 2009 International Conference on Ontology Patterns - Volume 516 (Washington DC) (WOP’09). CEUR-WS.org, Aachen,\nDEU, 83–97."@en .
 <https://w3id.org/icon/ontology/> <http://purl.org/dc/terms/title> "ICON Ontology"@en .
 <https://w3id.org/icon/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "icon"@en .
 <https://w3id.org/icon/ontology/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/icon/ontology/"@en .
+<https://w3id.org/icon/ontology/> <http://schema.org/citation> "Sartini B. and Baroncini S. Icon Ontology. https://w3id.org/icon/ontology"@en .
 <https://w3id.org/icon/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "The ICON ontology deals with high granularity art interpretation. It was developed by conceptualizing Panofsky's theory of levels of interpretation, therefore artworks can be described according to Pre-iconographical, Iconographical and Iconological information."@en .
-<https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> "1.1.0"@en .
-<https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#priorVersion> "1.1.0"@en .
-<https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "2.0.0"@en .
-<https://w3id.org/icon/ontology/> <http://www.w3.org/2003/06/sw-vocab-status/ns#status> "work in progress"@en .
-<https://w3id.org/icon/ontology/> <http://www.w3.org/2004/02/skos/core#changeNote> "**Version 2.0.0 Changelog**\n\nIntroduction of three super property chains:\n\n* preiconographicallyDepicts : which links elements from the first level of interpretation (pre-iconographical) directly to the artwork\n* iconographicallyDepicts : which links elements from the the second level of interpretation (iconographical) directly to the artwork\n* iconologicallyRepresents : which links elements from the third level of interpretation (iconological) directly to the artwork\n\nProperty interpretedByRecognition (domain: artwork range: recognition) has been renamed hasRecognition to avoid ambiguities between the terms recognition and interpretation"@en .
+<https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> "First version"@en .
+<https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#priorVersion> "1.0"@en .
+<https://w3id.org/icon/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.0"@en .
 # 
 # 
 # #################################################################
@@ -32,9 +29,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://purl.org/dc/terms/bibliographicCitation
-<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -45,17 +39,11 @@
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/dc/terms/source
-<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2001/XMLSchema#citation
 <http://www.w3.org/2001/XMLSchema#citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2003/06/sw-vocab-status/ns#status
-<http://www.w3.org/2003/06/sw-vocab-status/ns#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -84,7 +72,7 @@
 # 
 # https://w3id.org/icon/ontology/aboutWorkOfArt
 <https://w3id.org/icon/ontology/aboutWorkOfArt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/icon/ontology/aboutWorkOfArt> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/hasRecognition> .
+<https://w3id.org/icon/ontology/aboutWorkOfArt> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/interpretedByRecognition> .
 <https://w3id.org/icon/ontology/aboutWorkOfArt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Recognition> .
 <https://w3id.org/icon/ontology/aboutWorkOfArt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Artwork> .
 <https://w3id.org/icon/ontology/aboutWorkOfArt> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates each Recognition directly to the artwork. In this way, it is possible to retrieve easily all the interpretations about an artwork. Therefore, it a highly recommended good practice to declare it for each interpretation."@en .
@@ -245,10 +233,13 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/icon/ontology/hasPart
 <https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P106_is_composed_of> .
 <https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> .
 <https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/partOf> .
 <https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Composition> .
 <https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/ArtisticMotif> .
+<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links a Composition to the Artistic Motifs of which it consists."@en .
+<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "Has Part (ICON)"@en .
 # 
 # https://w3id.org/icon/ontology/hasPersonification
 <https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -293,14 +284,6 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/icon/ontology/hasRecAttribute> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
 <https://w3id.org/icon/ontology/hasRecAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "Has Rec Attribute"@en .
 # 
-# https://w3id.org/icon/ontology/hasRecognition
-<https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Artwork> .
-<https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Recognition> .
-<https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of aboutWorkOfArt"@en .
-<https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
-<https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Has Recognition"@en .
-# 
 # https://w3id.org/icon/ontology/hasSymbol
 <https://w3id.org/icon/ontology/hasSymbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/icon/ontology/hasSymbol> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/isSymbolOf> .
@@ -325,88 +308,6 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/icon/ontology/iconographicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
 <https://w3id.org/icon/ontology/iconographicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#label> "iconographically complies with"@en .
 # 
-# https://w3id.org/icon/ontology/iconographicallyDepicts
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasCharacter> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedImage> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasEvent> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedImage> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasNamedObject> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedImage> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasPersonification> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedImage> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid43 .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasPlace> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedImage> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid46 .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasSymbol> .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedImage> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedInvenzione> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid51 .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/composedOf> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedInvenzione> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link an artwork to the element of the second level of interpretation (iconographical) which it depicts. This elements can be Characters, Symbols, Personifications, Places, Stories, Allegories (and the element these stories and allegories are composed of).\n\nExample: There is an IconographicalRecognition of Artwork1 of Image1, which is linked to the character Thor through the hasCharacter property.\n\nThen Artwork1 iconographicallyDepicts Thor.\n\nExample2: There is an IconographicalRecognition of Artwork1 of Story1, which is the story of the death of Julius C. This story is composed by the Place Rome and the character Julius C. (and more...)\n\nThen Artwork1 IconographicallyDepicts the story of the death of Julius C., Julius C., and the city of Rome.\n\nThis link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation."@en .
-<https://w3id.org/icon/ontology/iconographicallyDepicts> <http://www.w3.org/2000/01/rdf-schema#label> "Iconographically Depicts"@en .
-# 
 # https://w3id.org/icon/ontology/iconologicallyCompliesWith
 <https://w3id.org/icon/ontology/iconologicallyCompliesWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/icon/ontology/iconologicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
@@ -417,30 +318,13 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/iconologicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
 <https://w3id.org/icon/ontology/iconologicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#label> "iconologically complies with"@en .
 # 
-# https://w3id.org/icon/ontology/iconologicallyRepresents
-<https://w3id.org/icon/ontology/iconologicallyRepresents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/icon/ontology/iconologicallyRepresents> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid54 .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedConcept> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/iconologicallyRepresents> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid57 .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/iconologicallyRepresents> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link an artwork to the element of the third level of interpretation (iconological) which it represents. This elements can be Cultural Phenomena, Social Objects (abstract concepts).\n\nExample: There is an IconologicalRecognition of Artwork1 of IntrinsicMeaning1, which is linked to the cultural phenomenon of ImitationOfClassics\nThen Artwork1 iconologicallyRepresents  ImitationOfClassics.\n\nExample2: There is an IconologicalRecognition of Artwork1 of IntrinsicMeaning2, which is linked to the social object \"Absurdity\" (and to other elements from other levels that suppor this claim...)\n\nThen Artwork1 IconologicallyRepresents Absurdity\n\nThis link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation."@en .
-<https://w3id.org/icon/ontology/iconologicallyRepresents> <http://www.w3.org/2000/01/rdf-schema#label> "Iconologically Represents"@en .
+# https://w3id.org/icon/ontology/interpretedByRecognition
+<https://w3id.org/icon/ontology/interpretedByRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/icon/ontology/interpretedByRecognition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Artwork> .
+<https://w3id.org/icon/ontology/interpretedByRecognition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Recognition> .
+<https://w3id.org/icon/ontology/interpretedByRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of aboutWorkOfArt"@en .
+<https://w3id.org/icon/ontology/interpretedByRecognition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
+<https://w3id.org/icon/ontology/interpretedByRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Interpreted By Recognition"@en .
 # 
 # https://w3id.org/icon/ontology/isArtisticMotifOf
 <https://w3id.org/icon/ontology/isArtisticMotifOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -482,15 +366,15 @@ _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> .
 <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/preiconographicallyCompliesWith> .
 <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/InterpretationDescription> .
-<https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#range> _:genid58 .
-_:genid58 <http://www.w3.org/2002/07/owl#unionOf> _:genid60 .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/FormalMotifRecognition> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#range> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#unionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/FormalMotifRecognition> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of pre-iconographically complies with"@en .
 <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
 <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "is compliant with pre-iconographical recognition"@en .
@@ -513,15 +397,15 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/icon/ontology/isCopiedMotifOf
 <https://w3id.org/icon/ontology/isCopiedMotifOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/icon/ontology/isCopiedMotifOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid61 .
-_:genid61 <http://www.w3.org/2002/07/owl#unionOf> _:genid63 .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/isCopiedMotifOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#unionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/isCopiedMotifOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/FormalMotifRecognition> .
 <https://w3id.org/icon/ontology/isCopiedMotifOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasCopiedMotif"@en .
 <https://w3id.org/icon/ontology/isCopiedMotifOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
@@ -547,39 +431,39 @@ _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/icon/ontology/isExpressionalMeaningOf
 <https://w3id.org/icon/ontology/isExpressionalMeaningOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/icon/ontology/isExpressionalMeaningOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/ExpressionalQuality> .
-<https://w3id.org/icon/ontology/isExpressionalMeaningOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid64 .
-_:genid64 <http://www.w3.org/2002/07/owl#unionOf> _:genid66 .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/isExpressionalMeaningOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#unionOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/isExpressionalMeaningOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasExpressionalMeaning"@en .
 <https://w3id.org/icon/ontology/isExpressionalMeaningOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
 <https://w3id.org/icon/ontology/isExpressionalMeaningOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Expressional Meaning Of"@en .
 # 
 # https://w3id.org/icon/ontology/isFactualMeaningOf
 <https://w3id.org/icon/ontology/isFactualMeaningOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/icon/ontology/isFactualMeaningOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid67 .
-_:genid67 <http://www.w3.org/2002/07/owl#unionOf> _:genid69 .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/NaturalElement> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Action> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/icon/ontology/isFactualMeaningOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid70 .
-_:genid70 <http://www.w3.org/2002/07/owl#unionOf> _:genid72 .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/isFactualMeaningOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#unionOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/NaturalElement> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Action> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/isFactualMeaningOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#unionOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/isFactualMeaningOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasFactualMeaning"@en .
 <https://w3id.org/icon/ontology/isFactualMeaningOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
 <https://w3id.org/icon/ontology/isFactualMeaningOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Factual Meaning Of"@en .
@@ -596,15 +480,15 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/icon/ontology/isIconographicallyReferredBy
 <https://w3id.org/icon/ontology/isIconographicallyReferredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/icon/ontology/isIconographicallyReferredBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/refersToArtisticMotif> .
-<https://w3id.org/icon/ontology/isIconographicallyReferredBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid73 .
-_:genid73 <http://www.w3.org/2002/07/owl#unionOf> _:genid75 .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/isIconographicallyReferredBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#unionOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/isIconographicallyReferredBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/IconographicalRecognition> .
 <https://w3id.org/icon/ontology/isIconographicallyReferredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of refers to artistic motif"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/icon/ontology/isIconographicallyReferredBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
@@ -661,15 +545,15 @@ _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/icon/ontology/isPrototypicalMotifOf
 <https://w3id.org/icon/ontology/isPrototypicalMotifOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/icon/ontology/isPrototypicalMotifOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid76 .
-_:genid76 <http://www.w3.org/2002/07/owl#unionOf> _:genid78 .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/isPrototypicalMotifOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#unionOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/isPrototypicalMotifOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/FormalMotifRecognition> .
 <https://w3id.org/icon/ontology/isPrototypicalMotifOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasPrototypicalMotif"@en .
 <https://w3id.org/icon/ontology/isPrototypicalMotifOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
@@ -729,15 +613,15 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/icon/ontology/isSymbolOf
 <https://w3id.org/icon/ontology/isSymbolOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/icon/ontology/isSymbolOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid79 .
-_:genid79 <http://www.w3.org/2002/07/owl#unionOf> _:genid81 .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulation> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Symbol> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/isSymbolOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#unionOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulation> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Symbol> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/isSymbolOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Image> .
 <https://w3id.org/icon/ontology/isSymbolOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of has symbol"@en .
 <https://w3id.org/icon/ontology/isSymbolOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
@@ -754,70 +638,19 @@ _:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/icon/ontology/preiconographicallyCompliesWith
 <https://w3id.org/icon/ontology/preiconographicallyCompliesWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/icon/ontology/preiconographicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
-<https://w3id.org/icon/ontology/preiconographicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid82 .
-_:genid82 <http://www.w3.org/2002/07/owl#unionOf> _:genid84 .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/FormalMotifRecognition> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/preiconographicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#unionOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/FormalMotifRecognition> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/preiconographicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/InterpretationDescription> .
 <https://w3id.org/icon/ontology/preiconographicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link all the pre-iconographical and formal motif recognitions recognitions that take part in one or more interpretation(s), to that/those interpretation(s)"@en .
 <https://w3id.org/icon/ontology/preiconographicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
 <https://w3id.org/icon/ontology/preiconographicallyCompliesWith> <http://www.w3.org/2000/01/rdf-schema#label> "pre-iconographically complies with"@en .
-# 
-# https://w3id.org/icon/ontology/preiconographicallyDepicts
-<https://w3id.org/icon/ontology/preiconographicallyDepicts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/icon/ontology/preiconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid87 .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasExpressionalMeaning> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedArtisticMotif> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/preiconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid90 .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasFactualMeaning> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedArtisticMotif> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/preiconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid94 .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasExpressionalMeaning> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasPart> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedComposition> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/preiconographicallyDepicts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid98 .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasFactualMeaning> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasPart> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/recognizedComposition> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/hasRecognition> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/icon/ontology/preiconographicallyDepicts> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link an artwork to the element of the first level of interpretation (pre-iconographical) which it depicts. This element can be a Natural Element, an Action, Expression, or an element included in a recognized Composition (again, natural element, action, expression).\n\nExample: There is a PreiconographicalRecognition of Artwork1 of ArtisticMotif1, which is linked to the natural element bear.\nThen Artwork1 preiconographicallyDepicts  bear.\n\nExample2: There is a PreiconographicalRecognition of Artwork1 of ArtisticMotif2, which is linked to the composition1, composed by a bear and the action of eating.\nThen Artwork1 preiconographicallyDepicts bear and eating.\n\nThis link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation."@en .
-<https://w3id.org/icon/ontology/preiconographicallyDepicts> <http://www.w3.org/2000/01/rdf-schema#label> "Pre-iconographically Depicts"@en .
 # 
 # https://w3id.org/icon/ontology/recognizedArtisticMotif
 <https://w3id.org/icon/ontology/recognizedArtisticMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -877,41 +710,41 @@ _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/refersToArtisticMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/icon/ontology/refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erlangen-crm.org/current/P140_assigned_attribute_to> .
 <https://w3id.org/icon/ontology/refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/IconographicalRecognition> .
-<https://w3id.org/icon/ontology/refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#range> _:genid99 .
-_:genid99 <http://www.w3.org/2002/07/owl#unionOf> _:genid101 .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#range> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#unionOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates a Composition or an Artistic Motif to the Iconographical Recognition that describes it at the second level of interpretation."@en .
 <https://w3id.org/icon/ontology/refersToArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Refers To Artistic Motif"@en .
 # 
 # https://w3id.org/icon/ontology/takesPartIn
 <https://w3id.org/icon/ontology/takesPartIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/icon/ontology/takesPartIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid102 .
-_:genid102 <http://www.w3.org/2002/07/owl#unionOf> _:genid108 .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Symbol> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Place> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Personification> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/NamedObject> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Event> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Character> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/takesPartIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#unionOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Symbol> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Place> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Personification> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/NamedObject> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Event> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Character> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/takesPartIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Invenzione> .
 <https://w3id.org/icon/ontology/takesPartIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of composed of"@en .
 <https://w3id.org/icon/ontology/takesPartIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
@@ -928,19 +761,16 @@ _:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/icon/ontology/regionDescription
 <https://w3id.org/icon/ontology/regionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/icon/ontology/regionDescription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid109 .
-_:genid109 <http://www.w3.org/2002/07/owl#unionOf> _:genid111 .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/regionDescription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#unionOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/regionDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/icon/ontology/regionDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property can be used to link an artistic motif or a composition with their coordinates in the image of the artwork in which they are recognized. These coordinates could indicate the bounding boxes of the detections of a computer vision algorithms or could also be the IIIF URI that selects the part of the image of the painting in which the artistic motif or the composition are found"@en .
-<https://w3id.org/icon/ontology/regionDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
-<https://w3id.org/icon/ontology/regionDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Region Description"@en .
 # 
 # 
 # 
@@ -982,21 +812,21 @@ _:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/icon/ontology/Allegory
 <https://w3id.org/icon/ontology/Allegory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Allegory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/Invenzione> .
-<https://w3id.org/icon/ontology/Allegory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid112 .
-_:genid112 <http://www.w3.org/2002/07/owl#unionOf> _:genid115 .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid114 .
-_:genid114 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/Symbol> .
-_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid116 .
-_:genid116 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/Personification> .
-_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/Allegory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#unionOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/Symbol> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/Personification> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/icon/ontology/ArtGenre
 <https://w3id.org/icon/ontology/ArtGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1007,36 +837,36 @@ _:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/icon/ontology/ArtisticMotif
 <https://w3id.org/icon/ontology/ArtisticMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/VisualSubject> .
-<https://w3id.org/icon/ontology/ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid117 .
-_:genid117 <http://www.w3.org/2002/07/owl#unionOf> _:genid123 .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid118 .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid119 .
-_:genid119 <http://www.w3.org/2002/07/owl#onClass> _:genid120 .
-_:genid120 <http://www.w3.org/2002/07/owl#unionOf> _:genid122 .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/NaturalElement> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Action> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid119 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasFactualMeaning> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid124 .
-_:genid124 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/ExpressionalQuality> .
-_:genid124 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasExpressionalMeaning> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/icon/ontology/ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
-_:genid125 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
-_:genid125 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#unionOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#onClass> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#unionOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/NaturalElement> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Action> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid76 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasFactualMeaning> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/ExpressionalQuality> .
+_:genid81 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasExpressionalMeaning> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
+_:genid82 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/icon/ontology/Artwork
 <https://w3id.org/icon/ontology/Artwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1063,16 +893,16 @@ _:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/icon/ontology/Composition
 <https://w3id.org/icon/ontology/Composition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/VisualSubject> .
-<https://w3id.org/icon/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
-_:genid126 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid126 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/icon/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid127 .
-_:genid127 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
-_:genid127 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isRecognizedCompositionOf> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid83 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
+_:genid84 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isRecognizedCompositionOf> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/icon/ontology/CompositionalStructure
 <https://w3id.org/icon/ontology/CompositionalStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1106,50 +936,50 @@ _:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/icon/ontology/FormalMotifRecognition
 <https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/Recognition> .
-<https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid128 .
-_:genid128 <http://www.w3.org/2002/07/owl#unionOf> _:genid131 .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid130 .
-_:genid130 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Composition> .
-_:genid130 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasCopiedMotif> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid132 .
-_:genid132 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid132 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasCopiedMotif> .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid133 .
-_:genid133 <http://www.w3.org/2002/07/owl#unionOf> _:genid136 .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid135 .
-_:genid135 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Composition> .
-_:genid135 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasPrototypicalMotif> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid137 .
-_:genid137 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid137 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid137 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasPrototypicalMotif> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
+_:genid85 <http://www.w3.org/2002/07/owl#unionOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Composition> .
+_:genid87 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasCopiedMotif> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid89 .
+_:genid89 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid89 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasCopiedMotif> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+_:genid90 <http://www.w3.org/2002/07/owl#unionOf> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Composition> .
+_:genid92 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasPrototypicalMotif> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid94 .
+_:genid94 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid94 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasPrototypicalMotif> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "The act of recognizing that subjects depicted by different artworks has the same formal motifs although the content represented may be different. The need of the usage of this class emerged from a bottom-up approach, rather than Panofsky's theory. It describes that certain subjects are prototypes of others, including preliminary drawings, but also cases in which another artist copied only the composition or gestures from another artwork. This recognition can link every specific part of a representation to the specific prototypes. The relation is between level 1 objects, i.e. Artistic Motifs and Composition, since it describes a formal aspect. Example of usage: if Hercules carrying the Boar is the prototype for a Christ carrying a deer, symbol of the human souls, it's possible to relate directly the boar represented in the former artwork to the deer represented in the latter."@en .
 <https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Formal Motif Recognition"@en .
 # 
 # https://w3id.org/icon/ontology/IconographicalDescription
 <https://w3id.org/icon/ontology/IconographicalDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/IconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/InterpretationDescription> .
-<https://w3id.org/icon/ontology/IconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid138 .
-_:genid138 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/icon/ontology/IconographicalRecognition> .
-_:genid138 <http://www.w3.org/2002/07/owl#onProperty> <http://erlangen-crm.org/current/P70_documents> .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/IconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
+_:genid95 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/icon/ontology/IconographicalRecognition> .
+_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <http://erlangen-crm.org/current/P70_documents> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/icon/ontology/IconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "An Iconographical Description is the enumeration of iconographical recognitions of images or invenzioni recognized by one or more agents. It is thus a collection of triples. It is the summary of what would be called in Panofsky's term the second level of interpretation."@en .
 <https://w3id.org/icon/ontology/IconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Iconographical Description"@en .
 <https://w3id.org/icon/ontology/IconographicalDescription> <http://www.w3.org/2002/07/owl#deprecated> "from version 1.1" .
@@ -1157,33 +987,33 @@ _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/icon/ontology/IconographicalRecognition
 <https://w3id.org/icon/ontology/IconographicalRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/IconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/Recognition> .
-<https://w3id.org/icon/ontology/IconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid139 .
-_:genid139 <http://www.w3.org/2002/07/owl#unionOf> _:genid142 .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid141 .
-_:genid141 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Invenzione> .
-_:genid141 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedInvenzione> .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid143 .
-_:genid143 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Image> .
-_:genid143 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedImage> .
-_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/IconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
+_:genid96 <http://www.w3.org/2002/07/owl#unionOf> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Invenzione> .
+_:genid98 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedInvenzione> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
+_:genid100 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Image> .
+_:genid100 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedImage> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/IconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Iconographical Recognition is a n-ary relationship class that links the artwork described (and, if available, the Artistic Motifs recognized at the previous level along with their compositions) to the Images recognized, or directly to the Invenzione that results from the grouping of the subject depicted by each single image. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed."@en .
 <https://w3id.org/icon/ontology/IconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Iconographical Recognition"@en .
 # 
 # https://w3id.org/icon/ontology/IconographicalSynthesis
 <https://w3id.org/icon/ontology/IconographicalSynthesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/IconographicalSynthesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/InterpretationDescription> .
-<https://w3id.org/icon/ontology/IconographicalSynthesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
-_:genid144 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/icon/ontology/IconologicalRecognition> .
-_:genid144 <http://www.w3.org/2002/07/owl#onProperty> <http://erlangen-crm.org/current/P70_documents> .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/IconographicalSynthesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/icon/ontology/IconologicalRecognition> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://erlangen-crm.org/current/P70_documents> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/icon/ontology/IconographicalSynthesis> <http://www.w3.org/2000/01/rdf-schema#comment> "An Iconographical Synthesis is the enumeration of iconological recognitions of intrinsic meanings recognized by one or more agents concerning a work of art. It is thus a collection of triples. It is the summary of what would be called in Panofsky's term the third level of interpretation."@en .
 <https://w3id.org/icon/ontology/IconographicalSynthesis> <http://www.w3.org/2000/01/rdf-schema#label> "Iconographical Synthesis"@en .
 <https://w3id.org/icon/ontology/IconographicalSynthesis> <http://www.w3.org/2002/07/owl#deprecated> "from version 1.1" .
@@ -1191,149 +1021,149 @@ _:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/icon/ontology/IconologicalRecognition
 <https://w3id.org/icon/ontology/IconologicalRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/IconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/Recognition> .
-<https://w3id.org/icon/ontology/IconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid145 .
-_:genid145 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/IntrinsicMeaning> .
-_:genid145 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid145 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/IconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/IntrinsicMeaning> .
+_:genid102 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/icon/ontology/IconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "An Iconological Recognition is a n-ary relationship class that links the artwork described (and optionally all the subjects represented at the first and second level of interpretation) to the Intrinsic Meanings recognized. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed. This class can represent: (1) the third level act of Interpretation described by Panofsky (1939), without a distinction between a overall artwork symbolic meaning and a societal aspect, (2) the third and second level described by Van Straten, according to the value associated to the intrinsic meaning, (3) the iconic act of interpretation described by Imdahl (2012), when the intrinsic meaning is directly linked to level 1 characteristics of the image."@en .
 <https://w3id.org/icon/ontology/IconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Iconological Recognition"@en .
 # 
 # https://w3id.org/icon/ontology/Image
 <https://w3id.org/icon/ontology/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/VisualSubject> .
-<https://w3id.org/icon/ontology/Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid146 .
-_:genid146 <http://www.w3.org/2002/07/owl#unionOf> _:genid160 .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid158 .
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid156 .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid154 .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid148 .
-_:genid148 <http://www.w3.org/2002/07/owl#onClass> _:genid149 .
-_:genid149 <http://www.w3.org/2002/07/owl#unionOf> _:genid151 .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid150 .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulation> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Symbol> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid148 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid148 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasSymbol> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid153 .
-_:genid153 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Place> .
-_:genid153 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid153 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasPlace> .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid155 .
-_:genid155 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Personification> .
-_:genid155 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid155 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasPersonification> .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid157 .
-_:genid157 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/NamedObject> .
-_:genid157 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid157 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasNamedObject> .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid159 .
-_:genid159 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Event> .
-_:genid159 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid159 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasEvent> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid161 .
-_:genid161 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Character> .
-_:genid161 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid161 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasCharacter> .
-_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/icon/ontology/Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid162 .
-_:genid162 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/IconographicalRecognition> .
-_:genid162 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid162 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isIconographicallyRecognizedBy> .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+_:genid103 <http://www.w3.org/2002/07/owl#unionOf> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid105 .
+_:genid105 <http://www.w3.org/2002/07/owl#onClass> _:genid106 .
+_:genid106 <http://www.w3.org/2002/07/owl#unionOf> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulation> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Symbol> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid105 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasSymbol> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Place> .
+_:genid110 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasPlace> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid112 .
+_:genid112 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Personification> .
+_:genid112 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasPersonification> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid114 .
+_:genid114 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/NamedObject> .
+_:genid114 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasNamedObject> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid116 .
+_:genid116 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Event> .
+_:genid116 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasEvent> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid118 .
+_:genid118 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Character> .
+_:genid118 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid118 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/hasCharacter> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
+_:genid119 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/IconographicalRecognition> .
+_:genid119 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isIconographicallyRecognizedBy> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/icon/ontology/InterpretationDescription
 <https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
-<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid163 .
-_:genid163 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/IconographicalRecognition> .
-_:genid163 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition> .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid164 .
-_:genid164 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/IconologicalRecognition> .
-_:genid164 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition> .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid165 .
-_:genid165 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid166 .
-_:genid166 <http://www.w3.org/2002/07/owl#unionOf> _:genid168 .
-_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid167 .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/FormalMotifRecognition> .
-_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid165 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
+_:genid120 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/IconographicalRecognition> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
+_:genid121 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/IconologicalRecognition> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
+_:genid122 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid123 .
+_:genid123 <http://www.w3.org/2002/07/owl#unionOf> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/FormalMotifRecognition> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/icon/ontology/IntrinsicMeaning
 <https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/VisualSubject> .
-<https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid169 .
-_:genid169 <http://www.w3.org/2002/07/owl#unionOf> _:genid176 .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid170 .
-_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid171 .
-_:genid171 <http://www.w3.org/2002/07/owl#unionOf> _:genid174 .
-_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid172 .
-_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid173 .
-_:genid173 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/CulturalPhenomenon> .
-_:genid173 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid173 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid175 .
-_:genid175 <http://www.w3.org/2002/07/owl#onClass> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
-_:genid175 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid175 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedConcept> .
-_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid177 .
-_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid177 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid180 .
-_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid178 .
-_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid179 .
-_:genid179 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/CulturalPhenomenon> .
-_:genid179 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid179 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> .
-_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid181 .
-_:genid181 <http://www.w3.org/2002/07/owl#onClass> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
-_:genid181 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid181 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedConcept> .
-_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid182 .
-_:genid182 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/IconologicalRecognition> .
-_:genid182 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid182 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isIntrinsicMeaningOf> .
-_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
+_:genid126 <http://www.w3.org/2002/07/owl#unionOf> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid128 .
+_:genid128 <http://www.w3.org/2002/07/owl#unionOf> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid130 .
+_:genid130 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/CulturalPhenomenon> .
+_:genid130 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid132 .
+_:genid132 <http://www.w3.org/2002/07/owl#onClass> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+_:genid132 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedConcept> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid134 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid136 .
+_:genid136 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/CulturalPhenomenon> .
+_:genid136 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid136 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid138 .
+_:genid138 <http://www.w3.org/2002/07/owl#onClass> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+_:genid138 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid138 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedConcept> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid139 .
+_:genid139 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/IconologicalRecognition> .
+_:genid139 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid139 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isIntrinsicMeaningOf> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/icon/ontology/Invenzione
 <https://w3id.org/icon/ontology/Invenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1358,18 +1188,18 @@ _:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/icon/ontology/PreiconographicalDescription
 <https://w3id.org/icon/ontology/PreiconographicalDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/PreiconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/InterpretationDescription> .
-<https://w3id.org/icon/ontology/PreiconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid183 .
-_:genid183 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid184 .
-_:genid184 <http://www.w3.org/2002/07/owl#unionOf> _:genid186 .
-_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid185 .
-_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
-_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/FormalMotifRecognition> .
-_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid183 <http://www.w3.org/2002/07/owl#onProperty> <http://erlangen-crm.org/current/P70_documents> .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/PreiconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid140 .
+_:genid140 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid141 .
+_:genid141 <http://www.w3.org/2002/07/owl#unionOf> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/FormalMotifRecognition> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid140 <http://www.w3.org/2002/07/owl#onProperty> <http://erlangen-crm.org/current/P70_documents> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/icon/ontology/PreiconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A Pre-iconographical description is the enumeration of the Pre-Iconographical Recognitions of a certain work of art, performed by one or more agents. It is thus a collection of triples constituting the documentation of the interpretation at level 1. The term and its definition is taken from Panofsky's Studies in Iconology (1939)."@en .
 <https://w3id.org/icon/ontology/PreiconographicalDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Preiconographical Description"@en .
 <https://w3id.org/icon/ontology/PreiconographicalDescription> <http://www.w3.org/2002/07/owl#deprecated> "from version 1.1" .
@@ -1377,23 +1207,23 @@ _:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/icon/ontology/PreiconographicalRecognition
 <https://w3id.org/icon/ontology/PreiconographicalRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/Recognition> .
-<https://w3id.org/icon/ontology/PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid187 .
-_:genid187 <http://www.w3.org/2002/07/owl#unionOf> _:genid190 .
-_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid188 .
-_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid189 .
-_:genid189 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Composition> .
-_:genid189 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid189 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedComposition> .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid191 .
-_:genid191 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/ArtisticMotif> .
-_:genid191 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid191 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedArtisticMotif> .
-_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
+_:genid144 <http://www.w3.org/2002/07/owl#unionOf> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid146 .
+_:genid146 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Composition> .
+_:genid146 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid146 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedComposition> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid148 .
+_:genid148 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/ArtisticMotif> .
+_:genid148 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid148 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/recognizedArtisticMotif> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Pre-iconographical recognition is a n-ary relationship class that links the artwork described (and optionally the Pure Forms composing it) to the Artistic Motifs recognized as carrier of meaning at the first level of analysis. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed."@en .
 <https://w3id.org/icon/ontology/PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Preiconographical Recognition"@en .
 # 
@@ -1408,47 +1238,42 @@ _:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/emmedi/hico/InterpretationAct> .
 <https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
-<https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid192 .
-_:genid192 <http://www.w3.org/2002/07/owl#onClass> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
-_:genid192 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid192 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> .
-_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid193 .
-_:genid193 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Artwork> .
-_:genid193 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid193 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/aboutWorkOfArt> .
-_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid149 .
+_:genid149 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Artwork> .
+_:genid149 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid149 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/aboutWorkOfArt> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/icon/ontology/Story
 <https://w3id.org/icon/ontology/Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/Invenzione> .
-<https://w3id.org/icon/ontology/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid194 .
-_:genid194 <http://www.w3.org/2002/07/owl#unionOf> _:genid201 .
-_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid199 .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid197 .
-_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid195 .
-_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid196 .
-_:genid196 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/NamedObject> .
-_:genid196 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
-_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid198 .
-_:genid198 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/Event> .
-_:genid198 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
-_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid200 .
-_:genid200 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/Character> .
-_:genid200 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
-_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid202 .
-_:genid202 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> .
-_:genid202 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
-_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/icon/ontology/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid150 .
+_:genid150 <http://www.w3.org/2002/07/owl#unionOf> _:genid157 .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid153 .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid152 .
+_:genid152 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/NamedObject> .
+_:genid152 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid154 .
+_:genid154 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/Event> .
+_:genid154 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid156 .
+_:genid156 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/Character> .
+_:genid156 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid158 .
+_:genid158 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> .
+_:genid158 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/icon/ontology/Symbol
 <https://w3id.org/icon/ontology/Symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1524,7 +1349,7 @@ _:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/icon/ontology/Event
 <https://w3id.org/icon/ontology/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/icon/ontology/Event> <http://www.w3.org/2004/02/skos/core#related> <http://erlangen-crm.org/current/E89_Propositional_Object> .
+<https://w3id.org/icon/ontology/Event> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/E89_Propositional_Object> .
 # 
 # https://w3id.org/icon/ontology/ExpressionalQuality
 <https://w3id.org/icon/ontology/ExpressionalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1539,7 +1364,7 @@ _:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/icon/ontology/InterpretationDescription
 <https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/E31_Document> .
+<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://erlangen-crm.org/current/E31_Document> .
 # 
 # https://w3id.org/icon/ontology/IntrinsicMeaning
 <https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1551,7 +1376,7 @@ _:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/icon/ontology/NamedObject
 <https://w3id.org/icon/ontology/NamedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/icon/ontology/NamedObject> <http://www.w3.org/2004/02/skos/core#related> <http://erlangen-crm.org/current/E89_Propositional_Object> .
+<https://w3id.org/icon/ontology/NamedObject> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/E89_Propositional_Object> .
 # 
 # https://w3id.org/icon/ontology/NaturalElement
 <https://w3id.org/icon/ontology/NaturalElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1563,7 +1388,7 @@ _:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/icon/ontology/Place
 <https://w3id.org/icon/ontology/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/icon/ontology/Place> <http://www.w3.org/2004/02/skos/core#related> <http://erlangen-crm.org/current/E89_Propositional_Object> .
+<https://w3id.org/icon/ontology/Place> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/E89_Propositional_Object> .
 # 
 # https://w3id.org/icon/ontology/Recognition
 <https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1600,10 +1425,6 @@ _:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/icon/ontology/hasNamedObject
 <https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/P138_represents> .
-# 
-# https://w3id.org/icon/ontology/hasPart
-<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/P106_is_composed_of> .
 # 
 # https://w3id.org/icon/ontology/hasPersonification
 <https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1747,10 +1568,6 @@ _:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Named Object depicted"@en .
 <https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
 <https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#label> "Has Named Object"@en .
-# 
-<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links a Composition to the Artistic Motifs of which it consists."@en .
-<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .
-<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "Has Part (ICON)"@en .
 # 
 <https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Personification depicted"@en .
 <https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/icon/ontology/ICONOntology> .

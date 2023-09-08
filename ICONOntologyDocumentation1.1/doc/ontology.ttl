@@ -7,7 +7,7 @@
 @base <https://w3id.org/icon/ontology/> .
 
 <https://w3id.org/icon/ontology/> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://w3id.org/icon/ontology/2.0.0/> ;
+                                   owl:versionIRI <https://w3id.org/icon/ontology/1.1.0/> ;
                                    owl:imports <http://erlangen-crm.org/current/> ,
                                                <http://purl.org/emmedi/hico/2020-03-31> ,
                                                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ,
@@ -17,52 +17,22 @@
                                                                                  "Marieke van Erp"@en ;
                                    <http://purl.org/dc/elements/1.1/creator> "Bruno Sartini" ,
                                                                              "Sofia Baroncini" ;
-                                   <http://purl.org/dc/terms/bibliographicCitation> "Sartini B. and Baroncini S. Icon Ontology. https://w3id.org/icon/ontology"@en ;
                                    <http://purl.org/dc/terms/created> "April 12th, 2022"@en ;
                                    <http://purl.org/dc/terms/issued> "April 12th, 2022"@en ;
                                    <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"@en ;
                                    <http://purl.org/dc/terms/publisher> "Bruno Sartini"@en ;
-                                   <http://purl.org/dc/terms/source> """The top down development of this ontology followed these sources:
-
-Erwin Panofsky. 1972. Studies in iconology: humanistic themes in the art of the Renaissance. Westview Press, Boulder, Colo. OCLC: 1151325340.
-
-Max Imdahl. 2012. Iconica. L’intuizione delle immagini. Aisthesis. Pratiche, linguaggi e saperi dell’estetico (2012).
-
-Roelof van Straten. 2012. An introduction to iconography (2 ed.). Routledge, London, England.
-
-Its development followed these methodologies:
-
-Silvio Peroni. 2016. A Simplified Agile Methodology for Ontology Development.. In Proceedings of the 13th OWL: Experiences and
-Directions Workshop and 5th OWL reasoner evaluation workshop (OWLED-ORE 2016). Springer, Cham, Switzerland, 55–69. https://doi.org/10.6084/M9.FIGSHARE.3189769.V2
-
-Valentina Presutti, Enrico Daga, Aldo Gangemi, and Eva Blomqvist. 2009. EXtreme Design with Content Ontology Design Patterns. In
-Proceedings of the 2009 International Conference on Ontology Patterns - Volume 516 (Washington DC) (WOP’09). CEUR-WS.org, Aachen,
-DEU, 83–97."""@en ;
                                    <http://purl.org/dc/terms/title> "ICON Ontology"@en ;
                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "icon"@en ;
                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/icon/ontology/"@en ;
+                                   <http://schema.org/citation> "Sartini B. and Baroncini S. Icon Ontology. https://w3id.org/icon/ontology"@en ;
                                    rdfs:comment "The ICON ontology deals with high granularity art interpretation. It was developed by conceptualizing Panofsky's theory of levels of interpretation, therefore artworks can be described according to Pre-iconographical, Iconographical and Iconological information."@en ;
-                                   owl:backwardCompatibleWith "1.1.0"@en ;
-                                   owl:priorVersion "1.1.0"@en ;
-                                   owl:versionInfo "2.0.0"@en ;
-                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#status> "work in progress"@en ;
-                                   <http://www.w3.org/2004/02/skos/core#changeNote> """**Version 2.0.0 Changelog**
-
-Introduction of three super property chains:
-
-* preiconographicallyDepicts : which links elements from the first level of interpretation (pre-iconographical) directly to the artwork
-* iconographicallyDepicts : which links elements from the the second level of interpretation (iconographical) directly to the artwork
-* iconologicallyRepresents : which links elements from the third level of interpretation (iconological) directly to the artwork
-
-Property interpretedByRecognition (domain: artwork range: recognition) has been renamed hasRecognition to avoid ambiguities between the terms recognition and interpretation"""@en .
+                                   owl:backwardCompatibleWith "First version"@en ;
+                                   owl:priorVersion "1.0"@en ;
+                                   owl:versionInfo "1.1.0"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://purl.org/dc/terms/bibliographicCitation
-<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
-
 
 ###  http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
@@ -76,20 +46,12 @@ Property interpretedByRecognition (domain: artwork range: recognition) has been 
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/source
-<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2001/XMLSchema#citation
 xsd:citation rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2003/06/sw-vocab-status/ns#status
-<http://www.w3.org/2003/06/sw-vocab-status/ns#status> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -118,7 +80,7 @@ xsd:citation rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/icon/ontology/aboutWorkOfArt
 :aboutWorkOfArt rdf:type owl:ObjectProperty ;
-                owl:inverseOf :hasRecognition ;
+                owl:inverseOf :interpretedByRecognition ;
                 rdfs:domain :Recognition ;
                 rdfs:range :Artwork ;
                 rdfs:comment "This relation associates each Recognition directly to the artwork. In this way, it is possible to retrieve easily all the interpretations about an artwork. Therefore, it a highly recommended good practice to declare it for each interpretation."@en ;
@@ -265,10 +227,13 @@ xsd:citation rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/icon/ontology/hasPart
 :hasPart rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> ;
+         rdfs:subPropertyOf <http://erlangen-crm.org/current/P106_is_composed_of> ,
+                            <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> ;
          owl:inverseOf :partOf ;
          rdfs:domain :Composition ;
-         rdfs:range :ArtisticMotif .
+         rdfs:range :ArtisticMotif ;
+         rdfs:comment "This relation links a Composition to the Artistic Motifs of which it consists."@en ;
+         rdfs:label "Has Part (ICON)"@en .
 
 
 ###  https://w3id.org/icon/ontology/hasPersonification
@@ -310,15 +275,6 @@ xsd:citation rdf:type owl:AnnotationProperty .
                  rdfs:label "Has Rec Attribute"@en .
 
 
-###  https://w3id.org/icon/ontology/hasRecognition
-:hasRecognition rdf:type owl:ObjectProperty ;
-                rdfs:domain :Artwork ;
-                rdfs:range :Recognition ;
-                rdfs:comment "Inverse property of aboutWorkOfArt"@en ;
-                rdfs:isDefinedBy :ICONOntology ;
-                rdfs:label "Has Recognition"@en .
-
-
 ###  https://w3id.org/icon/ontology/hasSymbol
 :hasSymbol rdf:type owl:ObjectProperty ;
            owl:inverseOf :isSymbolOf ;
@@ -341,53 +297,6 @@ xsd:citation rdf:type owl:AnnotationProperty .
                               rdfs:label "iconographically complies with"@en .
 
 
-###  https://w3id.org/icon/ontology/iconographicallyDepicts
-:iconographicallyDepicts rdf:type owl:ObjectProperty ;
-                         owl:propertyChainAxiom ( :hasRecognition
-                                                  :recognizedImage
-                                                  :hasCharacter
-                                                ) ,
-                                                ( :hasRecognition
-                                                  :recognizedImage
-                                                  :hasEvent
-                                                ) ,
-                                                ( :hasRecognition
-                                                  :recognizedImage
-                                                  :hasNamedObject
-                                                ) ,
-                                                ( :hasRecognition
-                                                  :recognizedImage
-                                                  :hasPersonification
-                                                ) ,
-                                                ( :hasRecognition
-                                                  :recognizedImage
-                                                  :hasPlace
-                                                ) ,
-                                                ( :hasRecognition
-                                                  :recognizedImage
-                                                  :hasSymbol
-                                                ) ,
-                                                ( :hasRecognition
-                                                  :recognizedInvenzione
-                                                ) ,
-                                                ( :hasRecognition
-                                                  :recognizedInvenzione
-                                                  :composedOf
-                                                ) ;
-                         rdfs:comment """This property is used to link an artwork to the element of the second level of interpretation (iconographical) which it depicts. This elements can be Characters, Symbols, Personifications, Places, Stories, Allegories (and the element these stories and allegories are composed of).
-
-Example: There is an IconographicalRecognition of Artwork1 of Image1, which is linked to the character Thor through the hasCharacter property.
-
-Then Artwork1 iconographicallyDepicts Thor.
-
-Example2: There is an IconographicalRecognition of Artwork1 of Story1, which is the story of the death of Julius C. This story is composed by the Place Rome and the character Julius C. (and more...)
-
-Then Artwork1 IconographicallyDepicts the story of the death of Julius C., Julius C., and the city of Rome.
-
-This link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation."""@en ;
-                         rdfs:label "Iconographically Depicts"@en .
-
-
 ###  https://w3id.org/icon/ontology/iconologicallyCompliesWith
 :iconologicallyCompliesWith rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> ;
@@ -399,27 +308,13 @@ This link can be created automatically through inference thanks to the super pro
                             rdfs:label "iconologically complies with"@en .
 
 
-###  https://w3id.org/icon/ontology/iconologicallyRepresents
-:iconologicallyRepresents rdf:type owl:ObjectProperty ;
-                          owl:propertyChainAxiom ( :hasRecognition
-                                                   :recognizedIntrinsicMeaning
-                                                   :recognizedConcept
-                                                 ) ,
-                                                 ( :hasRecognition
-                                                   :recognizedIntrinsicMeaning
-                                                   :recognizedCulturalPhenomenon
-                                                 ) ;
-                          rdfs:comment """This property is used to link an artwork to the element of the third level of interpretation (iconological) which it represents. This elements can be Cultural Phenomena, Social Objects (abstract concepts).
-
-Example: There is an IconologicalRecognition of Artwork1 of IntrinsicMeaning1, which is linked to the cultural phenomenon of ImitationOfClassics
-Then Artwork1 iconologicallyRepresents  ImitationOfClassics.
-
-Example2: There is an IconologicalRecognition of Artwork1 of IntrinsicMeaning2, which is linked to the social object \"Absurdity\" (and to other elements from other levels that suppor this claim...)
-
-Then Artwork1 IconologicallyRepresents Absurdity
-
-This link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation."""@en ;
-                          rdfs:label "Iconologically Represents"@en .
+###  https://w3id.org/icon/ontology/interpretedByRecognition
+:interpretedByRecognition rdf:type owl:ObjectProperty ;
+                          rdfs:domain :Artwork ;
+                          rdfs:range :Recognition ;
+                          rdfs:comment "Inverse property of aboutWorkOfArt"@en ;
+                          rdfs:isDefinedBy :ICONOntology ;
+                          rdfs:label "Interpreted By Recognition"@en .
 
 
 ###  https://w3id.org/icon/ontology/isArtisticMotifOf
@@ -742,38 +637,6 @@ This link can be created automatically through inference thanks to the super pro
                                  rdfs:label "pre-iconographically complies with"@en .
 
 
-###  https://w3id.org/icon/ontology/preiconographicallyDepicts
-:preiconographicallyDepicts rdf:type owl:ObjectProperty ;
-                            owl:propertyChainAxiom ( :hasRecognition
-                                                     :recognizedArtisticMotif
-                                                     :hasExpressionalMeaning
-                                                   ) ,
-                                                   ( :hasRecognition
-                                                     :recognizedArtisticMotif
-                                                     :hasFactualMeaning
-                                                   ) ,
-                                                   ( :hasRecognition
-                                                     :recognizedComposition
-                                                     :hasPart
-                                                     :hasExpressionalMeaning
-                                                   ) ,
-                                                   ( :hasRecognition
-                                                     :recognizedComposition
-                                                     :hasPart
-                                                     :hasFactualMeaning
-                                                   ) ;
-                            rdfs:comment """This property is used to link an artwork to the element of the first level of interpretation (pre-iconographical) which it depicts. This element can be a Natural Element, an Action, Expression, or an element included in a recognized Composition (again, natural element, action, expression).
-
-Example: There is a PreiconographicalRecognition of Artwork1 of ArtisticMotif1, which is linked to the natural element bear.
-Then Artwork1 preiconographicallyDepicts  bear.
-
-Example2: There is a PreiconographicalRecognition of Artwork1 of ArtisticMotif2, which is linked to the composition1, composed by a bear and the action of eating.
-Then Artwork1 preiconographicallyDepicts bear and eating.
-
-This link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation."""@en ;
-                            rdfs:label "Pre-iconographically Depicts"@en .
-
-
 ###  https://w3id.org/icon/ontology/recognizedArtisticMotif
 :recognizedArtisticMotif rdf:type owl:ObjectProperty ;
                          rdfs:domain :PreiconographicalRecognition ;
@@ -877,10 +740,7 @@ This link can be created automatically through inference thanks to the super pro
                                                :Composition
                                              )
                                ] ;
-                   rdfs:range rdfs:Literal ;
-                   rdfs:comment "This data property can be used to link an artistic motif or a composition with their coordinates in the image of the artwork in which they are recognized. These coordinates could indicate the bounding boxes of the detections of a computer vision algorithms or could also be the IIIF URI that selects the part of the image of the painting in which the artistic motif or the composition are found"@en ;
-                   rdfs:isDefinedBy :ICONOntology ;
-                   rdfs:label "Region Description"@en .
+                   rdfs:range rdfs:Literal .
 
 
 #################################################################
@@ -1318,11 +1178,6 @@ This link can be created automatically through inference thanks to the super pro
              rdfs:subClassOf <http://purl.org/emmedi/hico/InterpretationAct> ,
                              <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>
-                             ] ,
-                             [ rdf:type owl:Restriction ;
                                owl:onProperty :aboutWorkOfArt ;
                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                owl:onClass :Artwork
@@ -1438,7 +1293,7 @@ This link can be created automatically through inference thanks to the super pro
 
 ###  https://w3id.org/icon/ontology/Event
 :Event rdf:type owl:NamedIndividual ;
-       <http://www.w3.org/2004/02/skos/core#related> <http://erlangen-crm.org/current/E89_Propositional_Object> .
+       <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/E89_Propositional_Object> .
 
 
 ###  https://w3id.org/icon/ontology/ExpressionalQuality
@@ -1457,7 +1312,7 @@ This link can be created automatically through inference thanks to the super pro
 
 ###  https://w3id.org/icon/ontology/InterpretationDescription
 :InterpretationDescription rdf:type owl:NamedIndividual ;
-                           <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/E31_Document> .
+                           <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://erlangen-crm.org/current/E31_Document> .
 
 
 ###  https://w3id.org/icon/ontology/IntrinsicMeaning
@@ -1472,7 +1327,7 @@ This link can be created automatically through inference thanks to the super pro
 
 ###  https://w3id.org/icon/ontology/NamedObject
 :NamedObject rdf:type owl:NamedIndividual ;
-             <http://www.w3.org/2004/02/skos/core#related> <http://erlangen-crm.org/current/E89_Propositional_Object> .
+             <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/E89_Propositional_Object> .
 
 
 ###  https://w3id.org/icon/ontology/NaturalElement
@@ -1487,7 +1342,7 @@ This link can be created automatically through inference thanks to the super pro
 
 ###  https://w3id.org/icon/ontology/Place
 :Place rdf:type owl:NamedIndividual ;
-       <http://www.w3.org/2004/02/skos/core#related> <http://erlangen-crm.org/current/E89_Propositional_Object> .
+       <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/E89_Propositional_Object> .
 
 
 ###  https://w3id.org/icon/ontology/Recognition
@@ -1533,11 +1388,6 @@ This link can be created automatically through inference thanks to the super pro
 ###  https://w3id.org/icon/ontology/hasNamedObject
 :hasNamedObject rdf:type owl:NamedIndividual ;
                 <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/P138_represents> .
-
-
-###  https://w3id.org/icon/ontology/hasPart
-:hasPart rdf:type owl:NamedIndividual ;
-         <http://www.w3.org/2004/02/skos/core#broadMatch> <http://erlangen-crm.org/current/P106_is_composed_of> .
 
 
 ###  https://w3id.org/icon/ontology/hasPersonification
@@ -1711,11 +1561,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
 :hasNamedObject rdfs:comment "This relation links an image to the Named Object depicted"@en ;
                 rdfs:isDefinedBy :ICONOntology ;
                 rdfs:label "Has Named Object"@en .
-
-
-:hasPart rdfs:comment "This relation links a Composition to the Artistic Motifs of which it consists."@en ;
-         rdfs:isDefinedBy :ICONOntology ;
-         rdfs:label "Has Part (ICON)"@en .
 
 
 :hasPersonification rdfs:comment "This relation links an image to the Personification depicted"@en ;

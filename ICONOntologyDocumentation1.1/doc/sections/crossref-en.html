@@ -1,8 +1,6 @@
 <h2 id="crossreference" class="list">Cross-reference for ICON Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by ICON Ontology.
-<div xmlns:widoco="https://w3id.org/widoco/vocab#"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="classes">
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
@@ -287,7 +285,8 @@ This section provides details for each class and property defined by ICON Ontolo
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
+            <a href="#interpretedByRecognition"
+               title="https://w3id.org/icon/ontology/interpretedByRecognition">Interpreted By Recognition</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1169,7 +1168,8 @@ This section provides details for each class and property defined by ICON Ontolo
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
+            <a href="#interpretedByRecognition"
+               title="https://w3id.org/icon/ontology/interpretedByRecognition">Interpreted By Recognition</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/spar/cito/givesSupportTo" title="http://purl.org/spar/cito/givesSupportTo">gives support to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -1314,9 +1314,7 @@ This section provides details for each class and property defined by ICON Ontolo
          </dd>
       </dl>
    </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="objectproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -1391,9 +1389,7 @@ This section provides details for each class and property defined by ICON Ontolo
          </a>
       </li>
       <li>
-         <a href="#hasPart" title="https://w3id.org/icon/ontology/hasPart">
-            <span>Has Part (ICON)</span>
-         </a>
+         <a href="#hasPart" title="https://w3id.org/icon/ontology/hasPart">Has Part (ICON)</a>
       </li>
       <li>
          <a href="#hasPersonification"
@@ -1416,9 +1412,6 @@ This section provides details for each class and property defined by ICON Ontolo
          <a href="#hasRecAttribute" title="https://w3id.org/icon/ontology/hasRecAttribute">Has Rec Attribute</a>
       </li>
       <li>
-         <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-      </li>
-      <li>
          <a href="#hasSymbol" title="https://w3id.org/icon/ontology/hasSymbol">
             <span>Has Symbol</span>
          </a>
@@ -1428,16 +1421,12 @@ This section provides details for each class and property defined by ICON Ontolo
             title="https://w3id.org/icon/ontology/iconographicallyCompliesWith">iconographically complies with</a>
       </li>
       <li>
-         <a href="#iconographicallyDepicts"
-            title="https://w3id.org/icon/ontology/iconographicallyDepicts">Iconographically Depicts</a>
-      </li>
-      <li>
          <a href="#iconologicallyCompliesWith"
             title="https://w3id.org/icon/ontology/iconologicallyCompliesWith">iconologically complies with</a>
       </li>
       <li>
-         <a href="#iconologicallyRepresents"
-            title="https://w3id.org/icon/ontology/iconologicallyRepresents">Iconologically Represents</a>
+         <a href="#interpretedByRecognition"
+            title="https://w3id.org/icon/ontology/interpretedByRecognition">Interpreted By Recognition</a>
       </li>
       <li>
          <a href="#isArtisticMotifOf" title="https://w3id.org/icon/ontology/isArtisticMotifOf">Is artistic motif of</a>
@@ -1546,10 +1535,6 @@ This section provides details for each class and property defined by ICON Ontolo
             title="https://w3id.org/icon/ontology/preiconographicallyCompliesWith">pre-iconographically complies with</a>
       </li>
       <li>
-         <a href="#preiconographicallyDepicts"
-            title="https://w3id.org/icon/ontology/preiconographicallyDepicts">Pre-iconographically Depicts</a>
-      </li>
-      <li>
          <a href="#recognizedArtisticMotif"
             title="https://w3id.org/icon/ontology/recognizedArtisticMotif">
             <span>Recognized Artistic Motif</span>
@@ -1625,7 +1610,8 @@ This section provides details for each class and property defined by ICON Ontolo
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
+               <a href="#interpretedByRecognition"
+                  title="https://w3id.org/icon/ontology/interpretedByRecognition">Interpreted By Recognition</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -2170,13 +2156,18 @@ This section provides details for each class and property defined by ICON Ontolo
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/icon/ontology/hasPart</p>
+      <div class="comment">
+         <span class="markdown">This relation links a Composition to the Artistic Motifs of which it consists.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
                <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
                   target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart">has part</a>
+                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart">has part</a>, <a href="http://erlangen-crm.org/current/P106_is_composed_of"
+                  target="_blank"
+                  title="http://erlangen-crm.org/current/P106_is_composed_of">p106 is composed of</a>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -2192,10 +2183,6 @@ This section provides details for each class and property defined by ICON Ontolo
             <dd>
                <a href="#partOf" title="https://w3id.org/icon/ontology/partOf">Part Of (ICON)</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#hasPart">named individual</a>
             </dd>
          </dl>
       </div>
@@ -2340,42 +2327,6 @@ This section provides details for each class and property defined by ICON Ontolo
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasRecognition">
-      <h3>Has Recognition<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/icon/ontology/hasRecognition</p>
-      <div class="comment">
-         <span class="markdown">Inverse property of aboutWorkOfArt</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/icon/ontology/ICONOntology">https://w3id.org/icon/ontology/ICONOntology</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Artwork" title="https://w3id.org/icon/ontology/Artwork">Artwork</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Recognition" title="https://w3id.org/icon/ontology/Recognition">Recognition</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#aboutWorkOfArt" title="https://w3id.org/icon/ontology/aboutWorkOfArt">About Work Of Art</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasSymbol">
       <h3>Has Symbol<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2456,112 +2407,6 @@ This section provides details for each class and property defined by ICON Ontolo
          </dl>
       </div>
    </div>
-   <div class="entity" id="iconographicallyDepicts">
-      <h3>Iconographically Depicts<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/icon/ontology/iconographicallyDepicts</p>
-      <div class="comment">
-         <span class="markdown">This property is used to link an artwork to the element of the second level of interpretation (iconographical) which it depicts. This elements can be Characters, Symbols, Personifications, Places, Stories, Allegories (and the element these stories and allegories are composed of).
-
-Example: There is an IconographicalRecognition of Artwork1 of Image1, which is linked to the character Thor through the hasCharacter property.
-
-Then Artwork1 iconographicallyDepicts Thor.
-
-Example2: There is an IconographicalRecognition of Artwork1 of Story1, which is the story of the death of Julius C. This story is composed by the Place Rome and the character Julius C. (and more...)
-
-Then Artwork1 IconographicallyDepicts the story of the death of Julius C., Julius C., and the city of Rome.
-
-This link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has sub-property chains</dt>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedImage" title="https://w3id.org/icon/ontology/recognizedImage">Recognized Image</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasCharacter" title="https://w3id.org/icon/ontology/hasCharacter">Has Character</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedImage" title="https://w3id.org/icon/ontology/recognizedImage">Recognized Image</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasEvent" title="https://w3id.org/icon/ontology/hasEvent">Has Event</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedImage" title="https://w3id.org/icon/ontology/recognizedImage">Recognized Image</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasNamedObject" title="https://w3id.org/icon/ontology/hasNamedObject">Has Named Object</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedImage" title="https://w3id.org/icon/ontology/recognizedImage">Recognized Image</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasPersonification"
-                  title="https://w3id.org/icon/ontology/hasPersonification">Has Personification</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedImage" title="https://w3id.org/icon/ontology/recognizedImage">Recognized Image</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasPlace" title="https://w3id.org/icon/ontology/hasPlace">Has Place</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedImage" title="https://w3id.org/icon/ontology/recognizedImage">Recognized Image</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasSymbol" title="https://w3id.org/icon/ontology/hasSymbol">Has Symbol</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedInvenzione"
-                  title="https://w3id.org/icon/ontology/recognizedInvenzione">Recognized Invenzione</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedInvenzione"
-                  title="https://w3id.org/icon/ontology/recognizedInvenzione">Recognized Invenzione</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#composedOf" title="https://w3id.org/icon/ontology/composedOf">Composed Of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="iconologicallyCompliesWith">
       <h3>iconologically complies with<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2607,50 +2452,37 @@ This link can be created automatically through inference thanks to the super pro
          </dl>
       </div>
    </div>
-   <div class="entity" id="iconologicallyRepresents">
-      <h3>Iconologically Represents<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="interpretedByRecognition">
+      <h3>Interpreted By Recognition<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/icon/ontology/iconologicallyRepresents</p>
+         <strong>IRI:</strong> https://w3id.org/icon/ontology/interpretedByRecognition</p>
       <div class="comment">
-         <span class="markdown">This property is used to link an artwork to the element of the third level of interpretation (iconological) which it represents. This elements can be Cultural Phenomena, Social Objects (abstract concepts).
-
-Example: There is an IconologicalRecognition of Artwork1 of IntrinsicMeaning1, which is linked to the cultural phenomenon of ImitationOfClassics
-Then Artwork1 iconologicallyRepresents  ImitationOfClassics.
-
-Example2: There is an IconologicalRecognition of Artwork1 of IntrinsicMeaning2, which is linked to the social object "Absurdity" (and to other elements from other levels that suppor this claim...)
-
-Then Artwork1 IconologicallyRepresents Absurdity
-
-This link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation.</span>
+         <span class="markdown">Inverse property of aboutWorkOfArt</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/icon/ontology/ICONOntology">https://w3id.org/icon/ontology/ICONOntology</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
-            <dt>has sub-property chains</dt>
+            <dt>has domain</dt>
             <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedIntrinsicMeaning"
-                  title="https://w3id.org/icon/ontology/recognizedIntrinsicMeaning">Recognized Intrinsic Meaning</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedConcept"
-                  title="https://w3id.org/icon/ontology/recognizedConcept">Recognized Concept</a>
-               <sup class="type-op" title="object property">op</sup>
+               <a href="#Artwork" title="https://w3id.org/icon/ontology/Artwork">Artwork</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
             <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedIntrinsicMeaning"
-                  title="https://w3id.org/icon/ontology/recognizedIntrinsicMeaning">Recognized Intrinsic Meaning</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedCulturalPhenomenon"
-                  title="https://w3id.org/icon/ontology/recognizedCulturalPhenomenon">Recognized Cultural Phenomenon</a>
+               <a href="#Recognition" title="https://w3id.org/icon/ontology/Recognition">Recognition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#aboutWorkOfArt" title="https://w3id.org/icon/ontology/aboutWorkOfArt">About Work Of Art</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -3828,82 +3660,6 @@ This link can be created automatically through inference thanks to the super pro
          </dl>
       </div>
    </div>
-   <div class="entity" id="preiconographicallyDepicts">
-      <h3>Pre-iconographically Depicts<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/icon/ontology/preiconographicallyDepicts</p>
-      <div class="comment">
-         <span class="markdown">This property is used to link an artwork to the element of the first level of interpretation (pre-iconographical) which it depicts. This element can be a Natural Element, an Action, Expression, or an element included in a recognized Composition (again, natural element, action, expression).
-
-Example: There is a PreiconographicalRecognition of Artwork1 of ArtisticMotif1, which is linked to the natural element bear.
-Then Artwork1 preiconographicallyDepicts  bear.
-
-Example2: There is a PreiconographicalRecognition of Artwork1 of ArtisticMotif2, which is linked to the composition1, composed by a bear and the action of eating.
-Then Artwork1 preiconographicallyDepicts bear and eating.
-
-This link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has sub-property chains</dt>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedArtisticMotif"
-                  title="https://w3id.org/icon/ontology/recognizedArtisticMotif">Recognized Artistic Motif</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasExpressionalMeaning"
-                  title="https://w3id.org/icon/ontology/hasExpressionalMeaning">Has Expressional Meaning</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedArtisticMotif"
-                  title="https://w3id.org/icon/ontology/recognizedArtisticMotif">Recognized Artistic Motif</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasFactualMeaning" title="https://w3id.org/icon/ontology/hasFactualMeaning">Has Factual Meaning</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedComposition"
-                  title="https://w3id.org/icon/ontology/recognizedComposition">Recognized Composition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasPart" title="https://w3id.org/icon/ontology/hasPart">Has Part (ICON)</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasExpressionalMeaning"
-                  title="https://w3id.org/icon/ontology/hasExpressionalMeaning">Has Expressional Meaning</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dd>
-               <a href="#hasRecognition" title="https://w3id.org/icon/ontology/hasRecognition">Has Recognition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#recognizedComposition"
-                  title="https://w3id.org/icon/ontology/recognizedComposition">Recognized Composition</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasPart" title="https://w3id.org/icon/ontology/hasPart">Has Part (ICON)</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">o</span> 
-               <a href="#hasFactualMeaning" title="https://w3id.org/icon/ontology/hasFactualMeaning">Has Factual Meaning</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="recognizedArtisticMotif">
       <h3>Recognized Artistic Motif<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4282,32 +4038,23 @@ This link can be created automatically through inference thanks to the super pro
          </dl>
       </div>
    </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="dataproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#regionDescription"
-            title="https://w3id.org/icon/ontology/regionDescription">Region Description</a>
+            title="https://w3id.org/icon/ontology/regionDescription">
+            <span>region description</span>
+         </a>
       </li>
    </ul>
    <div class="entity" id="regionDescription">
-      <h3>Region Description<sup class="type-dp" title="data property">dp</sup>
+      <h3>region description<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/icon/ontology/regionDescription</p>
-      <div class="comment">
-         <span class="markdown">This data property can be used to link an artistic motif or a composition with their coordinates in the image of the artwork in which they are recognized. These coordinates could indicate the bounding boxes of the detections of a computer vision algorithms or could also be the IIIF URI that selects the part of the image of the painting in which the artistic motif or the composition are found</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/icon/ontology/ICONOntology">https://w3id.org/icon/ontology/ICONOntology</a>
-         </dd>
-      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -4327,9 +4074,7 @@ This link can be created automatically through inference thanks to the super pro
          </dl>
       </div>
    </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="namedindividuals">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
@@ -4403,11 +4148,6 @@ This link can be created automatically through inference thanks to the super pro
       <li>
          <a href="#hasNamedObject" title="https://w3id.org/icon/ontology/hasNamedObject">
             <span>Has Named Object</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasPart" title="https://w3id.org/icon/ontology/hasPart">
-            <span>Has Part (ICON)</span>
          </a>
       </li>
       <li>
@@ -4708,20 +4448,6 @@ This link can be created automatically through inference thanks to the super pro
          </dd>
       </dl>
    </div>
-   <div class="entity" id="hasPart">
-      <h3>Has Part (ICON)<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/icon/ontology/hasPart</p>
-      <dl class="description">
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#hasPart">object property</a>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="hasPersonification">
       <h3>Has Personification<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -4988,11 +4714,6 @@ This link can be created automatically through inference thanks to the super pro
          </dd>
       </dl>
    </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="rules">
-   <h3 class="list" id="rule">Rules</h3>
-   <ul class="hlist"/>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">

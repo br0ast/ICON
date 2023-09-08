@@ -17,31 +17,79 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Image"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/recognizedImage"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/icon/ontology/IconologicalRecognition"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://erlangen-crm.org/current/P70_documents"
+  } ]
+}, {
   "@id" : "_:genid102",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/IntrinsicMeaning"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/recognizedIntrinsicMeaning"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid103",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/Character"
+      "@id" : "_:genid118"
     }, {
-      "@id" : "https://w3id.org/icon/ontology/Event"
+      "@id" : "_:genid116"
     }, {
-      "@id" : "https://w3id.org/icon/ontology/NamedObject"
+      "@id" : "_:genid114"
     }, {
-      "@id" : "https://w3id.org/icon/ontology/Personification"
+      "@id" : "_:genid112"
     }, {
-      "@id" : "https://w3id.org/icon/ontology/Place"
+      "@id" : "_:genid110"
     }, {
-      "@id" : "https://w3id.org/icon/ontology/Symbol"
+      "@id" : "_:genid105"
     } ]
   } ]
 }, {
-  "@id" : "_:genid109",
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:genid106"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasSymbol"
+  } ]
+}, {
+  "@id" : "_:genid106",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
+      "@id" : "https://w3id.org/icon/ontology/Symbol"
     }, {
-      "@id" : "https://w3id.org/icon/ontology/Composition"
+      "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
     } ]
   } ]
 }, {
@@ -55,117 +103,129 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasPlace"
+  } ]
+}, {
   "@id" : "_:genid112",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid116"
-    }, {
-      "@id" : "_:genid114"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Personification"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasPersonification"
   } ]
 }, {
   "@id" : "_:genid114",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/composedOf"
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Symbol"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/NamedObject"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasNamedObject"
   } ]
 }, {
   "@id" : "_:genid116",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/composedOf"
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Personification"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Event"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasEvent"
   } ]
 }, {
-  "@id" : "_:genid117",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid124"
-    }, {
-      "@id" : "_:genid119"
-    } ]
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasCharacter"
   } ]
 }, {
   "@id" : "_:genid119",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid120"
+    "@id" : "https://w3id.org/icon/ontology/IconographicalRecognition"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasFactualMeaning"
+    "@id" : "https://w3id.org/icon/ontology/isIconographicallyRecognizedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/icon/ontology/IconographicalRecognition"
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/icon/ontology/IconologicalRecognition"
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid123"
+  } ]
+}, {
+  "@id" : "_:genid123",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/Action"
+      "@id" : "https://w3id.org/icon/ontology/FormalMotifRecognition"
     }, {
-      "@id" : "https://w3id.org/icon/ontology/NaturalElement"
+      "@id" : "https://w3id.org/icon/ontology/PreiconographicalRecognition"
     } ]
   } ]
 }, {
-  "@id" : "_:genid124",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/ExpressionalQuality"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasExpressionalMeaning"
-  } ]
-}, {
-  "@id" : "_:genid125",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/PreiconographicalRecognition"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
   "@id" : "_:genid126",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
-  } ]
-}, {
-  "@id" : "_:genid127",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/PreiconographicalRecognition"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/isRecognizedCompositionOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid134"
+    }, {
+      "@id" : "_:genid128"
+    } ]
   } ]
 }, {
   "@id" : "_:genid128",
@@ -181,10 +241,10 @@
   "@id" : "_:genid130",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Composition"
+    "@id" : "https://w3id.org/icon/ontology/CulturalPhenomenon"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasCopiedMotif"
+    "@id" : "https://w3id.org/icon/ontology/recognizedCulturalPhenomenon"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -194,46 +254,33 @@
   "@id" : "_:genid132",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasCopiedMotif"
+    "@id" : "https://w3id.org/icon/ontology/recognizedConcept"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid133",
+  "@id" : "_:genid134",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid137"
+      "@id" : "_:genid138"
     }, {
-      "@id" : "_:genid135"
+      "@id" : "_:genid136"
     } ]
   } ]
 }, {
-  "@id" : "_:genid135",
+  "@id" : "_:genid136",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Composition"
+    "@id" : "https://w3id.org/icon/ontology/CulturalPhenomenon"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasPrototypicalMotif"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid137",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasPrototypicalMotif"
+    "@id" : "https://w3id.org/icon/ontology/recognizedCulturalPhenomenon"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -242,330 +289,18 @@
 }, {
   "@id" : "_:genid138",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/icon/ontology/IconographicalRecognition"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://erlangen-crm.org/current/P70_documents"
+    "@id" : "https://w3id.org/icon/ontology/recognizedConcept"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid139",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid143"
-    }, {
-      "@id" : "_:genid141"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/Composition"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid141",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Invenzione"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/recognizedInvenzione"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid143",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Image"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/recognizedImage"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid144",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/icon/ontology/IconologicalRecognition"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://erlangen-crm.org/current/P70_documents"
-  } ]
-}, {
-  "@id" : "_:genid145",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/IntrinsicMeaning"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/recognizedIntrinsicMeaning"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid146",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid161"
-    }, {
-      "@id" : "_:genid159"
-    }, {
-      "@id" : "_:genid157"
-    }, {
-      "@id" : "_:genid155"
-    }, {
-      "@id" : "_:genid153"
-    }, {
-      "@id" : "_:genid148"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid148",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid149"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasSymbol"
-  } ]
-}, {
-  "@id" : "_:genid149",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/Symbol"
-    }, {
-      "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid153",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Place"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasPlace"
-  } ]
-}, {
-  "@id" : "_:genid155",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Personification"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasPersonification"
-  } ]
-}, {
-  "@id" : "_:genid157",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/NamedObject"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasNamedObject"
-  } ]
-}, {
-  "@id" : "_:genid159",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Event"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasEvent"
-  } ]
-}, {
-  "@id" : "_:genid161",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Character"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasCharacter"
-  } ]
-}, {
-  "@id" : "_:genid162",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/IconographicalRecognition"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/isIconographicallyRecognizedBy"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid163",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/icon/ontology/IconographicalRecognition"
-  } ]
-}, {
-  "@id" : "_:genid164",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/icon/ontology/IconologicalRecognition"
-  } ]
-}, {
-  "@id" : "_:genid165",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid166"
-  } ]
-}, {
-  "@id" : "_:genid166",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/FormalMotifRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/PreiconographicalRecognition"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid169",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid177"
-    }, {
-      "@id" : "_:genid171"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/Action"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/NaturalElement"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid171",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid175"
-    }, {
-      "@id" : "_:genid173"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid173",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/CulturalPhenomenon"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/recognizedCulturalPhenomenon"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid175",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/recognizedConcept"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid177",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid181"
-    }, {
-      "@id" : "_:genid179"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid179",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/icon/ontology/CulturalPhenomenon"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/recognizedCulturalPhenomenon"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid181",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/recognizedConcept"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid182",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/icon/ontology/IconologicalRecognition"
@@ -578,16 +313,26 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid183",
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/Composition"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid140",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid184"
+    "@id" : "_:genid141"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://erlangen-crm.org/current/P70_documents"
   } ]
 }, {
-  "@id" : "_:genid184",
+  "@id" : "_:genid141",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -597,17 +342,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid187",
+  "@id" : "_:genid144",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid191"
+      "@id" : "_:genid148"
     }, {
-      "@id" : "_:genid189"
+      "@id" : "_:genid146"
     } ]
   } ]
 }, {
-  "@id" : "_:genid189",
+  "@id" : "_:genid146",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/icon/ontology/Composition"
@@ -620,7 +365,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid191",
+  "@id" : "_:genid148",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
@@ -633,20 +378,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid192",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid193",
+  "@id" : "_:genid149",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/icon/ontology/Artwork"
@@ -659,21 +391,21 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid194",
+  "@id" : "_:genid150",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid202"
+      "@id" : "_:genid158"
     }, {
-      "@id" : "_:genid200"
+      "@id" : "_:genid156"
     }, {
-      "@id" : "_:genid198"
+      "@id" : "_:genid154"
     }, {
-      "@id" : "_:genid196"
+      "@id" : "_:genid152"
     } ]
   } ]
 }, {
-  "@id" : "_:genid196",
+  "@id" : "_:genid152",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/icon/ontology/composedOf"
@@ -682,13 +414,41 @@
     "@id" : "https://w3id.org/icon/ontology/NamedObject"
   } ]
 }, {
-  "@id" : "_:genid198",
+  "@id" : "_:genid154",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/icon/ontology/composedOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/icon/ontology/Event"
+  } ]
+}, {
+  "@id" : "_:genid156",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/composedOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Character"
+  } ]
+}, {
+  "@id" : "_:genid158",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/composedOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/icon/ontology/Action"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/NaturalElement"
+    } ]
   } ]
 }, {
   "@id" : "_:genid20",
@@ -699,24 +459,6 @@
     }, {
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid200",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/composedOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Character"
-  } ]
-}, {
-  "@id" : "_:genid202",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/icon/ontology/composedOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"
   } ]
 }, {
   "@id" : "_:genid23",
@@ -739,7 +481,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid58",
+  "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -749,7 +491,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid61",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -759,7 +501,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -769,7 +511,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid67",
+  "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -779,7 +521,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid70",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -789,7 +531,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid73",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -799,7 +541,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid76",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -809,13 +551,122 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/icon/ontology/Symbol"
     }, {
       "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/icon/ontology/FormalMotifRecognition"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/PreiconographicalRecognition"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/Composition"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/icon/ontology/Character"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/Event"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/NamedObject"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/Personification"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/Place"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/Symbol"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/Composition"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid73"
+    }, {
+      "@id" : "_:genid71"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/composedOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Symbol"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/composedOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Personification"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid81"
+    }, {
+      "@id" : "_:genid76"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:genid77"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasFactualMeaning"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/icon/ontology/Action"
+    }, {
+      "@id" : "https://w3id.org/icon/ontology/NaturalElement"
     } ]
   } ]
 }, {
@@ -829,24 +680,160 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/ExpressionalQuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasExpressionalMeaning"
+  } ]
+}, {
   "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/PreiconographicalRecognition"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/PreiconographicalRecognition"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/isRecognizedCompositionOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/FormalMotifRecognition"
+      "@id" : "_:genid89"
     }, {
-      "@id" : "https://w3id.org/icon/ontology/PreiconographicalRecognition"
+      "@id" : "_:genid87"
     } ]
   } ]
 }, {
-  "@id" : "_:genid99",
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Composition"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasCopiedMotif"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasCopiedMotif"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid90",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
+      "@id" : "_:genid94"
     }, {
-      "@id" : "https://w3id.org/icon/ontology/Composition"
+      "@id" : "_:genid92"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Composition"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasPrototypicalMotif"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/hasPrototypicalMotif"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/icon/ontology/IconographicalRecognition"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://erlangen-crm.org/current/P70_documents"
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid100"
+    }, {
+      "@id" : "_:genid98"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Invenzione"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/icon/ontology/recognizedInvenzione"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "http://erlangen-crm.org/current/E1_CRM_Entity",
@@ -871,9 +858,6 @@
     "@id" : "http://erlangen-crm.org/current/E28_Conceptual_Object"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -881,9 +865,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
@@ -930,9 +911,6 @@
   "@id" : "http://www.w3.org/2001/XMLSchema#citation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -956,10 +934,6 @@
   }, {
     "@value" : "Sofia Baroncini"
   } ],
-  "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@language" : "en",
-    "@value" : "Sartini B. and Baroncini S. Icon Ontology. https://w3id.org/icon/ontology"
-  } ],
   "http://purl.org/dc/terms/created" : [ {
     "@language" : "en",
     "@value" : "April 12th, 2022"
@@ -976,10 +950,6 @@
     "@language" : "en",
     "@value" : "Bruno Sartini"
   } ],
-  "http://purl.org/dc/terms/source" : [ {
-    "@language" : "en",
-    "@value" : "The top down development of this ontology followed these sources:\n\nErwin Panofsky. 1972. Studies in iconology: humanistic themes in the art of the Renaissance. Westview Press, Boulder, Colo. OCLC: 1151325340.\n\nMax Imdahl. 2012. Iconica. L’intuizione delle immagini. Aisthesis. Pratiche, linguaggi e saperi dell’estetico (2012).\n\nRoelof van Straten. 2012. An introduction to iconography (2 ed.). Routledge, London, England.\n\nIts development followed these methodologies:\n\nSilvio Peroni. 2016. A Simplified Agile Methodology for Ontology Development.. In Proceedings of the 13th OWL: Experiences and\nDirections Workshop and 5th OWL reasoner evaluation workshop (OWLED-ORE 2016). Springer, Cham, Switzerland, 55–69. https://doi.org/10.6084/M9.FIGSHARE.3189769.V2\n\nValentina Presutti, Enrico Daga, Aldo Gangemi, and Eva Blomqvist. 2009. EXtreme Design with Content Ontology Design Patterns. In\nProceedings of the 2009 International Conference on Ontology Patterns - Volume 516 (Washington DC) (WOP’09). CEUR-WS.org, Aachen,\nDEU, 83–97."
-  } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
     "@value" : "ICON Ontology"
@@ -992,13 +962,17 @@
     "@language" : "en",
     "@value" : "https://w3id.org/icon/ontology/"
   } ],
+  "http://schema.org/citation" : [ {
+    "@language" : "en",
+    "@value" : "Sartini B. and Baroncini S. Icon Ontology. https://w3id.org/icon/ontology"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The ICON ontology deals with high granularity art interpretation. It was developed by conceptualizing Panofsky's theory of levels of interpretation, therefore artworks can be described according to Pre-iconographical, Iconographical and Iconological information."
   } ],
   "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
     "@language" : "en",
-    "@value" : "1.1.0"
+    "@value" : "First version"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://erlangen-crm.org/current/"
@@ -1013,22 +987,14 @@
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@language" : "en",
-    "@value" : "1.1.0"
+    "@value" : "1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/icon/ontology/2.0.0/"
+    "@id" : "https://w3id.org/icon/ontology/1.1.0/"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "2.0.0"
-  } ],
-  "http://www.w3.org/2003/06/sw-vocab-status/ns#status" : [ {
-    "@language" : "en",
-    "@value" : "work in progress"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
-    "@language" : "en",
-    "@value" : "**Version 2.0.0 Changelog**\n\nIntroduction of three super property chains:\n\n* preiconographicallyDepicts : which links elements from the first level of interpretation (pre-iconographical) directly to the artwork\n* iconographicallyDepicts : which links elements from the the second level of interpretation (iconographical) directly to the artwork\n* iconologicallyRepresents : which links elements from the third level of interpretation (iconological) directly to the artwork\n\nProperty interpretedByRecognition (domain: artwork range: recognition) has been renamed hasRecognition to avoid ambiguities between the terms recognition and interpretation"
+    "@value" : "1.1.0"
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/Action",
@@ -1069,7 +1035,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/Invenzione"
   }, {
-    "@id" : "_:genid112"
+    "@id" : "_:genid69"
   } ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E1_CRM_Entity"
@@ -1105,9 +1071,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/VisualSubject"
   }, {
-    "@id" : "_:genid117"
+    "@id" : "_:genid74"
   }, {
-    "@id" : "_:genid125"
+    "@id" : "_:genid82"
   } ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E36_Visual_Item"
@@ -1203,9 +1169,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/VisualSubject"
   }, {
-    "@id" : "_:genid126"
+    "@id" : "_:genid83"
   }, {
-    "@id" : "_:genid127"
+    "@id" : "_:genid84"
   } ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E36_Visual_Item"
@@ -1275,7 +1241,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/arco/ontology/context-description/Subject"
   } ],
-  "http://www.w3.org/2004/02/skos/core#related" : [ {
+  "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E89_Propositional_Object"
   } ]
 }, {
@@ -1314,9 +1280,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/Recognition"
   }, {
-    "@id" : "_:genid128"
+    "@id" : "_:genid85"
   }, {
-    "@id" : "_:genid133"
+    "@id" : "_:genid90"
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/ICONOntology",
@@ -1335,7 +1301,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/InterpretationDescription"
   }, {
-    "@id" : "_:genid138"
+    "@id" : "_:genid95"
   } ],
   "http://www.w3.org/2002/07/owl#deprecated" : [ {
     "@value" : "from version 1.1"
@@ -1354,7 +1320,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/Recognition"
   }, {
-    "@id" : "_:genid139"
+    "@id" : "_:genid96"
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/IconographicalSynthesis",
@@ -1370,7 +1336,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/InterpretationDescription"
   }, {
-    "@id" : "_:genid144"
+    "@id" : "_:genid101"
   } ],
   "http://www.w3.org/2002/07/owl#deprecated" : [ {
     "@value" : "from version 1.1"
@@ -1389,7 +1355,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/Recognition"
   }, {
-    "@id" : "_:genid145"
+    "@id" : "_:genid102"
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/Image",
@@ -1408,9 +1374,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/VisualSubject"
   }, {
-    "@id" : "_:genid146"
+    "@id" : "_:genid103"
   }, {
-    "@id" : "_:genid162"
+    "@id" : "_:genid119"
   } ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E36_Visual_Item"
@@ -1432,13 +1398,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"
   }, {
-    "@id" : "_:genid163"
+    "@id" : "_:genid120"
   }, {
-    "@id" : "_:genid164"
+    "@id" : "_:genid121"
   }, {
-    "@id" : "_:genid165"
+    "@id" : "_:genid122"
   } ],
-  "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
+  "http://www.w3.org/2004/02/skos/core#narrowMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E31_Document"
   } ]
 }, {
@@ -1458,9 +1424,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/VisualSubject"
   }, {
-    "@id" : "_:genid169"
+    "@id" : "_:genid126"
   }, {
-    "@id" : "_:genid182"
+    "@id" : "_:genid139"
   } ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E36_Visual_Item"
@@ -1502,7 +1468,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/arco/ontology/context-description/Subject"
   } ],
-  "http://www.w3.org/2004/02/skos/core#related" : [ {
+  "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E89_Propositional_Object"
   } ]
 }, {
@@ -1562,7 +1528,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/arco/ontology/context-description/Subject"
   } ],
-  "http://www.w3.org/2004/02/skos/core#related" : [ {
+  "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E89_Propositional_Object"
   } ]
 }, {
@@ -1579,7 +1545,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/InterpretationDescription"
   }, {
-    "@id" : "_:genid183"
+    "@id" : "_:genid140"
   } ],
   "http://www.w3.org/2002/07/owl#deprecated" : [ {
     "@value" : "from version 1.1"
@@ -1598,7 +1564,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/Recognition"
   }, {
-    "@id" : "_:genid187"
+    "@id" : "_:genid144"
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/PureForm",
@@ -1635,9 +1601,7 @@
   }, {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
   }, {
-    "@id" : "_:genid192"
-  }, {
-    "@id" : "_:genid193"
+    "@id" : "_:genid149"
   } ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E13_Attribute_Assignment"
@@ -1659,7 +1623,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/Invenzione"
   }, {
-    "@id" : "_:genid194"
+    "@id" : "_:genid150"
   } ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
     "@id" : "http://erlangen-crm.org/current/E1_CRM_Entity"
@@ -1739,7 +1703,7 @@
     "@id" : "https://w3id.org/icon/ontology/Artwork"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/icon/ontology/hasRecognition"
+    "@id" : "https://w3id.org/icon/ontology/interpretedByRecognition"
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/associatedForm",
@@ -2059,16 +2023,13 @@
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/hasPart",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This relation links a Composition to the Artistic Motifs of which it consists."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/icon/ontology/Composition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/icon/ontology/ICONOntology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2078,13 +2039,12 @@
     "@id" : "https://w3id.org/icon/ontology/ArtisticMotif"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://erlangen-crm.org/current/P106_is_composed_of"
+  }, {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/icon/ontology/partOf"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
-    "@id" : "http://erlangen-crm.org/current/P106_is_composed_of"
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/hasPersonification",
@@ -2188,26 +2148,6 @@
     "@id" : "https://w3id.org/icon/ontology/isRecAttributeOf"
   } ]
 }, {
-  "@id" : "https://w3id.org/icon/ontology/hasRecognition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Inverse property of aboutWorkOfArt"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Artwork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/icon/ontology/ICONOntology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Has Recognition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/icon/ontology/Recognition"
-  } ]
-}, {
   "@id" : "https://w3id.org/icon/ontology/hasSymbol",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2260,80 +2200,6 @@
     "@id" : "https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition"
   } ]
 }, {
-  "@id" : "https://w3id.org/icon/ontology/iconographicallyDepicts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This property is used to link an artwork to the element of the second level of interpretation (iconographical) which it depicts. This elements can be Characters, Symbols, Personifications, Places, Stories, Allegories (and the element these stories and allegories are composed of).\n\nExample: There is an IconographicalRecognition of Artwork1 of Image1, which is linked to the character Thor through the hasCharacter property.\n\nThen Artwork1 iconographicallyDepicts Thor.\n\nExample2: There is an IconographicalRecognition of Artwork1 of Story1, which is the story of the death of Julius C. This story is composed by the Place Rome and the character Julius C. (and more...)\n\nThen Artwork1 IconographicallyDepicts the story of the death of Julius C., Julius C., and the city of Rome.\n\nThis link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Iconographically Depicts"
-  } ],
-  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedImage"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasCharacter"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedImage"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasEvent"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedImage"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasNamedObject"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedImage"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasPersonification"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedImage"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasPlace"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedImage"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasSymbol"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedInvenzione"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedInvenzione"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/composedOf"
-    } ]
-  } ]
-}, {
   "@id" : "https://w3id.org/icon/ontology/iconologicallyCompliesWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2360,32 +2226,24 @@
     "@id" : "https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition"
   } ]
 }, {
-  "@id" : "https://w3id.org/icon/ontology/iconologicallyRepresents",
+  "@id" : "https://w3id.org/icon/ontology/interpretedByRecognition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This property is used to link an artwork to the element of the third level of interpretation (iconological) which it represents. This elements can be Cultural Phenomena, Social Objects (abstract concepts).\n\nExample: There is an IconologicalRecognition of Artwork1 of IntrinsicMeaning1, which is linked to the cultural phenomenon of ImitationOfClassics\nThen Artwork1 iconologicallyRepresents  ImitationOfClassics.\n\nExample2: There is an IconologicalRecognition of Artwork1 of IntrinsicMeaning2, which is linked to the social object \"Absurdity\" (and to other elements from other levels that suppor this claim...)\n\nThen Artwork1 IconologicallyRepresents Absurdity\n\nThis link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation."
+    "@value" : "Inverse property of aboutWorkOfArt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Artwork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/icon/ontology/ICONOntology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Iconologically Represents"
+    "@value" : "Interpreted By Recognition"
   } ],
-  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedIntrinsicMeaning"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedConcept"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedIntrinsicMeaning"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedCulturalPhenomenon"
-    } ]
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/icon/ontology/Recognition"
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/isArtisticMotifOf",
@@ -2490,7 +2348,7 @@
     "@value" : "is compliant with pre-iconographical recognition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid58"
+    "@id" : "_:genid29"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy"
@@ -2546,7 +2404,7 @@
     "@value" : "Inverse property of hasCopiedMotif"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid61"
+    "@id" : "_:genid32"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/icon/ontology/ICONOntology"
@@ -2619,7 +2477,7 @@
     "@value" : "Is Expressional Meaning Of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid64"
+    "@id" : "_:genid35"
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/isFactualMeaningOf",
@@ -2629,7 +2487,7 @@
     "@value" : "Inverse property of hasFactualMeaning"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid67"
+    "@id" : "_:genid38"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/icon/ontology/ICONOntology"
@@ -2639,7 +2497,7 @@
     "@value" : "Is Factual Meaning Of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid70"
+    "@id" : "_:genid41"
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/isIconographicallyRecognizedBy",
@@ -2672,7 +2530,7 @@
     "@value" : "Inverse property of refers to artistic motif"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid73"
+    "@id" : "_:genid44"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/icon/ontology/ICONOntology"
@@ -2818,7 +2676,7 @@
     "@value" : "Inverse property of hasPrototypicalMotif"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid76"
+    "@id" : "_:genid47"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/icon/ontology/ICONOntology"
@@ -2970,7 +2828,7 @@
     "@value" : "Inverse property of has symbol"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid79"
+    "@id" : "_:genid50"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/icon/ontology/ICONOntology"
@@ -3010,7 +2868,7 @@
     "@value" : "This property is used to link all the pre-iconographical and formal motif recognitions recognitions that take part in one or more interpretation(s), to that/those interpretation(s)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid82"
+    "@id" : "_:genid53"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/icon/ontology/ICONOntology"
@@ -3024,54 +2882,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"
-  } ]
-}, {
-  "@id" : "https://w3id.org/icon/ontology/preiconographicallyDepicts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This property is used to link an artwork to the element of the first level of interpretation (pre-iconographical) which it depicts. This element can be a Natural Element, an Action, Expression, or an element included in a recognized Composition (again, natural element, action, expression).\n\nExample: There is a PreiconographicalRecognition of Artwork1 of ArtisticMotif1, which is linked to the natural element bear.\nThen Artwork1 preiconographicallyDepicts  bear.\n\nExample2: There is a PreiconographicalRecognition of Artwork1 of ArtisticMotif2, which is linked to the composition1, composed by a bear and the action of eating.\nThen Artwork1 preiconographicallyDepicts bear and eating.\n\nThis link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Pre-iconographically Depicts"
-  } ],
-  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedArtisticMotif"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasExpressionalMeaning"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedArtisticMotif"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasFactualMeaning"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedComposition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasPart"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasExpressionalMeaning"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/icon/ontology/hasRecognition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/recognizedComposition"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasPart"
-    }, {
-      "@id" : "https://w3id.org/icon/ontology/hasFactualMeaning"
-    } ]
   } ]
 }, {
   "@id" : "https://w3id.org/icon/ontology/recognizedArtisticMotif",
@@ -3267,7 +3077,7 @@
     "@value" : "Refers To Artistic Motif"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid99"
+    "@id" : "_:genid56"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://erlangen-crm.org/current/P140_assigned_attribute_to"
@@ -3275,19 +3085,8 @@
 }, {
   "@id" : "https://w3id.org/icon/ontology/regionDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This data property can be used to link an artistic motif or a composition with their coordinates in the image of the artwork in which they are recognized. These coordinates could indicate the bounding boxes of the detections of a computer vision algorithms or could also be the IIIF URI that selects the part of the image of the painting in which the artistic motif or the composition are found"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid109"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/icon/ontology/ICONOntology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Region Description"
+    "@id" : "_:genid66"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -3300,7 +3099,7 @@
     "@value" : "Inverse property of composed of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid102"
+    "@id" : "_:genid59"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/icon/ontology/ICONOntology"

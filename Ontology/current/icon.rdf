@@ -1030,12 +1030,23 @@ This link can be created automatically through inference thanks to the super pro
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasRecognition"/>
             <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedArtisticMotif"/>
+            <rdf:Description rdf:about="http://erlangen-crm.org/current/P138_represents"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasRecognition"/>
+            <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedArtisticMotif"/>
             <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasExpressionalMeaning"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasRecognition"/>
             <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedArtisticMotif"/>
             <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasFactualMeaning"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasRecognition"/>
+            <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedComposition"/>
+            <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPart"/>
+            <rdf:Description rdf:about="http://erlangen-crm.org/current/P138_represents"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasRecognition"/>
@@ -1911,6 +1922,12 @@ This link can be created automatically through inference thanks to the super pro
     
 
 
+    <!-- https://www.w3id.org/simulation/ontology/Simulation -->
+
+    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulation"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2259,50 +2276,50 @@ This link can be created automatically through inference thanks to the super pro
         <rdfs:label xml:lang="en">Action (ICON)</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Allegory">
-        <rdfs:comment xml:lang="en">An Allegory is a cohese combination of images that represent either symbols of personifications. Allegories are recognized in the context of iconographical recognition; their recognition can be included in an Iconographical Description. This definition of Allegory has been taken from Panofsky&apos;s Studies in Iconology (1939). Nevertheless, also a story can have a symbolical meaning. In this case, it is suggested to associate a Story to the images describing its content, an allegory  to the images describing the story and the symbolical meaning associated to it. E.g.: the fall of Phaeton was generally considered as an allegory of the fate of every temerarius (Panofsky 1939, p. 218). Therefore, the image identifying Phaeton is linked both to the Allegory and to the Story.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Allegory</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">An Allegory is a cohese combination of images that represent either symbols of personifications. Allegories are recognized in the context of iconographical recognition; their recognition can be included in an Iconographical Description. This definition of Allegory has been taken from Panofsky&apos;s Studies in Iconology (1939). Nevertheless, also a story can have a symbolical meaning. In this case, it is suggested to associate a Story to the images describing its content, an allegory  to the images describing the story and the symbolical meaning associated to it. E.g.: the fall of Phaeton was generally considered as an allegory of the fate of every temerarius (Panofsky 1939, p. 218). Therefore, the image identifying Phaeton is linked both to the Allegory and to the Story.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/ArtisticMotif">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:comment xml:lang="en">An ArtisticMotif is the output of a Pre Iconographic Recognition. It is a N-ary relationship class linking the physical unique representation depicted in an artwork to the corresponding real world meaning recognized. Each artistic motif describes exactly one meaning among: Natural Element, Action, Expression Quality. Qualities (e.g. colors) can be expressed.
 The N-ary structure allow first of all to maintain the distinction between the particular representation belonging to the artwork considered and the general meaning of which the representation is an expression. Furthermore, it allows to carefully describe in detail what is represented in the visual representation, since it gives the chance to identify uniquely details of objects and iconographies.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Artistic Motif</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Artwork">
+        <rdfs:label xml:lang="en">Artwork</rdfs:label>
         <rdfs:comment xml:lang="en">The artwork is a visual representation that may be relevant from an iconographical or an iconological point of view, carried by a physical cultural object (dul:InformationRealization) usually created by a person.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Artwork</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Character">
         <rdfs:comment xml:lang="en">A Character is a real or imaginary being identifiable as a subject in the Iconographical Analysis (level 2 of interpretation)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Character</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Composition">
-        <rdfs:comment xml:lang="en">A Composition is a jointly of ArtisticMotif having a meaning. It can be recognized as corresponding to the same image at the second level or interpretation, or can explicit groupings of level 1 elements that the descriptor considers significant. Its is suggested to express the level 1 elements involved every time that there is an action (e.g. the action &quot;lifting&quot; in the context of &quot;man lifting a woman&quot; should be grouped in a composition including the artistic motifs corresponding respectively to &quot;man&quot;, &quot;woman, &quot;lifting&quot;)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">A Composition is a jointly of ArtisticMotif having a meaning. It can be recognized as corresponding to the same image at the second level or interpretation, or can explicit groupings of level 1 elements that the descriptor considers significant. Its is suggested to express the level 1 elements involved every time that there is an action (e.g. the action &quot;lifting&quot; in the context of &quot;man lifting a woman&quot; should be grouped in a composition including the artistic motifs corresponding respectively to &quot;man&quot;, &quot;woman, &quot;lifting&quot;)</rdfs:comment>
         <rdfs:label xml:lang="en">Composition</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Event">
-        <rdfs:comment xml:lang="en">An Event is an action that is depicted as subject by an artwork. It differs from the first level Action since it requires deeper interpretation to be identified. For example, the act of hurling the Trident (Action) held by Neptune in some iconographies is interpreted as the act of calming the storm (Event) provoked by Juno in Virgil&apos;s Aeneid book 1. Furthermore, an Event is linked to a icon:Image, and not to a icon:Artistic Motif. This class includes also events having a proper identity, such as historical events (e.g. the Battle of Cascina).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">An Event is an action that is depicted as subject by an artwork. It differs from the first level Action since it requires deeper interpretation to be identified. For example, the act of hurling the Trident (Action) held by Neptune in some iconographies is interpreted as the act of calming the storm (Event) provoked by Juno in Virgil&apos;s Aeneid book 1. Furthermore, an Event is linked to a icon:Image, and not to a icon:Artistic Motif. This class includes also events having a proper identity, such as historical events (e.g. the Battle of Cascina).</rdfs:comment>
         <rdfs:label xml:lang="en">Event</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/ExpressionalQuality">
-        <rdfs:comment xml:lang="en">An Expression Quality corresponds to the &quot;expressional subject matter&quot; described by Panofsky (1939), which belongs, along with the factual ones, to the Primary or natural subject matter of a work of art. Indeed, it individuates, by way of example, emotions, an atmosphere, the character of a person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Expressional Quality</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">An Expression Quality corresponds to the &quot;expressional subject matter&quot; described by Panofsky (1939), which belongs, along with the factual ones, to the Primary or natural subject matter of a work of art. Indeed, it individuates, by way of example, emotions, an atmosphere, the character of a person.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Image">
-        <rdfs:comment xml:lang="en">Image is a reification class linking the identified second level subject (namely: Characters, Events, Places, Named Objects, Symbols and Personifications) to the specific interpretation that recognizes it. It represents the subject depicted as a manifestation in the specific artwork taken into account, in contrast to the second level subjects cited and Invenzione, identifying iconographies from an abstract and general point of view. This distinction between the general subject level and the artwork-specific one is functional to identify the variants of a subject in relation to the specific context.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Image</rdfs:label>
+        <rdfs:comment xml:lang="en">Image is a reification class linking the identified second level subject (namely: Characters, Events, Places, Named Objects, Symbols and Personifications) to the specific interpretation that recognizes it. It represents the subject depicted as a manifestation in the specific artwork taken into account, in contrast to the second level subjects cited and Invenzione, identifying iconographies from an abstract and general point of view. This distinction between the general subject level and the artwork-specific one is functional to identify the variants of a subject in relation to the specific context.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/InterpretationDescription">
         <rdfs:comment xml:lang="en">The Interpretation Description is a class collecting all the triples describing each recognition in each level that shares a unique interpretative perspective. For example, it allows to collect claims agreeing each other or to describe the situation in which an art historian attributes to other art historians some details of the general interpretation he claims. Recognitions in disagree with each other should be documented in different descriptions. For example, the interpretation made in 1699 recognising Regnaudin&apos;s statuette as depicting &quot;Time carrying off the Truth&quot; is listed in a different description form the interpretation recognising &quot;The rape of Cybele&quot; as its subject (Wittkower).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Interpretation Description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/IntrinsicMeaning">
         <rdfs:comment xml:lang="en">N-ary relatioship class linking the identified cultural phenomenon or deeper meaning to the whole artwork or to the specific part of its representation and to the interpretation that identifies it. From a theoretical point of view, it corresponds to the manifestation in the specific artwork of the concepts and cultural phenomena identified by the iconological analysis. The terminology is taken from Panofsky (1939, 1955).</rdfs:comment>
@@ -2315,79 +2332,79 @@ The N-ary structure allow first of all to maintain the distinction between the p
         <rdfs:label xml:lang="en">Invenzione</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/NamedObject">
-        <rdfs:comment xml:lang="en">A named object is a non-living unique element that is often used as an attribute for the recognition of specific characters or as the individuals of a more general concept class. (e.g. Bible for the Book class)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">A named object is a non-living unique element that is often used as an attribute for the recognition of specific characters or as the individuals of a more general concept class. (e.g. Bible for the Book class)</rdfs:comment>
         <rdfs:label xml:lang="en">Named Object</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/NaturalElement">
         <rdfs:comment xml:lang="en">Comprises objects, human beings, natural elements that can be experienced. They are recognized at the first level of interpretation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Natural Element</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Personification">
-        <rdfs:comment xml:lang="en">A representation of a concept through a human figure</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Personification (ICON)</rdfs:label>
+        <rdfs:comment xml:lang="en">A representation of a concept through a human figure</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Place">
         <rdfs:comment xml:lang="en">An identified setting, e.g. the city of Bologna, which is recognized as a Level 2 subject. The recognition of a generic city is formally represented by the Natural Element class (level 1).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Place (ICON)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Recognition">
         <rdfs:comment xml:lang="en">A recognition, in the context of this ontology, is an interpretation act made by an agent (biological or electronic being) that links works of arts to something related to their content. More specific recognitions are available as subclasses for specific types of recognition according to the level of interpretation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Recognition</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Story">
-        <rdfs:comment xml:lang="en">A story is a cohese combination of images that represent narrative elements such as Characters, Places, Events, Named Objects. The recognition of a story happens in the context of an Iconographical Recognition, and it is included in an Iconographical Description. As the super class Invenzione, it concerns the word of the subject matter. It is not necessary to have multiple images to compose a story.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Story</rdfs:label>
+        <rdfs:comment xml:lang="en">A story is a cohese combination of images that represent narrative elements such as Characters, Places, Events, Named Objects. The recognition of a story happens in the context of an Iconographical Recognition, and it is included in an Iconographical Description. As the super class Invenzione, it concerns the word of the subject matter. It is not necessary to have multiple images to compose a story.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Symbol">
-        <rdfs:comment xml:lang="en">A Symbol is the class representing the unity of a symbol and its symbolic meaning that can be expressed by an Image. The represented object (Simulacrum) and the symbolical meaning expressed (Reality Counterpart) along with the type of relation linking them if further represented by the Simulation Ontology.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Symbol</rdfs:label>
+        <rdfs:comment xml:lang="en">A Symbol is the class representing the unity of a symbol and its symbolic meaning that can be expressed by an Image. The represented object (Simulacrum) and the symbolical meaning expressed (Reality Counterpart) along with the type of relation linking them if further represented by the Simulation Ontology.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasCharacter">
-        <rdfs:comment xml:lang="en">This relation links an image to the Character depicted</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Character</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">This relation links an image to the Character depicted</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasCopiedMotif">
-        <rdfs:comment xml:lang="en">This relation associates to the act of Formal Motif Recognition the Artistic Motif representing the copied visual pattern. To be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Copied Motif</rdfs:label>
+        <rdfs:comment xml:lang="en">This relation associates to the act of Formal Motif Recognition the Artistic Motif representing the copied visual pattern. To be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasEvent">
-        <rdfs:comment xml:lang="en">This relation links an image to the Event depicted</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">This relation links an image to the Event depicted</rdfs:comment>
         <rdfs:label xml:lang="en">Has Event</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasExpressionalMeaning">
+        <rdfs:label xml:lang="en">Has Expressional Meaning</rdfs:label>
         <rdfs:comment>This relation links the Expressional Meaning recognized to the Artistic Motif</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Has Expressional Meaning</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasFactualMeaning">
-        <rdfs:comment>This relation links the Factual Meaning recognized (Actions or Natural Elements) to the Artistic Motif</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment>This relation links the Factual Meaning recognized (Actions or Natural Elements) to the Artistic Motif</rdfs:comment>
         <rdfs:label xml:lang="en">Has Factual Meaning</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasNamedObject">
-        <rdfs:comment xml:lang="en">This relation links an image to the Named Object depicted</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Named Object</rdfs:label>
+        <rdfs:comment xml:lang="en">This relation links an image to the Named Object depicted</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPart">
         <rdfs:comment xml:lang="en">This relation links a Composition to the Artistic Motifs of which it consists.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Part (ICON)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPersonification">
         <rdfs:comment xml:lang="en">This relation links an image to the Personification depicted</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Personification</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPlace">
         <rdfs:comment xml:lang="en">This relation links an image to the Place depicted</rdfs:comment>
@@ -2396,27 +2413,27 @@ The N-ary structure allow first of all to maintain the distinction between the p
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPrototypicalMotif">
         <rdfs:comment xml:lang="en">This relation associates to the act of the Recognition of a formal motif to the artistic motif from which the visual pattern derives. It should be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Prototypical Motif</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasSymbol">
+        <rdfs:label xml:lang="en">Has Symbol</rdfs:label>
         <rdfs:comment xml:lang="en">This relation links an image to the Symbol depicted</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Has Symbol</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedArtisticMotif">
-        <rdfs:comment xml:lang="en">This relation associates the Artistic Motif to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Recognized Artistic Motif</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">This relation associates the Artistic Motif to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedComposition">
-        <rdfs:comment xml:lang="en">This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Recognized Composition</rdfs:label>
+        <rdfs:comment xml:lang="en">This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedImage">
-        <rdfs:comment xml:lang="en">This relation associates the Image to the Iconographical Recognition that recognizes it at the second level of interpretation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">This relation associates the Image to the Iconographical Recognition that recognizes it at the second level of interpretation.</rdfs:comment>
         <rdfs:label xml:lang="en">Recognized Image</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedInvenzione">
@@ -2428,5 +2445,5 @@ The N-ary structure allow first of all to maintain the distinction between the p
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

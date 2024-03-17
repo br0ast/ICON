@@ -127,7 +127,7 @@ select distinct ?img ?sub2 ?role where {
 
     ?img icon:hasRole ?role .
     ?img ?rel ?sub2.
-} limit 100
+}
 """
 
 

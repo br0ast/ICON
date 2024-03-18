@@ -19,17 +19,17 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://w3id.org/icon/ontology/">
-        <owl:versionIRI rdf:resource="https://w3id.org/icon/ontology/2.1.0/"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/icon/ontology/2.0.0/"/>
         <owl:imports rdf:resource="http://erlangen-crm.org/current/"/>
         <owl:imports rdf:resource="http://purl.org/emmedi/hico/2020-03-31"/>
         <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="https://www.w3id.org/simulation/ontology/"/>
-        <dc:contributor xml:lang="en">Aldo Gangemi (Until version 1.1)</dc:contributor>
-        <dc:contributor xml:lang="en">Marieke van Erp (Until version 1.1)</dc:contributor>
+        <dc:contributor xml:lang="en">Aldo Gangemi</dc:contributor>
+        <dc:contributor xml:lang="en">Marieke van Erp</dc:contributor>
         <dc:creator>Bruno Sartini</dc:creator>
         <dc:creator>Sofia Baroncini</dc:creator>
-        <dcterms:bibliographicCitation xml:lang="en">Bruno Sartini, Sofia Baroncini, Marieke van Erp, Francesca Tomasi, and Aldo Gangemi. 2023. ICON: An Ontology for Comprehensive Artistic Interpretations. J. Comput. Cult. Herit. 16, 3, Article 59 (September 2023), 38 pages. https://doi.org/10.1145/3594724</dcterms:bibliographicCitation>
+        <dcterms:bibliographicCitation xml:lang="en">Sartini B. and Baroncini S. Icon Ontology. https://w3id.org/icon/ontology</dcterms:bibliographicCitation>
         <dcterms:created xml:lang="en">April 12th, 2022</dcterms:created>
         <dcterms:issued xml:lang="en">April 12th, 2022</dcterms:issued>
         <dcterms:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</dcterms:license>
@@ -56,34 +56,17 @@ DEU, 83–97.</dcterms:source>
         <rdfs:comment xml:lang="en">The ICON ontology deals with high granularity art interpretation. It was developed by conceptualizing Panofsky&apos;s theory of levels of interpretation, therefore artworks can be described according to Pre-iconographical, Iconographical and Iconological information.</rdfs:comment>
         <owl:backwardCompatibleWith xml:lang="en">1.1.0</owl:backwardCompatibleWith>
         <owl:priorVersion xml:lang="en">1.1.0</owl:priorVersion>
-        <owl:versionInfo xml:lang="en">2.1.0</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">2.0.0</owl:versionInfo>
         <ns:status xml:lang="en">work in progress</ns:status>
-        <skos:changeNote xml:lang="en">**Version 2.1.0 Changelog**
+        <skos:changeNote xml:lang="en">**Version 2.0.0 Changelog**
 
-Introduction of six new classes:
+Introduction of three super property chains:
 
-* Material
-* Color
-* Role
-* Preiconographical Subject
-* Iconographical Subject
-* Iconological Subject
+* preiconographicallyDepicts : which links elements from the first level of interpretation (pre-iconographical) directly to the artwork
+* iconographicallyDepicts : which links elements from the the second level of interpretation (iconographical) directly to the artwork
+* iconologicallyRepresents : which links elements from the third level of interpretation (iconological) directly to the artwork
 
-Seven new object properties
-
-* associatedMaterial
-* associatedColor
-* hasRole
-* hasPreiconographicalSubject
-* hasIconographicalSubject
-* hasIconologicalSubject
-* hasResponsibleAgent
-
-And one new data property
-
-* quantity
-
-Refer to the classes and properties in protege or in the documentation for more explanations on them</skos:changeNote>
+Property interpretedByRecognition (domain: artwork range: recognition) has been renamed hasRecognition to avoid ambiguities between the terms recognition and interpretation</skos:changeNote>
     </owl:Ontology>
     
 
@@ -158,36 +141,6 @@ Refer to the classes and properties in protege or in the documentation for more 
     
 
 
-    <!-- http://erlangen-crm.org/231027/P14_carried_out_by -->
-
-    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/231027/P14_carried_out_by"/>
-    
-
-
-    <!-- http://erlangen-crm.org/current/P138_represents -->
-
-    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/current/P138_represents"/>
-    
-
-
-    <!-- http://erlangen-crm.org/current/P140_assigned_attribute_to -->
-
-    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/current/P140_assigned_attribute_to"/>
-    
-
-
-    <!-- http://erlangen-crm.org/current/P141_assigned -->
-
-    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/current/P141_assigned"/>
-    
-
-
-    <!-- http://erlangen-crm.org/current/P70_documents -->
-
-    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/current/P70_documents"/>
-    
-
-
     <!-- http://purl.org/spar/cito/citesAsEvidence -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsEvidence">
@@ -232,23 +185,6 @@ Refer to the classes and properties in protege or in the documentation for more 
     
 
 
-    <!-- https://w3id.org/icon/ontology/associatedColor -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/associatedColor">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/icon/ontology/ArtisticMotif"/>
-                    <rdf:Description rdf:about="https://w3id.org/icon/ontology/Image"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/icon/ontology/Color"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/icon/ontology/associatedForm -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/associatedForm">
@@ -259,23 +195,6 @@ Refer to the classes and properties in protege or in the documentation for more 
         <rdfs:comment>This relation associates a Pure Form to the Pre-iconographical Recognition that describes it at the first level of interpretation.</rdfs:comment>
         <rdfs:label xml:lang="en">Associated Form</rdfs:label>
         <owl:deprecated>Since 1.1 version</owl:deprecated>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/icon/ontology/associatedMaterial -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/associatedMaterial">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/icon/ontology/ArtisticMotif"/>
-                    <rdf:Description rdf:about="https://w3id.org/icon/ontology/Image"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/icon/ontology/Material"/>
     </owl:ObjectProperty>
     
 
@@ -320,7 +239,6 @@ Refer to the classes and properties in protege or in the documentation for more 
     <!-- https://w3id.org/icon/ontology/hasCharacter -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasCharacter">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ontology/hasIconographicalSubject"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/isCharacterOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/Image"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/Character"/>
@@ -374,7 +292,6 @@ Refer to the classes and properties in protege or in the documentation for more 
     <!-- https://w3id.org/icon/ontology/hasEvent -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasEvent">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ontology/hasIconographicalSubject"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/isEventOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/Image"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/Event"/>
@@ -385,7 +302,6 @@ Refer to the classes and properties in protege or in the documentation for more 
     <!-- https://w3id.org/icon/ontology/hasExpressionalMeaning -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasExpressionalMeaning">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ontology/hasPreiconographicalSubject"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/isExpressionalMeaningOf"/>
         <rdfs:domain>
             <owl:Class>
@@ -403,7 +319,6 @@ Refer to the classes and properties in protege or in the documentation for more 
     <!-- https://w3id.org/icon/ontology/hasFactualMeaning -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasFactualMeaning">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ontology/hasPreiconographicalSubject"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/isFactualMeaningOf"/>
         <rdfs:domain>
             <owl:Class>
@@ -421,30 +336,6 @@ Refer to the classes and properties in protege or in the documentation for more 
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/icon/ontology/hasIconographicalSubject -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasIconographicalSubject">
-        <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/Image"/>
-        <rdfs:range rdf:resource="https://w3id.org/icon/ontology/IconographicalSubject"/>
-        <rdfs:comment xml:lang="en">This property is used to link an image to the iconographical subject it represents, it is used when it is difficult to distinguish between the different iconographical subjects (for instance in the case of an automatic conversion of data into the ICON ontology)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">has Iconographical Subject</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/icon/ontology/hasIconologicalSubject -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasIconologicalSubject">
-        <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/IntrinsicMeaning"/>
-        <rdfs:range rdf:resource="https://w3id.org/icon/ontology/IconologicalSubject"/>
-        <rdfs:comment xml:lang="en">This property is used to link an intrinstic meaning to the iconological subject it represents. It is useful in the cases where it is difficult to identify the type of the iconological subject (cultural phenomenon, abstract concept...) especially in cases of automatic conversions of data to the ICON ontology structure</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">has Iconological Subject</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -478,7 +369,6 @@ Refer to the classes and properties in protege or in the documentation for more 
     <!-- https://w3id.org/icon/ontology/hasNamedObject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasNamedObject">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ontology/hasIconographicalSubject"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/isNamedObjectOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/Image"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/NamedObject"/>
@@ -500,7 +390,6 @@ Refer to the classes and properties in protege or in the documentation for more 
     <!-- https://w3id.org/icon/ontology/hasPersonification -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasPersonification">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ontology/hasIconographicalSubject"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/isPersonificationOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/Image"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/Personification"/>
@@ -511,7 +400,6 @@ Refer to the classes and properties in protege or in the documentation for more 
     <!-- https://w3id.org/icon/ontology/hasPlace -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasPlace">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ontology/hasIconographicalSubject"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/isPlaceOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/Image"/>
         <rdfs:range>
@@ -522,18 +410,6 @@ Refer to the classes and properties in protege or in the documentation for more 
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/icon/ontology/hasPreiconographicalSubject -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasPreiconographicalSubject">
-        <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/ArtisticMotif"/>
-        <rdfs:range rdf:resource="https://w3id.org/icon/ontology/PreiconographicalSubject"/>
-        <rdfs:comment xml:lang="en">This property links an artistic motif with a pre-iconographical subject represented by it, it is used when it is difficult to distinguish between the different types of pre-iconographical subjects (for example in situations where the conversion from interpretation to ICON is made automatically)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">has Pre-iconographical Subject</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -580,63 +456,9 @@ Refer to the classes and properties in protege or in the documentation for more 
     
 
 
-    <!-- https://w3id.org/icon/ontology/hasResponsibleAgent -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasResponsibleAgent">
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition"/>
-            <rdf:Description rdf:about="http://erlangen-crm.org/231027/P14_carried_out_by"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition"/>
-            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition"/>
-            <rdf:Description rdf:about="http://erlangen-crm.org/231027/P14_carried_out_by"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition"/>
-            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition"/>
-            <rdf:Description rdf:about="http://erlangen-crm.org/231027/P14_carried_out_by"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition"/>
-            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent"/>
-        </owl:propertyChainAxiom>
-        <rdfs:comment xml:lang="en">This property links the Interpretation Description with all the agents responsible for the recognitions that are part of it</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">has Responsible Agent</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/icon/ontology/hasRole -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasRole">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/icon/ontology/ArtisticMotif"/>
-                    <rdf:Description rdf:about="https://w3id.org/icon/ontology/Image"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/icon/ontology/Role"/>
-        <rdfs:comment xml:lang="en">This property is used to link an artistic motif or an image to one of the (recognized) roles of the elements recognized in those artistic motifs or images. For instance, expressing that the role of the man recognized in a painting is &quot;butcher&quot;, &quot;prince&quot;, etc...</rdfs:comment>
-        <rdfs:label rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Role</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/icon/ontology/hasSymbol -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/hasSymbol">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ontology/hasIconographicalSubject"/>
         <owl:inverseOf rdf:resource="https://w3id.org/icon/ontology/isSymbolOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/Image"/>
         <rdfs:range>
@@ -1273,7 +1095,6 @@ This link can be created automatically through inference thanks to the super pro
     <!-- https://w3id.org/icon/ontology/recognizedConcept -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/recognizedConcept">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ontology/hasIconologicalSubject"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/IntrinsicMeaning"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
         <rdfs:comment xml:lang="en">This relation expresses the Concept that is related to the Intrinsic Meaning</rdfs:comment>
@@ -1286,7 +1107,6 @@ This link can be created automatically through inference thanks to the super pro
     <!-- https://w3id.org/icon/ontology/recognizedCulturalPhenomenon -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/icon/ontology/recognizedCulturalPhenomenon">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ontology/hasIconologicalSubject"/>
         <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/IntrinsicMeaning"/>
         <rdfs:range rdf:resource="https://w3id.org/icon/ontology/CulturalPhenomenon"/>
         <rdfs:comment xml:lang="en">This relation expresses the Cultural Phenomenon that is related to the Intrinsic Meaning</rdfs:comment>
@@ -1393,23 +1213,6 @@ This link can be created automatically through inference thanks to the super pro
     
 
 
-    <!-- https://w3id.org/icon/ontology/quantity -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/icon/ontology/quantity">
-        <rdfs:domain rdf:resource="https://w3id.org/icon/ontology/ArtisticMotif"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
-                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
-                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
-                </owl:unionOf>
-            </rdfs:Datatype>
-        </rdfs:range>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/icon/ontology/regionDescription -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/icon/ontology/regionDescription">
@@ -1437,18 +1240,6 @@ This link can be created automatically through inference thanks to the super pro
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://erlangen-crm.org/current/E28_Conceptual_Object -->
-
-    <owl:Class rdf:about="http://erlangen-crm.org/current/E28_Conceptual_Object"/>
-    
-
-
-    <!-- http://erlangen-crm.org/current/E53_Place -->
-
-    <owl:Class rdf:about="http://erlangen-crm.org/current/E53_Place"/>
     
 
 
@@ -1481,7 +1272,7 @@ This link can be created automatically through inference thanks to the super pro
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject -->
 
     <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/IconologicalSubject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
     </rdf:Description>
     
 
@@ -1504,7 +1295,7 @@ This link can be created automatically through inference thanks to the super pro
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/Action">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/PreiconographicalSubject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
     </owl:Class>
     
 
@@ -1612,18 +1403,7 @@ This link can be created automatically through inference thanks to the super pro
     <!-- https://w3id.org/icon/ontology/Character -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/Character">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/IconographicalSubject"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/icon/ontology/Color -->
-
-    <owl:Class rdf:about="https://w3id.org/icon/ontology/Color">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
-        <rdfs:comment xml:lang="en">Class representing the color of an entity represented in an Artistic Motif or Image</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Color</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
     </owl:Class>
     
 
@@ -1663,7 +1443,7 @@ This link can be created automatically through inference thanks to the super pro
     <!-- https://w3id.org/icon/ontology/CulturalPhenomenon -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/CulturalPhenomenon">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/IconologicalSubject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
         <rdfs:comment xml:lang="en">The cultural phenomenon entity expresses the cultural, social and historical aspects of which the work of art can be document. The iconographical evolution of subjects can have a cultural meaning as well. Also the personal characteristics of the artist, or of the patron, can be involved (Wittkower, Van Straten). The cultural phenomena are the object of investigation of an iconological interpretation (Van Straten, 2012, p. 12), which is considered, in the current work, a level 3 interpretation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Cultural Phenomenon</rdfs:label>
@@ -1685,7 +1465,7 @@ This link can be created automatically through inference thanks to the super pro
     <!-- https://w3id.org/icon/ontology/Event -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/Event">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/IconographicalSubject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
     </owl:Class>
     
 
@@ -1694,7 +1474,7 @@ This link can be created automatically through inference thanks to the super pro
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/ExpressionalQuality">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/PreiconographicalSubject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
     </owl:Class>
     
 
@@ -1784,17 +1564,6 @@ This link can be created automatically through inference thanks to the super pro
     
 
 
-    <!-- https://w3id.org/icon/ontology/IconographicalSubject -->
-
-    <owl:Class rdf:about="https://w3id.org/icon/ontology/IconographicalSubject">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
-        <rdfs:comment xml:lang="en">This class represents all the iconographical subjects of an artwork recognized in images</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Iconographical Subject</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/icon/ontology/IconographicalSynthesis -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/IconographicalSynthesis">
@@ -1825,17 +1594,6 @@ This link can be created automatically through inference thanks to the super pro
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An Iconological Recognition is a n-ary relationship class that links the artwork described (and optionally all the subjects represented at the first and second level of interpretation) to the Intrinsic Meanings recognized. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed. This class can represent: (1) the third level act of Interpretation described by Panofsky (1939), without a distinction between a overall artwork symbolic meaning and a societal aspect, (2) the third and second level described by Van Straten, according to the value associated to the intrinsic meaning, (3) the iconic act of interpretation described by Imdahl (2012), when the intrinsic meaning is directly linked to level 1 characteristics of the image.</rdfs:comment>
         <rdfs:label xml:lang="en">Iconological Recognition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/icon/ontology/IconologicalSubject -->
-
-    <owl:Class rdf:about="https://w3id.org/icon/ontology/IconologicalSubject">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Iconological Subject</rdfs:label>
-        <rdfs:label xml:lang="en">This class represents all the iconological subjects of an artwork recognized through an intrinstic meaning</rdfs:label>
     </owl:Class>
     
 
@@ -1988,21 +1746,10 @@ This link can be created automatically through inference thanks to the super pro
     
 
 
-    <!-- https://w3id.org/icon/ontology/Material -->
-
-    <owl:Class rdf:about="https://w3id.org/icon/ontology/Material">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
-        <rdfs:comment xml:lang="en">This class represent the material expressed in an artistic motif or image (referring to the element recognized in them)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Material</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/icon/ontology/NamedObject -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/NamedObject">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/IconographicalSubject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
     </owl:Class>
     
 
@@ -2010,7 +1757,7 @@ This link can be created automatically through inference thanks to the super pro
     <!-- https://w3id.org/icon/ontology/NaturalElement -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/NaturalElement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/PreiconographicalSubject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
     </owl:Class>
     
 
@@ -2018,7 +1765,7 @@ This link can be created automatically through inference thanks to the super pro
     <!-- https://w3id.org/icon/ontology/Personification -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/Personification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/IconographicalSubject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
     </owl:Class>
     
 
@@ -2026,7 +1773,7 @@ This link can be created automatically through inference thanks to the super pro
     <!-- https://w3id.org/icon/ontology/Place -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/Place">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/IconographicalSubject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
     </owl:Class>
     
 
@@ -2081,17 +1828,6 @@ This link can be created automatically through inference thanks to the super pro
     
 
 
-    <!-- https://w3id.org/icon/ontology/PreiconographicalSubject -->
-
-    <owl:Class rdf:about="https://w3id.org/icon/ontology/PreiconographicalSubject">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
-        <rdfs:comment xml:lang="en">This class is used to represent all the preiconographical subjects that can be recognized in an artistic motif</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Pre-iconographical Subject</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/icon/ontology/PureForm -->
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/PureForm">
@@ -2122,17 +1858,6 @@ This link can be created automatically through inference thanks to the super pro
                 <owl:onClass rdf:resource="https://w3id.org/icon/ontology/Artwork"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/icon/ontology/Role -->
-
-    <owl:Class rdf:about="https://w3id.org/icon/ontology/Role">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
-        <rdfs:comment xml:lang="en">This class represents the Role of an element recognized in an artistic motif or an image.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Role</rdfs:label>
     </owl:Class>
     
 
@@ -2171,7 +1896,7 @@ This link can be created automatically through inference thanks to the super pro
 
     <owl:Class rdf:about="https://w3id.org/icon/ontology/Symbol">
         <owl:equivalentClass rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ontology/IconographicalSubject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/context-description/Subject"/>
     </owl:Class>
     
 
@@ -2197,6 +1922,12 @@ This link can be created automatically through inference thanks to the super pro
     
 
 
+    <!-- https://www.w3id.org/simulation/ontology/Simulation -->
+
+    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulation"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2205,12 +1936,6 @@ This link can be created automatically through inference thanks to the super pro
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://erlangen-crm.org/current/E13_Attribute_Assignment -->
-
-    <owl:NamedIndividual rdf:about="http://erlangen-crm.org/current/E13_Attribute_Assignment"/>
     
 
 
@@ -2226,12 +1951,6 @@ This link can be created automatically through inference thanks to the super pro
     
 
 
-    <!-- http://erlangen-crm.org/current/E36_Visual_Item -->
-
-    <owl:NamedIndividual rdf:about="http://erlangen-crm.org/current/E36_Visual_Item"/>
-    
-
-
     <!-- http://erlangen-crm.org/current/E5_Event -->
 
     <owl:NamedIndividual rdf:about="http://erlangen-crm.org/current/E5_Event"/>
@@ -2241,30 +1960,6 @@ This link can be created automatically through inference thanks to the super pro
     <!-- http://erlangen-crm.org/current/E89_Propositional_Object -->
 
     <owl:NamedIndividual rdf:about="http://erlangen-crm.org/current/E89_Propositional_Object"/>
-    
-
-
-    <!-- http://erlangen-crm.org/current/E90_Symbolic_Object -->
-
-    <owl:NamedIndividual rdf:about="http://erlangen-crm.org/current/E90_Symbolic_Object"/>
-    
-
-
-    <!-- http://erlangen-crm.org/current/P106_is_composed_of -->
-
-    <owl:NamedIndividual rdf:about="http://erlangen-crm.org/current/P106_is_composed_of"/>
-    
-
-
-    <!-- http://erlangen-crm.org/current/P138_represents -->
-
-    <owl:NamedIndividual rdf:about="http://erlangen-crm.org/current/P138_represents"/>
-    
-
-
-    <!-- http://erlangen-crm.org/current/P141_assigned -->
-
-    <owl:NamedIndividual rdf:about="http://erlangen-crm.org/current/P141_assigned"/>
     
 
 
@@ -2444,22 +2139,6 @@ This link can be created automatically through inference thanks to the super pro
     
 
 
-    <!-- https://w3id.org/icon/ontology/associatedColor -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/associatedColor">
-        <skos:broadMatch rdf:resource="https://www.wikidata.org/wiki/Property:P462"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/icon/ontology/associatedMaterial -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/associatedMaterial">
-        <skos:broadMatch rdf:resource="https://www.wikidata.org/wiki/Property:P186"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/icon/ontology/hasCharacter -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/hasCharacter">
@@ -2548,14 +2227,6 @@ This link can be created automatically through inference thanks to the super pro
     
 
 
-    <!-- https://w3id.org/icon/ontology/quantity -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/quantity">
-        <skos:broadMatch rdf:resource="https://www.wikidata.org/wiki/Property:P1114"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/icon/ontology/recognizedArtisticMotif -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/icon/ontology/recognizedArtisticMotif">
@@ -2588,24 +2259,6 @@ This link can be created automatically through inference thanks to the super pro
     
 
 
-    <!-- https://www.wikidata.org/wiki/Property:P1114 -->
-
-    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Property:P1114"/>
-    
-
-
-    <!-- https://www.wikidata.org/wiki/Property:P186 -->
-
-    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Property:P186"/>
-    
-
-
-    <!-- https://www.wikidata.org/wiki/Property:P462 -->
-
-    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Property:P462"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2623,50 +2276,50 @@ This link can be created automatically through inference thanks to the super pro
         <rdfs:label xml:lang="en">Action (ICON)</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Allegory">
-        <rdfs:comment xml:lang="en">An Allegory is a cohese combination of images that represent either symbols of personifications. Allegories are recognized in the context of iconographical recognition; their recognition can be included in an Iconographical Description. This definition of Allegory has been taken from Panofsky&apos;s Studies in Iconology (1939). Nevertheless, also a story can have a symbolical meaning. In this case, it is suggested to associate a Story to the images describing its content, an allegory  to the images describing the story and the symbolical meaning associated to it. E.g.: the fall of Phaeton was generally considered as an allegory of the fate of every temerarius (Panofsky 1939, p. 218). Therefore, the image identifying Phaeton is linked both to the Allegory and to the Story.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Allegory</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">An Allegory is a cohese combination of images that represent either symbols of personifications. Allegories are recognized in the context of iconographical recognition; their recognition can be included in an Iconographical Description. This definition of Allegory has been taken from Panofsky&apos;s Studies in Iconology (1939). Nevertheless, also a story can have a symbolical meaning. In this case, it is suggested to associate a Story to the images describing its content, an allegory  to the images describing the story and the symbolical meaning associated to it. E.g.: the fall of Phaeton was generally considered as an allegory of the fate of every temerarius (Panofsky 1939, p. 218). Therefore, the image identifying Phaeton is linked both to the Allegory and to the Story.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/ArtisticMotif">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:comment xml:lang="en">An ArtisticMotif is the output of a Pre Iconographic Recognition. It is a N-ary relationship class linking the physical unique representation depicted in an artwork to the corresponding real world meaning recognized. Each artistic motif describes exactly one meaning among: Natural Element, Action, Expression Quality. Qualities (e.g. colors) can be expressed.
 The N-ary structure allow first of all to maintain the distinction between the particular representation belonging to the artwork considered and the general meaning of which the representation is an expression. Furthermore, it allows to carefully describe in detail what is represented in the visual representation, since it gives the chance to identify uniquely details of objects and iconographies.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Artistic Motif</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Artwork">
+        <rdfs:label xml:lang="en">Artwork</rdfs:label>
         <rdfs:comment xml:lang="en">The artwork is a visual representation that may be relevant from an iconographical or an iconological point of view, carried by a physical cultural object (dul:InformationRealization) usually created by a person.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Artwork</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Character">
         <rdfs:comment xml:lang="en">A Character is a real or imaginary being identifiable as a subject in the Iconographical Analysis (level 2 of interpretation)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Character</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Composition">
-        <rdfs:comment xml:lang="en">A Composition is a jointly of ArtisticMotif having a meaning. It can be recognized as corresponding to the same image at the second level or interpretation, or can explicit groupings of level 1 elements that the descriptor considers significant. Its is suggested to express the level 1 elements involved every time that there is an action (e.g. the action &quot;lifting&quot; in the context of &quot;man lifting a woman&quot; should be grouped in a composition including the artistic motifs corresponding respectively to &quot;man&quot;, &quot;woman, &quot;lifting&quot;)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">A Composition is a jointly of ArtisticMotif having a meaning. It can be recognized as corresponding to the same image at the second level or interpretation, or can explicit groupings of level 1 elements that the descriptor considers significant. Its is suggested to express the level 1 elements involved every time that there is an action (e.g. the action &quot;lifting&quot; in the context of &quot;man lifting a woman&quot; should be grouped in a composition including the artistic motifs corresponding respectively to &quot;man&quot;, &quot;woman, &quot;lifting&quot;)</rdfs:comment>
         <rdfs:label xml:lang="en">Composition</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Event">
-        <rdfs:comment xml:lang="en">An Event is an action that is depicted as subject by an artwork. It differs from the first level Action since it requires deeper interpretation to be identified. For example, the act of hurling the Trident (Action) held by Neptune in some iconographies is interpreted as the act of calming the storm (Event) provoked by Juno in Virgil&apos;s Aeneid book 1. Furthermore, an Event is linked to a icon:Image, and not to a icon:Artistic Motif. This class includes also events having a proper identity, such as historical events (e.g. the Battle of Cascina).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">An Event is an action that is depicted as subject by an artwork. It differs from the first level Action since it requires deeper interpretation to be identified. For example, the act of hurling the Trident (Action) held by Neptune in some iconographies is interpreted as the act of calming the storm (Event) provoked by Juno in Virgil&apos;s Aeneid book 1. Furthermore, an Event is linked to a icon:Image, and not to a icon:Artistic Motif. This class includes also events having a proper identity, such as historical events (e.g. the Battle of Cascina).</rdfs:comment>
         <rdfs:label xml:lang="en">Event</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/ExpressionalQuality">
-        <rdfs:comment xml:lang="en">An Expression Quality corresponds to the &quot;expressional subject matter&quot; described by Panofsky (1939), which belongs, along with the factual ones, to the Primary or natural subject matter of a work of art. Indeed, it individuates, by way of example, emotions, an atmosphere, the character of a person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Expressional Quality</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">An Expression Quality corresponds to the &quot;expressional subject matter&quot; described by Panofsky (1939), which belongs, along with the factual ones, to the Primary or natural subject matter of a work of art. Indeed, it individuates, by way of example, emotions, an atmosphere, the character of a person.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Image">
-        <rdfs:comment xml:lang="en">Image is a reification class linking the identified second level subject (namely: Characters, Events, Places, Named Objects, Symbols and Personifications) to the specific interpretation that recognizes it. It represents the subject depicted as a manifestation in the specific artwork taken into account, in contrast to the second level subjects cited and Invenzione, identifying iconographies from an abstract and general point of view. This distinction between the general subject level and the artwork-specific one is functional to identify the variants of a subject in relation to the specific context.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Image</rdfs:label>
+        <rdfs:comment xml:lang="en">Image is a reification class linking the identified second level subject (namely: Characters, Events, Places, Named Objects, Symbols and Personifications) to the specific interpretation that recognizes it. It represents the subject depicted as a manifestation in the specific artwork taken into account, in contrast to the second level subjects cited and Invenzione, identifying iconographies from an abstract and general point of view. This distinction between the general subject level and the artwork-specific one is functional to identify the variants of a subject in relation to the specific context.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/InterpretationDescription">
         <rdfs:comment xml:lang="en">The Interpretation Description is a class collecting all the triples describing each recognition in each level that shares a unique interpretative perspective. For example, it allows to collect claims agreeing each other or to describe the situation in which an art historian attributes to other art historians some details of the general interpretation he claims. Recognitions in disagree with each other should be documented in different descriptions. For example, the interpretation made in 1699 recognising Regnaudin&apos;s statuette as depicting &quot;Time carrying off the Truth&quot; is listed in a different description form the interpretation recognising &quot;The rape of Cybele&quot; as its subject (Wittkower).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Interpretation Description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/IntrinsicMeaning">
         <rdfs:comment xml:lang="en">N-ary relatioship class linking the identified cultural phenomenon or deeper meaning to the whole artwork or to the specific part of its representation and to the interpretation that identifies it. From a theoretical point of view, it corresponds to the manifestation in the specific artwork of the concepts and cultural phenomena identified by the iconological analysis. The terminology is taken from Panofsky (1939, 1955).</rdfs:comment>
@@ -2679,89 +2332,79 @@ The N-ary structure allow first of all to maintain the distinction between the p
         <rdfs:label xml:lang="en">Invenzione</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/NamedObject">
-        <rdfs:comment xml:lang="en">A named object is a non-living unique element that is often used as an attribute for the recognition of specific characters or as the individuals of a more general concept class. (e.g. Bible for the Book class)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">A named object is a non-living unique element that is often used as an attribute for the recognition of specific characters or as the individuals of a more general concept class. (e.g. Bible for the Book class)</rdfs:comment>
         <rdfs:label xml:lang="en">Named Object</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/NaturalElement">
         <rdfs:comment xml:lang="en">Comprises objects, human beings, natural elements that can be experienced. They are recognized at the first level of interpretation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Natural Element</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Personification">
-        <rdfs:comment xml:lang="en">A representation of a concept through a human figure</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Personification (ICON)</rdfs:label>
+        <rdfs:comment xml:lang="en">A representation of a concept through a human figure</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Place">
         <rdfs:comment xml:lang="en">An identified setting, e.g. the city of Bologna, which is recognized as a Level 2 subject. The recognition of a generic city is formally represented by the Natural Element class (level 1).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Place (ICON)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Recognition">
         <rdfs:comment xml:lang="en">A recognition, in the context of this ontology, is an interpretation act made by an agent (biological or electronic being) that links works of arts to something related to their content. More specific recognitions are available as subclasses for specific types of recognition according to the level of interpretation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Recognition</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Story">
-        <rdfs:comment xml:lang="en">A story is a cohese combination of images that represent narrative elements such as Characters, Places, Events, Named Objects. The recognition of a story happens in the context of an Iconographical Recognition, and it is included in an Iconographical Description. As the super class Invenzione, it concerns the word of the subject matter. It is not necessary to have multiple images to compose a story.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Story</rdfs:label>
+        <rdfs:comment xml:lang="en">A story is a cohese combination of images that represent narrative elements such as Characters, Places, Events, Named Objects. The recognition of a story happens in the context of an Iconographical Recognition, and it is included in an Iconographical Description. As the super class Invenzione, it concerns the word of the subject matter. It is not necessary to have multiple images to compose a story.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/Symbol">
-        <rdfs:comment xml:lang="en">A Symbol is the class representing the unity of a symbol and its symbolic meaning that can be expressed by an Image. The represented object (Simulacrum) and the symbolical meaning expressed (Reality Counterpart) along with the type of relation linking them if further represented by the Simulation Ontology.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Symbol</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/icon/ontology/associatedColor">
-        <rdfs:comment xml:lang="en">This property is used to link an artistic motif or an image to one of the (recognized) colors of the elements recognized in those artistic motifs or images. For instance, expressing &quot;red&quot; in  the artistic motif representing a scarf in a work or art.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">associated Color</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/icon/ontology/associatedMaterial">
-        <rdfs:comment xml:lang="en">This property is used to link an artistic motif or an image to one of the (recognized) materials of the element that are recognized in those artistic motifs or images. For instance, expressing that the artistic motif representing a crown in a portrait denotes also that the crown is made of bronze. Or that the image of the Thor&apos;s Hammer is denoting that the hammer is made of steel.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">associated Material</rdfs:label>
+        <rdfs:comment xml:lang="en">A Symbol is the class representing the unity of a symbol and its symbolic meaning that can be expressed by an Image. The represented object (Simulacrum) and the symbolical meaning expressed (Reality Counterpart) along with the type of relation linking them if further represented by the Simulation Ontology.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasCharacter">
-        <rdfs:comment xml:lang="en">This relation links an image to the Character depicted</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Character</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">This relation links an image to the Character depicted</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasCopiedMotif">
-        <rdfs:comment xml:lang="en">This relation associates to the act of Formal Motif Recognition the Artistic Motif representing the copied visual pattern. To be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Copied Motif</rdfs:label>
+        <rdfs:comment xml:lang="en">This relation associates to the act of Formal Motif Recognition the Artistic Motif representing the copied visual pattern. To be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasEvent">
-        <rdfs:comment xml:lang="en">This relation links an image to the Event depicted</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">This relation links an image to the Event depicted</rdfs:comment>
         <rdfs:label xml:lang="en">Has Event</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasExpressionalMeaning">
+        <rdfs:label xml:lang="en">Has Expressional Meaning</rdfs:label>
         <rdfs:comment>This relation links the Expressional Meaning recognized to the Artistic Motif</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Has Expressional Meaning</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasFactualMeaning">
-        <rdfs:comment>This relation links the Factual Meaning recognized (Actions or Natural Elements) to the Artistic Motif</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment>This relation links the Factual Meaning recognized (Actions or Natural Elements) to the Artistic Motif</rdfs:comment>
         <rdfs:label xml:lang="en">Has Factual Meaning</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasNamedObject">
-        <rdfs:comment xml:lang="en">This relation links an image to the Named Object depicted</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Named Object</rdfs:label>
+        <rdfs:comment xml:lang="en">This relation links an image to the Named Object depicted</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPart">
         <rdfs:comment xml:lang="en">This relation links a Composition to the Artistic Motifs of which it consists.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Part (ICON)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPersonification">
         <rdfs:comment xml:lang="en">This relation links an image to the Personification depicted</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Personification</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPlace">
         <rdfs:comment xml:lang="en">This relation links an image to the Place depicted</rdfs:comment>
@@ -2770,32 +2413,27 @@ The N-ary structure allow first of all to maintain the distinction between the p
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasPrototypicalMotif">
         <rdfs:comment xml:lang="en">This relation associates to the act of the Recognition of a formal motif to the artistic motif from which the visual pattern derives. It should be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Has Prototypical Motif</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/hasSymbol">
+        <rdfs:label xml:lang="en">Has Symbol</rdfs:label>
         <rdfs:comment xml:lang="en">This relation links an image to the Symbol depicted</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:label xml:lang="en">Has Symbol</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/icon/ontology/quantity">
-        <rdfs:comment rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
-        <rdfs:comment xml:lang="en">This data property expresses the number or elements represented in an artistic motif, especially when the recognition of each element is not needed</rdfs:comment>
-        <rdfs:label xml:lang="en">Quantity</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedArtisticMotif">
-        <rdfs:comment xml:lang="en">This relation associates the Artistic Motif to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Recognized Artistic Motif</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">This relation associates the Artistic Motif to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedComposition">
-        <rdfs:comment xml:lang="en">This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
         <rdfs:label xml:lang="en">Recognized Composition</rdfs:label>
+        <rdfs:comment xml:lang="en">This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedImage">
-        <rdfs:comment xml:lang="en">This relation associates the Image to the Iconographical Recognition that recognizes it at the second level of interpretation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/ontology/ICONOntology"/>
+        <rdfs:comment xml:lang="en">This relation associates the Image to the Iconographical Recognition that recognizes it at the second level of interpretation.</rdfs:comment>
         <rdfs:label xml:lang="en">Recognized Image</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/icon/ontology/recognizedInvenzione">
@@ -2807,5 +2445,5 @@ The N-ary structure allow first of all to maintain the distinction between the p
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

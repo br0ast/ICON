@@ -49,12 +49,12 @@ function loadTOC(){
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
-      $("#abstract").load("C:\Users\Bruno\Documents\GitHub\ICON\ICONOntologyDocumentation\sections\abstract-en.html"); 
-      $("#introduction").load("C:\Users\Bruno\Documents\GitHub\ICON\ICONOntologyDocumentation\sections\introduction-en.html"); 
+      $("#abstract").load("sections\abstract-en.html"); 
+      $("#introduction").load("introduction-en.html"); 
       $("#nstable").load("sections/ns-en.html"); 
-      $("#overview").load("C:\Users\Bruno\Documents\GitHub\ICON\ICONOntologyDocumentation\sections\overview-en.html"); 
-      $("#description").load("C:\Users\Bruno\Documents\GitHub\ICON\ICONOntologyDocumentation\sections\description-en.html"); 
-      $("#references").load("C:\Users\Bruno\Documents\GitHub\ICON\ICONOntologyDocumentation\sections\references-en.html"); 
+      $("#overview").load("sections\overview-en.html"); 
+      $("#description").load("sections\description-en.html"); 
+      $("#references").load("sections\references-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
     </script> 

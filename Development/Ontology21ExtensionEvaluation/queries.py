@@ -18,10 +18,24 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 prefix icon: <https://w3id.org/icon/ontology/>
 
-select distinct ?desc (group_concat(distinct ?pLabel; separator=", ") as ?per) where {
+select distinct ?desc (group_concat(distinct ?p; separator=", ") as ?per) where {
 
     ?desc icon:hasResponsibleAgent ?p.
+    
+} GROUP BY ?desc 
+ """
+
+
+person_interpr_2_1 = """ 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+prefix icon: <https://w3id.org/icon/ontology/>
+
+select distinct ?desc (group_concat(distinct ?pLabel; separator=", ") as ?per) where {
+
+    ?desc ?resp ?p.
     ?p rdfs:label ?pLabel.
+    ?resp rdfs:subPropertyOf* icon:hasResponsibleAgent. 
 } GROUP BY ?desc 
  """
 
@@ -129,6 +143,99 @@ select distinct ?img ?sub2 ?role where {
     ?img ?rel ?sub2.
 }
 """
+
+attributes_2_1 = """
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX icon: <https://w3id.org/icon/ontology/>
+
+select distinct ?art ?iconography ?attribute where {
+  
+         
+  ?rec icon:aboutWorkOfArt ?art;
+       icon:recognizedImage ?img. 
+  ?img icon:hasRecAttribute ?am.  
+  
+
+  ?img ?ic_subj ?iconography.
+  ?ic_subj rdfs:subPropertyOf* icon:hasIconographicalSubject.
+
+  ?am ?preic_subj ?attribute.
+   ?preic_subj rdfs:subPropertyOf* icon:hasPreiconographicalSubject.
+
+
+}
+
+"""
+
+qual_2_1 = """
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX icon: <https://w3id.org/icon/ontology/>
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
+
+select distinct ?art ?subj ?qual where {
+  
+         
+  ?rec icon:aboutWorkOfArt ?art;
+       icon:recognizedArtisticMotif ?am. 
+
+  ?am ?preic_subj ?subj; 
+      ?quality ?qual. 
+   ?preic_subj rdfs:subPropertyOf* icon:hasPreiconographicalSubject.
+   ?quality rdfs:subPropertyOf* dul:hasQuality. 
+
+
+}
+
+"""
+
+
+
+lev3_2_1 = """
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX icon: <https://w3id.org/icon/ontology/>
+
+select distinct ?art ?subj ?obj where {
+
+         
+  ?rec icon:aboutWorkOfArt ?art;
+       icon:recognizedIntrinsicMeaning ?intr. 
+  ?intr ?iconol_subj ?subj. 
+  ?intr icon:hasArtisticMotif | icon:hasImage | icon:hasInvenzione ?support. 
+  ?support ?lev ?obj. 
+  
+  ?iconol_subj rdfs:subPropertyOf* icon:hasIconologicalSubject.
+  {?lev rdfs:subPropertyOf* icon:hasIconographicalSubject} UNION 
+  {?lev rdfs:subPropertyOf* icon:hasPreiconographicalSubject} UNION
+  {?lev rdfs:subPropertyOf* icon:hasIconologicalSubject}
+
+}
+
+"""
+
+
+
+source_2_1 = """
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX icon: <https://w3id.org/icon/ontology/>
+
+select distinct ?art ?evid ?obj where {
+
+         
+  ?rec icon:aboutWorkOfArt ?art;
+      cito:citesAsEvidence ?evid.
+   ?rec  icon:recognizedArtisticMotif | icon:recognizedImage | icon:recognizedIntrinsicMeaning  ?manifested. 
+  ?manifested ?lev ?obj. 
+  
+  {?lev rdfs:subPropertyOf* icon:hasIconographicalSubject} UNION 
+  {?lev rdfs:subPropertyOf* icon:hasPreiconographicalSubject} UNION
+  {?lev rdfs:subPropertyOf* icon:hasIconologicalSubject}
+
+}
+
+"""
+
 
 
 

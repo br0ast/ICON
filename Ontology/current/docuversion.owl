@@ -1,0 +1,3006 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/icon/ontology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/icon/ontology/"
+     versionIRI="https://w3id.org/icon/ontology/2.2.0/">
+    <Prefix name="" IRI="https://w3id.org/icon/ontology/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="crm" IRI="http://erlangen-crm.org/current/"/>
+    <Prefix name="dct" IRI="https://www.w3.org/1999/xhtml/vocab#dct:"/>
+    <Prefix name="dul" IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="icon" IRI="https://w3id.org/icon/ontology/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="2.1.0" IRI="https://w3id.org/icon/ontology/2.1.0/"/>
+    <Prefix name="vocab" IRI="https://www.w3.org/1999/xhtml/vocab#"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="cpannotationschema" IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"/>
+    <Import>http://erlangen-crm.org/current/</Import>
+    <Import>http://purl.org/emmedi/hico/2020-03-31</Import>
+    <Import>http://www.ontologydesignpatterns.org/ont/dul/DUL.owl</Import>
+    <Import>http://www.w3.org/2004/02/skos/core</Import>
+    <Import>https://www.w3id.org/simulation/ontology/</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="en">Aldo Gangemi (Until version 1.1)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="en">Marieke van Erp (Until version 1.1)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Bruno Sartini</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Sofia Baroncini</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:bibliographicCitation"/>
+        <Literal xml:lang="en">Bruno Sartini, Sofia Baroncini, Marieke van Erp, Francesca Tomasi, and Aldo Gangemi. 2023. ICON: An Ontology for Comprehensive Artistic Interpretations. J. Comput. Cult. Herit. 16, 3, Article 59 (September 2023), 38 pages. https://doi.org/10.1145/3594724</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+        <Literal xml:lang="en">April 12th, 2022</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
+        <Literal xml:lang="en">April 12th, 2022</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <Literal xml:lang="en">https://creativecommons.org/licenses/by/4.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+        <Literal xml:lang="en">Bruno Sartini</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:source"/>
+        <Literal xml:lang="en">The top down development of this ontology followed these sources:
+
+Erwin Panofsky. 1972. Studies in iconology: humanistic themes in the art of the Renaissance. Westview Press, Boulder, Colo. OCLC: 1151325340.
+
+Max Imdahl. 2012. Iconica. L’intuizione delle immagini. Aisthesis. Pratiche, linguaggi e saperi dell’estetico (2012).
+
+Roelof van Straten. 2012. An introduction to iconography (2 ed.). Routledge, London, England.
+
+Its development followed these methodologies:
+
+Silvio Peroni. 2016. A Simplified Agile Methodology for Ontology Development.. In Proceedings of the 13th OWL: Experiences and
+Directions Workshop and 5th OWL reasoner evaluation workshop (OWLED-ORE 2016). Springer, Cham, Switzerland, 55–69. https://doi.org/10.6084/M9.FIGSHARE.3189769.V2
+
+Valentina Presutti, Enrico Daga, Aldo Gangemi, and Eva Blomqvist. 2009. EXtreme Design with Content Ontology Design Patterns. In
+Proceedings of the 2009 International Conference on Ontology Patterns - Volume 516 (Washington DC) (WOP’09). CEUR-WS.org, Aachen,
+DEU, 83–97.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">ICON Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal xml:lang="en">icon</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal xml:lang="en">https://w3id.org/icon/ontology/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">The ICON ontology deals with high granularity art interpretation. It was developed by conceptualizing Panofsky&apos;s theory of levels of interpretation, therefore artworks can be described according to Pre-iconographical, Iconographical and Iconological information.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:backwardCompatibleWith"/>
+        <Literal xml:lang="en">2.1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
+        <Literal xml:lang="en">2.1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">2.2.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="ns:status"/>
+        <Literal xml:lang="en">work in progress</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="skos:changeNote"/>
+        <Literal xml:lang="en">**Version 2.2.0 Changelog**
+
+Introduction of two new properties:
+
+visually Represents
+recognized Visual Subject
+
+Refer to the classes and properties in protege or in the documentation for more explanations on them</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="crm:E28_Conceptual_Object"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="crm:E53_Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://iflastandards.info/ns/fr/frbr/frbroo/F38"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/emmedi/hico/InterpretationAct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://w3id.org/vir#IC11_Personification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://w3id.org/vir#IC1_Iconographical_Atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/arco/ontology/arco/HistoricOrArtisticProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Allegory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ArtGenre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ArtisticMotif"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Artwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Attitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Belief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Composition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CompositionalStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CulturalPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CulturalValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExpressionalQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FormalMotifRecognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IconographicalDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IconographicalRecognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IconographicalSubject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IconographicalSynthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IconologicalRecognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IconologicalSubject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="InterpretationDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IntrinsicMeaning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Invenzione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NamedObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NaturalElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Personification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PreiconographicalDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PreiconographicalRecognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PreiconographicalSubject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PureForm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Story"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Symbol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tendency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="VisualSubject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3id.org/simulation/ontology/Simulation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://erlangen-crm.org/231027/P14_carried_out_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="crm:P138_represents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="crm:P140_assigned_attribute_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="crm:P141_assigned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="crm:P70_documents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/spar/cito/citesAsEvidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/spar/cito/citesForInformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/spar/cito/givesSupportTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://w3id.org/vir#K4_is_visual_prototype_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="aboutWorkOfArt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="associatedColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="associatedForm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="associatedMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="composedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasArtisticMotif"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCharacter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasComposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCompositionalStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCopiedMotif"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasExpressionalMeaning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFactualMeaning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasIconographicalSubject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasIconologicalSubject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasImage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInvenzione"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasNamedObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPersonification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPreiconographicalSubject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPrototypicalMotif"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRecAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRecognition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasResponsibleAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSymbol"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="iconographicallyCompliesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="iconographicallyDepicts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="iconologicallyCompliesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="iconologicallyRepresents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isArtisticMotifOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCharacterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCompliantWithIconographicalRecognition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCompliantWithIconologicalRecognition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCompliantWithPreiconographicalRecognition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCompositionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCompositionalStructureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCopiedMotifOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCulturalPhenomenonOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isEventOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isExpressionalMeaningOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isFactualMeaningOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isIconographicallyRecognizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isIconographicallyReferredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isImageOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isIntrinsicMeaningOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isInvenzioneOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isNamedObjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPersonificationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPlaceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPrototypicalMotifOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPureFormOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRecAttributeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRecognOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRecognizedArtisticMotifOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRecognizedCompositionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRecognizedConceptOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSymbolOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="partOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="preiconographicallyCompliesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="preiconographicallyDepicts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizedArtisticMotif"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizedComposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizedConcept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizedCulturalPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizedGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizedImage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizedIntrinsicMeaning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizedInvenzione"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizedVisualSubject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="refersToArtisticMotif"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="takesPartIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="visuallyRepresents"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="quantity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="regionDescription"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="xsd:citation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns:status"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="Symbol"/>
+        <Class IRI="https://www.w3id.org/simulation/ontology/Simulation"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://iflastandards.info/ns/fr/frbr/frbroo/F38"/>
+        <Class abbreviatedIRI="crm:E28_Conceptual_Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dul:SocialObject"/>
+        <Class IRI="IconologicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Action"/>
+        <Class abbreviatedIRI="dul:Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Action"/>
+        <Class IRI="PreiconographicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Allegory"/>
+        <Class IRI="Invenzione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Allegory"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="composedOf"/>
+                <Class IRI="Personification"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="composedOf"/>
+                <Class IRI="Symbol"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArtisticMotif"/>
+        <Class IRI="VisualSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArtisticMotif"/>
+        <ObjectUnionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="hasExpressionalMeaning"/>
+                <Class IRI="ExpressionalQuality"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="hasFactualMeaning"/>
+                <ObjectUnionOf>
+                    <Class IRI="Action"/>
+                    <Class IRI="NaturalElement"/>
+                </ObjectUnionOf>
+            </ObjectMinCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArtisticMotif"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="isRecognizedArtisticMotifOf"/>
+            <Class IRI="PreiconographicalRecognition"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Artwork"/>
+        <Class abbreviatedIRI="dul:InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Attitude"/>
+        <Class IRI="CulturalPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Belief"/>
+        <Class IRI="CulturalPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Character"/>
+        <Class IRI="IconographicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Color"/>
+        <Class abbreviatedIRI="dul:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Composition"/>
+        <Class IRI="VisualSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Composition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="dul:hasPart"/>
+            <Class IRI="ArtisticMotif"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Composition"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="isRecognizedCompositionOf"/>
+            <Class IRI="PreiconographicalRecognition"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CulturalPhenomenon"/>
+        <Class IRI="IconologicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CulturalValue"/>
+        <Class IRI="CulturalPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Event"/>
+        <Class IRI="IconographicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ExpressionalQuality"/>
+        <Class abbreviatedIRI="dul:SocialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ExpressionalQuality"/>
+        <Class IRI="PreiconographicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FormalMotifRecognition"/>
+        <Class IRI="Recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FormalMotifRecognition"/>
+        <ObjectUnionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasCopiedMotif"/>
+                <Class IRI="ArtisticMotif"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasCopiedMotif"/>
+                <Class IRI="Composition"/>
+            </ObjectExactCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FormalMotifRecognition"/>
+        <ObjectUnionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPrototypicalMotif"/>
+                <Class IRI="ArtisticMotif"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPrototypicalMotif"/>
+                <Class IRI="Composition"/>
+            </ObjectExactCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IconographicalDescription"/>
+        <Class IRI="InterpretationDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IconographicalDescription"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="crm:P70_documents"/>
+            <Class IRI="IconographicalRecognition"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IconographicalRecognition"/>
+        <Class IRI="Recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IconographicalRecognition"/>
+        <ObjectUnionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="recognizedImage"/>
+                <Class IRI="Image"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="recognizedInvenzione"/>
+                <Class IRI="Invenzione"/>
+            </ObjectExactCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IconographicalSubject"/>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IconographicalSynthesis"/>
+        <Class IRI="InterpretationDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IconographicalSynthesis"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="crm:P70_documents"/>
+            <Class IRI="IconologicalRecognition"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IconologicalRecognition"/>
+        <Class IRI="Recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IconologicalRecognition"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="recognizedIntrinsicMeaning"/>
+            <Class IRI="IntrinsicMeaning"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IconologicalSubject"/>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Image"/>
+        <Class IRI="VisualSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Image"/>
+        <ObjectUnionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="hasCharacter"/>
+                <Class IRI="Character"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="hasEvent"/>
+                <Class IRI="Event"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="hasNamedObject"/>
+                <Class IRI="NamedObject"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="hasPersonification"/>
+                <Class IRI="Personification"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="hasPlace"/>
+                <Class IRI="Place"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="hasSymbol"/>
+                <ObjectUnionOf>
+                    <Class IRI="Symbol"/>
+                    <Class IRI="https://www.w3id.org/simulation/ontology/Simulation"/>
+                </ObjectUnionOf>
+            </ObjectMinCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Image"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="isIconographicallyRecognizedBy"/>
+            <Class IRI="IconographicalRecognition"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InterpretationDescription"/>
+        <Class abbreviatedIRI="dul:Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InterpretationDescription"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isCompliantWithIconographicalRecognition"/>
+            <Class IRI="IconographicalRecognition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InterpretationDescription"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isCompliantWithIconologicalRecognition"/>
+            <Class IRI="IconologicalRecognition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InterpretationDescription"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isCompliantWithPreiconographicalRecognition"/>
+            <ObjectUnionOf>
+                <Class IRI="FormalMotifRecognition"/>
+                <Class IRI="PreiconographicalRecognition"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IntrinsicMeaning"/>
+        <Class IRI="VisualSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IntrinsicMeaning"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="recognizedConcept"/>
+                    <Class abbreviatedIRI="dul:SocialObject"/>
+                </ObjectExactCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="recognizedCulturalPhenomenon"/>
+                    <Class IRI="CulturalPhenomenon"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="recognizedConcept"/>
+                    <Class abbreviatedIRI="dul:SocialObject"/>
+                </ObjectExactCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="recognizedCulturalPhenomenon"/>
+                    <Class IRI="CulturalPhenomenon"/>
+                </ObjectExactCardinality>
+            </ObjectUnionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IntrinsicMeaning"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="isIntrinsicMeaningOf"/>
+            <Class IRI="IconologicalRecognition"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Invenzione"/>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Material"/>
+        <Class abbreviatedIRI="dul:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NamedObject"/>
+        <Class IRI="IconographicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NaturalElement"/>
+        <Class IRI="PreiconographicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Personification"/>
+        <Class IRI="IconographicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Place"/>
+        <Class IRI="IconographicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PreiconographicalDescription"/>
+        <Class IRI="InterpretationDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PreiconographicalDescription"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="crm:P70_documents"/>
+            <ObjectUnionOf>
+                <Class IRI="FormalMotifRecognition"/>
+                <Class IRI="PreiconographicalRecognition"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PreiconographicalRecognition"/>
+        <Class IRI="Recognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PreiconographicalRecognition"/>
+        <ObjectUnionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="recognizedArtisticMotif"/>
+                <Class IRI="ArtisticMotif"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="recognizedComposition"/>
+                <Class IRI="Composition"/>
+            </ObjectExactCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PreiconographicalSubject"/>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Recognition"/>
+        <Class IRI="http://purl.org/emmedi/hico/InterpretationAct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Recognition"/>
+        <Class abbreviatedIRI="dul:Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Recognition"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="dul:includesAgent"/>
+            <Class abbreviatedIRI="dul:Agent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Recognition"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="aboutWorkOfArt"/>
+            <Class IRI="Artwork"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Role"/>
+        <Class abbreviatedIRI="dul:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Story"/>
+        <Class IRI="Invenzione"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Story"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="composedOf"/>
+                <Class abbreviatedIRI="dul:Place"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="composedOf"/>
+                <Class IRI="Character"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="composedOf"/>
+                <Class IRI="Event"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="composedOf"/>
+                <Class IRI="NamedObject"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Symbol"/>
+        <Class IRI="IconographicalSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Tendency"/>
+        <Class IRI="CulturalPhenomenon"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/Subject"/>
+        <Class IRI="VisualSubject"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="associatedColor"/>
+        <ObjectProperty abbreviatedIRI="dul:hasQuality"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="associatedForm"/>
+        <ObjectProperty abbreviatedIRI="crm:P140_assigned_attribute_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="associatedMaterial"/>
+        <ObjectProperty abbreviatedIRI="dul:hasQuality"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCharacter"/>
+        <ObjectProperty IRI="hasIconographicalSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasEvent"/>
+        <ObjectProperty IRI="hasIconographicalSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasExpressionalMeaning"/>
+        <ObjectProperty IRI="hasPreiconographicalSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFactualMeaning"/>
+        <ObjectProperty IRI="hasPreiconographicalSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasIconographicalSubject"/>
+        <ObjectProperty IRI="visuallyRepresents"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasIconologicalSubject"/>
+        <ObjectProperty IRI="visuallyRepresents"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasNamedObject"/>
+        <ObjectProperty IRI="hasIconographicalSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPart"/>
+        <ObjectProperty abbreviatedIRI="dul:hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPersonification"/>
+        <ObjectProperty IRI="hasIconographicalSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPlace"/>
+        <ObjectProperty IRI="hasIconographicalSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPreiconographicalSubject"/>
+        <ObjectProperty IRI="visuallyRepresents"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSymbol"/>
+        <ObjectProperty IRI="hasIconographicalSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="iconographicallyCompliesWith"/>
+        <ObjectProperty abbreviatedIRI="dul:satisfies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="iconologicallyCompliesWith"/>
+        <ObjectProperty abbreviatedIRI="dul:satisfies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isCompliantWithIconographicalRecognition"/>
+        <ObjectProperty abbreviatedIRI="dul:isSatisfiedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isCompliantWithIconologicalRecognition"/>
+        <ObjectProperty abbreviatedIRI="dul:isSatisfiedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isCompliantWithPreiconographicalRecognition"/>
+        <ObjectProperty abbreviatedIRI="dul:isSatisfiedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="partOf"/>
+        <ObjectProperty abbreviatedIRI="dul:isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="preiconographicallyCompliesWith"/>
+        <ObjectProperty abbreviatedIRI="dul:satisfies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recognizedArtisticMotif"/>
+        <ObjectProperty IRI="recognizedVisualSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recognizedComposition"/>
+        <ObjectProperty IRI="recognizedVisualSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recognizedConcept"/>
+        <ObjectProperty IRI="hasIconologicalSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recognizedCulturalPhenomenon"/>
+        <ObjectProperty IRI="hasIconologicalSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recognizedGenre"/>
+        <ObjectProperty abbreviatedIRI="crm:P141_assigned"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recognizedImage"/>
+        <ObjectProperty IRI="recognizedVisualSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recognizedIntrinsicMeaning"/>
+        <ObjectProperty IRI="recognizedVisualSubject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recognizedInvenzione"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="refersToArtisticMotif"/>
+        <ObjectProperty abbreviatedIRI="crm:P140_assigned_attribute_to"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="aboutWorkOfArt"/>
+        <ObjectProperty IRI="hasRecognition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="associatedForm"/>
+        <ObjectProperty IRI="isPureFormOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="composedOf"/>
+        <ObjectProperty IRI="takesPartIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasArtisticMotif"/>
+        <ObjectProperty IRI="isArtisticMotifOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasCharacter"/>
+        <ObjectProperty IRI="isCharacterOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasComposition"/>
+        <ObjectProperty IRI="isCompositionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasCompositionalStructure"/>
+        <ObjectProperty IRI="isCompositionalStructureOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasCopiedMotif"/>
+        <ObjectProperty IRI="isCopiedMotifOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasEvent"/>
+        <ObjectProperty IRI="isEventOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasExpressionalMeaning"/>
+        <ObjectProperty IRI="isExpressionalMeaningOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasFactualMeaning"/>
+        <ObjectProperty IRI="isFactualMeaningOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasImage"/>
+        <ObjectProperty IRI="isImageOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasInvenzione"/>
+        <ObjectProperty IRI="isInvenzioneOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasNamedObject"/>
+        <ObjectProperty IRI="isNamedObjectOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPart"/>
+        <ObjectProperty IRI="partOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPersonification"/>
+        <ObjectProperty IRI="isPersonificationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPlace"/>
+        <ObjectProperty IRI="isPlaceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPrototypicalMotif"/>
+        <ObjectProperty IRI="isPrototypicalMotifOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasRecAttribute"/>
+        <ObjectProperty IRI="isRecAttributeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasSymbol"/>
+        <ObjectProperty IRI="isSymbolOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="iconographicallyCompliesWith"/>
+        <ObjectProperty IRI="isCompliantWithIconographicalRecognition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="iconologicallyCompliesWith"/>
+        <ObjectProperty IRI="isCompliantWithIconologicalRecognition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isCompliantWithPreiconographicalRecognition"/>
+        <ObjectProperty IRI="preiconographicallyCompliesWith"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isCulturalPhenomenonOf"/>
+        <ObjectProperty IRI="recognizedCulturalPhenomenon"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isIconographicallyRecognizedBy"/>
+        <ObjectProperty IRI="recognizedImage"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isIconographicallyReferredBy"/>
+        <ObjectProperty IRI="refersToArtisticMotif"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isIntrinsicMeaningOf"/>
+        <ObjectProperty IRI="recognizedIntrinsicMeaning"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isRecognOf"/>
+        <ObjectProperty IRI="recognizedInvenzione"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isRecognizedArtisticMotifOf"/>
+        <ObjectProperty IRI="recognizedArtisticMotif"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isRecognizedCompositionOf"/>
+        <ObjectProperty IRI="recognizedComposition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isRecognizedConceptOf"/>
+        <ObjectProperty IRI="recognizedConcept"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="isArtisticMotifOf"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/spar/cito/citesAsEvidence"/>
+        <Class IRI="Recognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/spar/cito/citesForInformation"/>
+        <Class IRI="Recognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/spar/cito/givesSupportTo"/>
+        <Class IRI="Recognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="aboutWorkOfArt"/>
+        <Class IRI="Recognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="associatedColor"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Image"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="associatedForm"/>
+        <Class IRI="PreiconographicalRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="associatedMaterial"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Image"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="composedOf"/>
+        <Class IRI="Invenzione"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasArtisticMotif"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCharacter"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasComposition"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCompositionalStructure"/>
+        <Class IRI="Composition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCopiedMotif"/>
+        <Class IRI="FormalMotifRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEvent"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasExpressionalMeaning"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFactualMeaning"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasIconographicalSubject"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasIconologicalSubject"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasImage"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasInvenzione"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasNamedObject"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPart"/>
+        <Class IRI="Composition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPersonification"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPlace"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPreiconographicalSubject"/>
+        <Class IRI="ArtisticMotif"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPrototypicalMotif"/>
+        <Class IRI="FormalMotifRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRecAttribute"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRecognition"/>
+        <Class IRI="Artwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRole"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Image"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSymbol"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="iconographicallyCompliesWith"/>
+        <Class IRI="IconographicalRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="iconologicallyCompliesWith"/>
+        <Class IRI="IconologicalRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isArtisticMotifOf"/>
+        <Class IRI="ArtisticMotif"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCharacterOf"/>
+        <Class IRI="Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCompliantWithIconographicalRecognition"/>
+        <Class IRI="InterpretationDescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCompliantWithIconologicalRecognition"/>
+        <Class IRI="InterpretationDescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCompliantWithPreiconographicalRecognition"/>
+        <Class IRI="InterpretationDescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCompositionOf"/>
+        <Class IRI="Composition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCompositionalStructureOf"/>
+        <Class IRI="CompositionalStructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCopiedMotifOf"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCulturalPhenomenonOf"/>
+        <Class IRI="CulturalPhenomenon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isEventOf"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isExpressionalMeaningOf"/>
+        <Class IRI="ExpressionalQuality"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isFactualMeaningOf"/>
+        <ObjectUnionOf>
+            <Class IRI="Action"/>
+            <Class IRI="NaturalElement"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isIconographicallyRecognizedBy"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isIconographicallyReferredBy"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isImageOf"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isIntrinsicMeaningOf"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isInvenzioneOf"/>
+        <Class IRI="Invenzione"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isNamedObjectOf"/>
+        <Class IRI="NamedObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPersonificationOf"/>
+        <Class IRI="Personification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPlaceOf"/>
+        <Class abbreviatedIRI="dul:Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPrototypicalMotifOf"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPureFormOf"/>
+        <Class IRI="PureForm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRecAttributeOf"/>
+        <Class IRI="ArtisticMotif"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRecognOf"/>
+        <Class IRI="Invenzione"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRecognizedArtisticMotifOf"/>
+        <Class IRI="ArtisticMotif"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRecognizedCompositionOf"/>
+        <Class IRI="Composition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRecognizedConceptOf"/>
+        <Class abbreviatedIRI="dul:SocialObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSymbolOf"/>
+        <ObjectUnionOf>
+            <Class IRI="Symbol"/>
+            <Class IRI="https://www.w3id.org/simulation/ontology/Simulation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="partOf"/>
+        <Class IRI="ArtisticMotif"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="preiconographicallyCompliesWith"/>
+        <ObjectUnionOf>
+            <Class IRI="FormalMotifRecognition"/>
+            <Class IRI="PreiconographicalRecognition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizedArtisticMotif"/>
+        <Class IRI="PreiconographicalRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizedComposition"/>
+        <Class IRI="PreiconographicalRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizedConcept"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizedCulturalPhenomenon"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizedGenre"/>
+        <Class IRI="Recognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizedImage"/>
+        <Class IRI="IconographicalRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizedIntrinsicMeaning"/>
+        <Class IRI="IconologicalRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizedInvenzione"/>
+        <Class IRI="IconographicalRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizedVisualSubject"/>
+        <Class IRI="Recognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="refersToArtisticMotif"/>
+        <Class IRI="IconographicalRecognition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="takesPartIn"/>
+        <ObjectUnionOf>
+            <Class IRI="Character"/>
+            <Class IRI="Event"/>
+            <Class IRI="NamedObject"/>
+            <Class IRI="Personification"/>
+            <Class IRI="Place"/>
+            <Class IRI="Symbol"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="visuallyRepresents"/>
+        <Class IRI="VisualSubject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/spar/cito/givesSupportTo"/>
+        <Class IRI="Recognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="aboutWorkOfArt"/>
+        <Class IRI="Artwork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="associatedColor"/>
+        <Class IRI="Color"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="associatedForm"/>
+        <Class IRI="PureForm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="associatedMaterial"/>
+        <Class IRI="Material"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="composedOf"/>
+        <ObjectUnionOf>
+            <Class IRI="Character"/>
+            <Class IRI="Event"/>
+            <Class IRI="NamedObject"/>
+            <Class IRI="Personification"/>
+            <Class IRI="Place"/>
+            <Class IRI="Symbol"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasArtisticMotif"/>
+        <Class IRI="ArtisticMotif"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCharacter"/>
+        <Class IRI="Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasComposition"/>
+        <Class IRI="Composition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCompositionalStructure"/>
+        <Class IRI="CompositionalStructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCopiedMotif"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEvent"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasExpressionalMeaning"/>
+        <Class IRI="ExpressionalQuality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFactualMeaning"/>
+        <ObjectUnionOf>
+            <Class IRI="Action"/>
+            <Class IRI="NaturalElement"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasIconographicalSubject"/>
+        <Class IRI="IconographicalSubject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasIconologicalSubject"/>
+        <Class IRI="IconologicalSubject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasImage"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasInvenzione"/>
+        <Class IRI="Invenzione"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasNamedObject"/>
+        <Class IRI="NamedObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPart"/>
+        <Class IRI="ArtisticMotif"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPersonification"/>
+        <Class IRI="Personification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPlace"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="crm:E53_Place"/>
+            <Class abbreviatedIRI="dul:Place"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPreiconographicalSubject"/>
+        <Class IRI="PreiconographicalSubject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPrototypicalMotif"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRecAttribute"/>
+        <Class IRI="ArtisticMotif"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRecognition"/>
+        <Class IRI="Recognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRole"/>
+        <Class IRI="Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSymbol"/>
+        <ObjectUnionOf>
+            <Class IRI="Symbol"/>
+            <Class IRI="https://www.w3id.org/simulation/ontology/Simulation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="iconographicallyCompliesWith"/>
+        <Class IRI="InterpretationDescription"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="iconologicallyCompliesWith"/>
+        <Class IRI="InterpretationDescription"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isArtisticMotifOf"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCharacterOf"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCompliantWithIconographicalRecognition"/>
+        <Class IRI="IconographicalRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCompliantWithIconologicalRecognition"/>
+        <Class IRI="PreiconographicalRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCompliantWithPreiconographicalRecognition"/>
+        <ObjectUnionOf>
+            <Class IRI="FormalMotifRecognition"/>
+            <Class IRI="PreiconographicalRecognition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCompositionOf"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCompositionalStructureOf"/>
+        <Class IRI="Composition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCopiedMotifOf"/>
+        <Class IRI="FormalMotifRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCulturalPhenomenonOf"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isEventOf"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isExpressionalMeaningOf"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isFactualMeaningOf"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isIconographicallyRecognizedBy"/>
+        <Class IRI="IconographicalRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isIconographicallyReferredBy"/>
+        <Class IRI="IconographicalRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isImageOf"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isIntrinsicMeaningOf"/>
+        <Class IRI="IconologicalRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isInvenzioneOf"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isNamedObjectOf"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPersonificationOf"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPlaceOf"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPrototypicalMotifOf"/>
+        <Class IRI="FormalMotifRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPureFormOf"/>
+        <Class IRI="PreiconographicalRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRecAttributeOf"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRecognOf"/>
+        <Class IRI="IconographicalRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRecognizedArtisticMotifOf"/>
+        <Class IRI="PreiconographicalRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRecognizedCompositionOf"/>
+        <Class IRI="PreiconographicalRecognition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRecognizedConceptOf"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSymbolOf"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="partOf"/>
+        <Class IRI="Composition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="preiconographicallyCompliesWith"/>
+        <Class IRI="InterpretationDescription"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizedArtisticMotif"/>
+        <Class IRI="ArtisticMotif"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizedComposition"/>
+        <Class IRI="Composition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizedConcept"/>
+        <Class abbreviatedIRI="dul:SocialObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizedCulturalPhenomenon"/>
+        <Class IRI="CulturalPhenomenon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizedGenre"/>
+        <Class IRI="ArtGenre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizedImage"/>
+        <Class IRI="Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizedIntrinsicMeaning"/>
+        <Class IRI="IntrinsicMeaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizedInvenzione"/>
+        <Class IRI="Invenzione"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizedVisualSubject"/>
+        <Class IRI="VisualSubject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="refersToArtisticMotif"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="takesPartIn"/>
+        <Class IRI="Invenzione"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="visuallyRepresents"/>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/Subject"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedArtisticMotif"/>
+            <ObjectProperty abbreviatedIRI="crm:P138_represents"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="preiconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedArtisticMotif"/>
+            <ObjectProperty IRI="hasExpressionalMeaning"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="preiconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedArtisticMotif"/>
+            <ObjectProperty IRI="hasFactualMeaning"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="preiconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedComposition"/>
+            <ObjectProperty IRI="hasPart"/>
+            <ObjectProperty abbreviatedIRI="crm:P138_represents"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="preiconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedComposition"/>
+            <ObjectProperty IRI="hasPart"/>
+            <ObjectProperty IRI="hasExpressionalMeaning"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="preiconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedComposition"/>
+            <ObjectProperty IRI="hasPart"/>
+            <ObjectProperty IRI="hasFactualMeaning"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="preiconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedImage"/>
+            <ObjectProperty IRI="hasCharacter"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="iconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedImage"/>
+            <ObjectProperty IRI="hasEvent"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="iconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedImage"/>
+            <ObjectProperty IRI="hasNamedObject"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="iconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedImage"/>
+            <ObjectProperty IRI="hasPersonification"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="iconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedImage"/>
+            <ObjectProperty IRI="hasPlace"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="iconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedImage"/>
+            <ObjectProperty IRI="hasSymbol"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="iconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedIntrinsicMeaning"/>
+            <ObjectProperty IRI="recognizedConcept"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="iconologicallyRepresents"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedIntrinsicMeaning"/>
+            <ObjectProperty IRI="recognizedCulturalPhenomenon"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="iconologicallyRepresents"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedInvenzione"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="iconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasRecognition"/>
+            <ObjectProperty IRI="recognizedInvenzione"/>
+            <ObjectProperty IRI="composedOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="iconographicallyDepicts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isCompliantWithIconographicalRecognition"/>
+            <ObjectProperty IRI="http://erlangen-crm.org/231027/P14_carried_out_by"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasResponsibleAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isCompliantWithIconographicalRecognition"/>
+            <ObjectProperty abbreviatedIRI="dul:includesAgent"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasResponsibleAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isCompliantWithIconologicalRecognition"/>
+            <ObjectProperty IRI="http://erlangen-crm.org/231027/P14_carried_out_by"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasResponsibleAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isCompliantWithIconologicalRecognition"/>
+            <ObjectProperty abbreviatedIRI="dul:includesAgent"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasResponsibleAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isCompliantWithPreiconographicalRecognition"/>
+            <ObjectProperty IRI="http://erlangen-crm.org/231027/P14_carried_out_by"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasResponsibleAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isCompliantWithPreiconographicalRecognition"/>
+            <ObjectProperty abbreviatedIRI="dul:includesAgent"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasResponsibleAgent"/>
+    </SubObjectPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="quantity"/>
+        <Class IRI="ArtisticMotif"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="regionDescription"/>
+        <ObjectUnionOf>
+            <Class IRI="ArtisticMotif"/>
+            <Class IRI="Composition"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="quantity"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="regionDescription"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ArtGenre</IRI>
+        <Literal xml:lang="en">This class is substituted by the the solution adopted by linked.art using crm:P2_has_type as follows: &lt;subject&gt;, crm:P2_has_type, &lt;specific style term&gt;.  &lt;specific style term&gt; crm:P2_has_type, &lt;http://vocab.getty.edu/aat/300015646&gt; # the AAT term indicating the concept of style.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ArtGenre</IRI>
+        <Literal xml:lang="en">Art Genre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>ArtGenre</IRI>
+        <Literal>since new version 25/03</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Attitude</IRI>
+        <Literal xml:lang="en">Example term taken from Panofsky&apos;s studies, can be used as a specification of a cultural phenomemon if it can be considered an Attitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Attitude</IRI>
+        <Literal xml:lang="en">Attitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Belief</IRI>
+        <Literal xml:lang="en">Example term taken from Panofsky&apos;s studies, can be used as a specification of a cultural phenomemon if it can be considered a Belief</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Belief</IRI>
+        <Literal xml:lang="en">Belief</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Color</IRI>
+        <Literal xml:lang="en">Class representing the color of an entity represented in an Artistic Motif or Image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Color</IRI>
+        <Literal xml:lang="en">Color</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CompositionalStructure</IRI>
+        <Literal xml:lang="en">The compositional structure identifies relevant structures that can be recognized in the layout of Artistic Motifs in a Composition, e.g. pyramidal, symmetrical.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>CompositionalStructure</IRI>
+        <Literal xml:lang="en">Compositional Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CulturalPhenomenon</IRI>
+        <Literal xml:lang="en">The cultural phenomenon entity expresses the cultural, social and historical aspects of which the work of art can be document. The iconographical evolution of subjects can have a cultural meaning as well. Also the personal characteristics of the artist, or of the patron, can be involved (Wittkower, Van Straten). The cultural phenomena are the object of investigation of an iconological interpretation (Van Straten, 2012, p. 12), which is considered, in the current work, a level 3 interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>CulturalPhenomenon</IRI>
+        <Literal xml:lang="en">Cultural Phenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CulturalValue</IRI>
+        <Literal xml:lang="en">Example term taken from Panofsky&apos;s studies, can be used as a specification of a cultural phenomemon if it can be considered a CulturalValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>CulturalValue</IRI>
+        <Literal xml:lang="en">Cultural Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FormalMotifRecognition</IRI>
+        <Literal xml:lang="en">The act of recognizing that subjects depicted by different artworks has the same formal motifs although the content represented may be different. The need of the usage of this class emerged from a bottom-up approach, rather than Panofsky&apos;s theory. It describes that certain subjects are prototypes of others, including preliminary drawings, but also cases in which another artist copied only the composition or gestures from another artwork. This recognition can link every specific part of a representation to the specific prototypes. The relation is between level 1 objects, i.e. Artistic Motifs and Composition, since it describes a formal aspect. Example of usage: if Hercules carrying the Boar is the prototype for a Christ carrying a deer, symbol of the human souls, it&apos;s possible to relate directly the boar represented in the former artwork to the deer represented in the latter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>FormalMotifRecognition</IRI>
+        <Literal xml:lang="en">Formal Motif Recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IconographicalDescription</IRI>
+        <Literal xml:lang="en">An Iconographical Description is the enumeration of iconographical recognitions of images or invenzioni recognized by one or more agents. It is thus a collection of triples. It is the summary of what would be called in Panofsky&apos;s term the second level of interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IconographicalDescription</IRI>
+        <Literal xml:lang="en">Iconographical Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>IconographicalDescription</IRI>
+        <Literal>from version 1.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IconographicalRecognition</IRI>
+        <Literal xml:lang="en">A Iconographical Recognition is a n-ary relationship class that links the artwork described (and, if available, the Artistic Motifs recognized at the previous level along with their compositions) to the Images recognized, or directly to the Invenzione that results from the grouping of the subject depicted by each single image. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IconographicalRecognition</IRI>
+        <Literal xml:lang="en">Iconographical Recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IconographicalSubject</IRI>
+        <Literal xml:lang="en">This class represents all the iconographical subjects of an artwork recognized in images</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IconographicalSubject</IRI>
+        <Literal xml:lang="en">Iconographical Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IconographicalSynthesis</IRI>
+        <Literal xml:lang="en">An Iconographical Synthesis is the enumeration of iconological recognitions of intrinsic meanings recognized by one or more agents concerning a work of art. It is thus a collection of triples. It is the summary of what would be called in Panofsky&apos;s term the third level of interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IconographicalSynthesis</IRI>
+        <Literal xml:lang="en">Iconographical Synthesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>IconographicalSynthesis</IRI>
+        <Literal>from version 1.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IconologicalRecognition</IRI>
+        <Literal xml:lang="en">An Iconological Recognition is a n-ary relationship class that links the artwork described (and optionally all the subjects represented at the first and second level of interpretation) to the Intrinsic Meanings recognized. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed. This class can represent: (1) the third level act of Interpretation described by Panofsky (1939), without a distinction between a overall artwork symbolic meaning and a societal aspect, (2) the third and second level described by Van Straten, according to the value associated to the intrinsic meaning, (3) the iconic act of interpretation described by Imdahl (2012), when the intrinsic meaning is directly linked to level 1 characteristics of the image.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IconologicalRecognition</IRI>
+        <Literal xml:lang="en">Iconological Recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IconologicalSubject</IRI>
+        <Literal xml:lang="en">Iconological Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IconologicalSubject</IRI>
+        <Literal xml:lang="en">This class represents all the iconological subjects of an artwork recognized through an intrinstic meaning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Material</IRI>
+        <Literal xml:lang="en">This class represent the material expressed in an artistic motif or image (referring to the element recognized in them)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Material</IRI>
+        <Literal xml:lang="en">Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PreiconographicalDescription</IRI>
+        <Literal xml:lang="en">A Pre-iconographical description is the enumeration of the Pre-Iconographical Recognitions of a certain work of art, performed by one or more agents. It is thus a collection of triples constituting the documentation of the interpretation at level 1. The term and its definition is taken from Panofsky&apos;s Studies in Iconology (1939).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PreiconographicalDescription</IRI>
+        <Literal xml:lang="en">Preiconographical Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>PreiconographicalDescription</IRI>
+        <Literal>from version 1.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PreiconographicalRecognition</IRI>
+        <Literal xml:lang="en">A Pre-iconographical recognition is a n-ary relationship class that links the artwork described (and optionally the Pure Forms composing it) to the Artistic Motifs recognized as carrier of meaning at the first level of analysis. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PreiconographicalRecognition</IRI>
+        <Literal xml:lang="en">Preiconographical Recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PreiconographicalSubject</IRI>
+        <Literal xml:lang="en">This class is used to represent all the preiconographical subjects that can be recognized in an artistic motif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PreiconographicalSubject</IRI>
+        <Literal xml:lang="en">Pre-iconographical Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PureForm</IRI>
+        <Literal xml:lang="en">A pure form represents the physical portion of the work of art in which artistic motifs are found. It has been introduced as a way to include the results of analysis performed by computational agents, that are able to classify images and give image coordinates for specific recognition. It is not recommended to be used by manual annotators or in any case in which the coordinates of the image of the work of art are not considered. If available, the Pure form can represent the region of an image identified by IIIF Image API.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PureForm</IRI>
+        <Literal>Change the definition to the formal representation that can be enclosed in a certain coordinate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PureForm</IRI>
+        <Literal xml:lang="en">Pure Form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>PureForm</IRI>
+        <Literal>from 1.1 version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Role</IRI>
+        <Literal xml:lang="en">This class represents the Role of an element recognized in an artistic motif or an image.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Role</IRI>
+        <Literal xml:lang="en">Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Tendency</IRI>
+        <Literal xml:lang="en">Example term taken from Panofsky&apos;s studies, can be used as a specification of a cultural phenomemon if it can be considered a tendency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Tendency</IRI>
+        <Literal xml:lang="en">Tendency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>VisualSubject</IRI>
+        <Literal xml:lang="en">A visual subject is the representation of the subject in specific artwork, in contrast with the arco:Subject which is used to define a general subject which can be shared by multiple artworks. For example, the image representing Christ in the Last Supper is a visual Subject because it is intended as only that representation for that specific artwork. The character referred by that image (Christ) would be an arco:Subject, and it can shared by all the artworks that have a specific image that refers to Christ.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>VisualSubject</IRI>
+        <Literal xml:lang="en">Visual Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>aboutWorkOfArt</IRI>
+        <Literal xml:lang="en">This relation associates each Recognition directly to the artwork. In this way, it is possible to retrieve easily all the interpretations about an artwork. Therefore, it a highly recommended good practice to declare it for each interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>aboutWorkOfArt</IRI>
+        <Literal xml:lang="en">About Work Of Art</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>associatedForm</IRI>
+        <Literal>This relation associates a Pure Form to the Pre-iconographical Recognition that describes it at the first level of interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>associatedForm</IRI>
+        <Literal xml:lang="en">Associated Form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>associatedForm</IRI>
+        <Literal>Since 1.1 version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>composedOf</IRI>
+        <Literal xml:lang="en">This Property links an invenzione with its components, which may vary from Characters, Events, Named Objects, Places to Personifications, Symbols according to the kind of Invenzione is being described.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>composedOf</IRI>
+        <Literal xml:lang="en">Composed Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasArtisticMotif</IRI>
+        <Literal xml:lang="en">This relation links an Intrinsic Meaning to the Artistic Motif recognized at the first level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this Artistic Motif, and not only to the general artwork.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasArtisticMotif</IRI>
+        <Literal xml:lang="en">Has Artistic Motif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasComposition</IRI>
+        <Literal xml:lang="en">This relation links an Intrinsic Meaning to the Composition recognized at the first level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this Composition, and not only to the general artwork.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasComposition</IRI>
+        <Literal xml:lang="en">Has Composition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasCompositionalStructure</IRI>
+        <Literal>This relation describes the arrangement of the Artistic Motifs composing the Composition. It is suggested to use it only when they are arranged in a relevant observable structure (e.g. pyramidal, oblique)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasCompositionalStructure</IRI>
+        <Literal xml:lang="en">Has Compositional Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasIconographicalSubject</IRI>
+        <Literal xml:lang="en">This property is used to link an image to the iconographical subject it represents, it is used when it is difficult to distinguish between the different iconographical subjects (for instance in the case of an automatic conversion of data into the ICON ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasIconographicalSubject</IRI>
+        <Literal xml:lang="en">has Iconographical Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasIconologicalSubject</IRI>
+        <Literal xml:lang="en">This property is used to link an intrinstic meaning to the iconological subject it represents. It is useful in the cases where it is difficult to identify the type of the iconological subject (cultural phenomenon, abstract concept...) especially in cases of automatic conversions of data to the ICON ontology structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasIconologicalSubject</IRI>
+        <Literal xml:lang="en">has Iconological Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasImage</IRI>
+        <Literal xml:lang="en">This relation links an Intrinsic Meaning to the Image recognized at the second level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this Image, and not only to the general artwork.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasImage</IRI>
+        <Literal xml:lang="en">Has Image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasInvenzione</IRI>
+        <Literal xml:lang="en">This relation links an Intrinsic Meaning to the Invenzione recognized at the second level of interpretation. It should be used to express that the third level meaning associated to the Intrinsic Meaning refers specifically to this invenzione, and not only to the general artwork.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasInvenzione</IRI>
+        <Literal xml:lang="en">Has Invenzione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPreiconographicalSubject</IRI>
+        <Literal xml:lang="en">This property links an artistic motif with a pre-iconographical subject represented by it, it is used when it is difficult to distinguish between the different types of pre-iconographical subjects (for example in situations where the conversion from interpretation to ICON is made automatically)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPreiconographicalSubject</IRI>
+        <Literal xml:lang="en">has Pre-iconographical Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasRecAttribute</IRI>
+        <Literal xml:lang="en">This relation identifies objects belonging to the level 1 as fundamental for the recognition of a certain subject. It is suggested that the Artistic Motif of the object is included in the Composition corresponding to the subject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasRecAttribute</IRI>
+        <Literal xml:lang="en">Has Rec Attribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasRecognition</IRI>
+        <Literal xml:lang="en">Inverse property of aboutWorkOfArt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasRecognition</IRI>
+        <Literal xml:lang="en">Has Recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasResponsibleAgent</IRI>
+        <Literal xml:lang="en">This property links the Interpretation Description with all the agents responsible for the recognitions that are part of it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasResponsibleAgent</IRI>
+        <Literal xml:lang="en">has Responsible Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasRole</IRI>
+        <Literal xml:lang="en">This property is used to link an artistic motif or an image to one of the (recognized) roles of the elements recognized in those artistic motifs or images. For instance, expressing that the role of the man recognized in a painting is &quot;butcher&quot;, &quot;prince&quot;, etc...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasRole</IRI>
+        <Literal xml:lang="en">has Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>iconographicallyCompliesWith</IRI>
+        <Literal xml:lang="en">This property is used to link all the iconographical recognitions that take part in one or more interpretation(s), to that/those interpretation(s)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>iconographicallyCompliesWith</IRI>
+        <Literal xml:lang="en">iconographically complies with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>iconographicallyDepicts</IRI>
+        <Literal xml:lang="en">This property is used to link an artwork to the element of the second level of interpretation (iconographical) which it depicts. This elements can be Characters, Symbols, Personifications, Places, Stories, Allegories (and the element these stories and allegories are composed of).
+
+Example: There is an IconographicalRecognition of Artwork1 of Image1, which is linked to the character Thor through the hasCharacter property.
+
+Then Artwork1 iconographicallyDepicts Thor.
+
+Example2: There is an IconographicalRecognition of Artwork1 of Story1, which is the story of the death of Julius C. This story is composed by the Place Rome and the character Julius C. (and more...)
+
+Then Artwork1 IconographicallyDepicts the story of the death of Julius C., Julius C., and the city of Rome.
+
+This link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>iconographicallyDepicts</IRI>
+        <Literal xml:lang="en">Iconographically Depicts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>iconologicallyCompliesWith</IRI>
+        <Literal xml:lang="en">This property is used to link all the iconological recognitions that take part in one or more interpretation(s), to that/those interpretation(s)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>iconologicallyCompliesWith</IRI>
+        <Literal xml:lang="en">iconologically complies with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>iconologicallyRepresents</IRI>
+        <Literal xml:lang="en">This property is used to link an artwork to the element of the third level of interpretation (iconological) which it represents. This elements can be Cultural Phenomena, Social Objects (abstract concepts).
+
+Example: There is an IconologicalRecognition of Artwork1 of IntrinsicMeaning1, which is linked to the cultural phenomenon of ImitationOfClassics
+Then Artwork1 iconologicallyRepresents  ImitationOfClassics.
+
+Example2: There is an IconologicalRecognition of Artwork1 of IntrinsicMeaning2, which is linked to the social object &quot;Absurdity&quot; (and to other elements from other levels that suppor this claim...)
+
+Then Artwork1 IconologicallyRepresents Absurdity
+
+This link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>iconologicallyRepresents</IRI>
+        <Literal xml:lang="en">Iconologically Represents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isArtisticMotifOf</IRI>
+        <Literal>Inverse property of has artistic motif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isArtisticMotifOf</IRI>
+        <Literal xml:lang="en">Is artistic motif of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCharacterOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasCharacter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isCharacterOf</IRI>
+        <Literal xml:lang="en">Is Character Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCompliantWithIconographicalRecognition</IRI>
+        <Literal xml:lang="en">Inverse of iconographically complies with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isCompliantWithIconographicalRecognition</IRI>
+        <Literal xml:lang="en">is compliant with iconographical recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCompliantWithIconologicalRecognition</IRI>
+        <Literal xml:lang="en">inverse of iconologically complies with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isCompliantWithIconologicalRecognition</IRI>
+        <Literal xml:lang="en">is compliant with iconological recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCompliantWithPreiconographicalRecognition</IRI>
+        <Literal xml:lang="en">Inverse of pre-iconographically complies with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isCompliantWithPreiconographicalRecognition</IRI>
+        <Literal xml:lang="en">is compliant with pre-iconographical recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCompositionOf</IRI>
+        <Literal xml:lang="en">Inverse property of has composition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isCompositionOf</IRI>
+        <Literal xml:lang="en">Is composition of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCompositionalStructureOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasCompositionalStructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isCompositionalStructureOf</IRI>
+        <Literal xml:lang="en">Is Compositional Structure Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCopiedMotifOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasCopiedMotif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isCopiedMotifOf</IRI>
+        <Literal xml:lang="en">Is Copied Motif Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCulturalPhenomenonOf</IRI>
+        <Literal xml:lang="en">Inverse property of recognizedCulturalPhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isCulturalPhenomenonOf</IRI>
+        <Literal xml:lang="en">Is Cultural Phenomenon Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isEventOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isEventOf</IRI>
+        <Literal xml:lang="en">Is Event Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isExpressionalMeaningOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasExpressionalMeaning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isExpressionalMeaningOf</IRI>
+        <Literal xml:lang="en">Is Expressional Meaning Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isFactualMeaningOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasFactualMeaning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isFactualMeaningOf</IRI>
+        <Literal xml:lang="en">Is Factual Meaning Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isIconographicallyRecognizedBy</IRI>
+        <Literal xml:lang="en">Inverse property of recognizedImage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isIconographicallyRecognizedBy</IRI>
+        <Literal xml:lang="en">Is Iconographically Recognized By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isIconographicallyReferredBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Inverse property of refers to artistic motif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isIconographicallyReferredBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Is iconographically referred by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isImageOf</IRI>
+        <Literal xml:lang="en">Inverse property of has image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isImageOf</IRI>
+        <Literal xml:lang="en">Is image of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isIntrinsicMeaningOf</IRI>
+        <Literal xml:lang="en">Inverse property of recognized intrinsic meaning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isIntrinsicMeaningOf</IRI>
+        <Literal xml:lang="en">Is Intrinsic Meaning Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isInvenzioneOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasInvenzione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isInvenzioneOf</IRI>
+        <Literal xml:lang="en">Is Invenzione Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isNamedObjectOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasNamedObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isNamedObjectOf</IRI>
+        <Literal xml:lang="en">Is Named Object Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPersonificationOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasPersonification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPersonificationOf</IRI>
+        <Literal xml:lang="en">Is Personification Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPlaceOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasPlace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPlaceOf</IRI>
+        <Literal xml:lang="en">Is Place Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPrototypicalMotifOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasPrototypicalMotif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPrototypicalMotifOf</IRI>
+        <Literal xml:lang="en">Is Prototypical Motif Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPureFormOf</IRI>
+        <Literal xml:lang="en">Inverse property of associatedForm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPureFormOf</IRI>
+        <Literal xml:lang="en">Is Pure Form Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>isPureFormOf</IRI>
+        <Literal>since 1.1 version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRecAttributeOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasRecAttribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isRecAttributeOf</IRI>
+        <Literal xml:lang="en">Is Rec Attribute Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRecognOf</IRI>
+        <Literal xml:lang="en">Inverse property of recognizedInvenzione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isRecognOf</IRI>
+        <Literal xml:lang="en">Is Recogn Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRecognizedArtisticMotifOf</IRI>
+        <Literal xml:lang="en">Inverse property of recognized artistic motif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isRecognizedArtisticMotifOf</IRI>
+        <Literal xml:lang="en">Is Recognized Artistic Motif Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRecognizedCompositionOf</IRI>
+        <Literal xml:lang="en">Inverse property of recognizedComposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isRecognizedCompositionOf</IRI>
+        <Literal xml:lang="en">Is Recognized Composition Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRecognizedConceptOf</IRI>
+        <Literal xml:lang="en">Inverse property of recognizedConcept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isRecognizedConceptOf</IRI>
+        <Literal xml:lang="en">Is Recognized Concept Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSymbolOf</IRI>
+        <Literal xml:lang="en">Inverse property of has symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isSymbolOf</IRI>
+        <Literal xml:lang="en">Is Symbol Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>partOf</IRI>
+        <Literal xml:lang="en">Inverse property of hasPart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>partOf</IRI>
+        <Literal xml:lang="en">Part Of (ICON)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>preiconographicallyCompliesWith</IRI>
+        <Literal xml:lang="en">This property is used to link all the pre-iconographical and formal motif recognitions recognitions that take part in one or more interpretation(s), to that/those interpretation(s)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>preiconographicallyCompliesWith</IRI>
+        <Literal xml:lang="en">pre-iconographically complies with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>preiconographicallyDepicts</IRI>
+        <Literal xml:lang="en">This property is used to link an artwork to the element of the first level of interpretation (pre-iconographical) which it depicts. This element can be a Natural Element, an Action, Expression, or an element included in a recognized Composition (again, natural element, action, expression).
+
+Example: There is a PreiconographicalRecognition of Artwork1 of ArtisticMotif1, which is linked to the natural element bear.
+Then Artwork1 preiconographicallyDepicts  bear.
+
+Example2: There is a PreiconographicalRecognition of Artwork1 of ArtisticMotif2, which is linked to the composition1, composed by a bear and the action of eating.
+Then Artwork1 preiconographicallyDepicts bear and eating.
+
+This link can be created automatically through inference thanks to the super property chain, or it can be written by users who are not planning of including contextual information to the interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>preiconographicallyDepicts</IRI>
+        <Literal xml:lang="en">Pre-iconographically Depicts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>recognizedConcept</IRI>
+        <Literal xml:lang="en">This relation expresses the Concept that is related to the Intrinsic Meaning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>recognizedConcept</IRI>
+        <Literal xml:lang="en">Recognized Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>recognizedCulturalPhenomenon</IRI>
+        <Literal xml:lang="en">This relation expresses the Cultural Phenomenon that is related to the Intrinsic Meaning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>recognizedCulturalPhenomenon</IRI>
+        <Literal xml:lang="en">Recognized Cultural Phenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>recognizedGenre</IRI>
+        <Literal xml:lang="en">This property is substituted by the the solution adopted by linked.art using crm:P2_has_type as follows: &lt;subject&gt;, crm:P2_has_type, &lt;specific style term&gt;.  &lt;specific style term&gt; crm:P2_has_type, &lt;http://vocab.getty.edu/aat/300015646&gt; # the AAT term indicating the concept of style.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>recognizedGenre</IRI>
+        <Literal xml:lang="en">Recognized Genre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>recognizedGenre</IRI>
+        <Literal xml:lang="en">since new version 25/03</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>recognizedIntrinsicMeaning</IRI>
+        <Literal xml:lang="en">This relation associates the Intrinsic Meaning to the Iconological Recognition that recognizes it at the third level of interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>recognizedIntrinsicMeaning</IRI>
+        <Literal xml:lang="en">Recognized Intrinsic Meaning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>recognizedVisualSubject</IRI>
+        <Literal xml:lang="en">This property is used to link a Recognition to the recognized Visual Subject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>recognizedVisualSubject</IRI>
+        <Literal xml:lang="en">Recognized Visual Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>refersToArtisticMotif</IRI>
+        <Literal xml:lang="en">This relation associates a Composition or an Artistic Motif to the Iconographical Recognition that describes it at the second level of interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>refersToArtisticMotif</IRI>
+        <Literal xml:lang="en">Refers To Artistic Motif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>regionDescription</IRI>
+        <Literal xml:lang="en">This data property can be used to link an artistic motif or a composition with their coordinates in the image of the artwork in which they are recognized. These coordinates could indicate the bounding boxes of the detections of a computer vision algorithms or could also be the IIIF URI that selects the part of the image of the painting in which the artistic motif or the composition are found</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>regionDescription</IRI>
+        <Literal xml:lang="en">Region Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>takesPartIn</IRI>
+        <Literal xml:lang="en">Inverse property of composed of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>takesPartIn</IRI>
+        <Literal xml:lang="en">Takes part in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>visuallyRepresents</IRI>
+        <Literal xml:lang="en">This property is used to link a Visual Subject (the subject visually represented in the specific artwork) with the general subject entity (for instance the controlled vocabulary entry). Example: the image of Hercules in the Farnese Hercules linked to the general Hercules subject expressed in Iconclass (94L) or the URI of the &quot;general&quot; Hercules in the KG. For specific interpretation-level relationships, see and use one of this property&apos;s subproperties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>visuallyRepresents</IRI>
+        <Literal xml:lang="en">Visually Represents</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

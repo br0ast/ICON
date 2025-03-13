@@ -1286,7 +1286,7 @@ The N-ary structure allow first of all to maintain the distinction between the p
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasRole" title="https://w3id.org/icon/ontology/hasRole">has Role</a>
+            <a href="#hasRole" title="https://w3id.org/icon/ontology/hasRole">Role</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1531,9 +1531,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
             title="https://w3id.org/icon/ontology/hasResponsibleAgent">has Responsible Agent</a>
       </li>
       <li>
-         <a href="#hasRole" title="https://w3id.org/icon/ontology/hasRole">has Role</a>
-      </li>
-      <li>
          <a href="#hasSymbol" title="https://w3id.org/icon/ontology/hasSymbol">Has Symbol</a>
       </li>
       <li>
@@ -1700,6 +1697,9 @@ The N-ary structure allow first of all to maintain the distinction between the p
       <li>
          <a href="#refersToArtisticMotif"
             title="https://w3id.org/icon/ontology/refersToArtisticMotif">Refers To Artistic Motif</a>
+      </li>
+      <li>
+         <a href="#hasRole" title="https://w3id.org/icon/ontology/hasRole">Role</a>
       </li>
       <li>
          <a href="#takesPartIn" title="https://w3id.org/icon/ontology/takesPartIn">Takes part in</a>
@@ -2730,34 +2730,6 @@ The N-ary structure allow first of all to maintain the distinction between the p
                <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent"
                   target="_blank"
                   title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent">includes agent</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasRole">
-      <h3>has Role<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/icon/ontology/hasRole</p>
-      <div class="comment">
-         <span class="markdown">This property is used to link an artistic motif or an image to one of the (recognized) roles of the elements recognized in those artistic motifs or images. For instance, expressing that the role of the man recognized in a painting is "butcher", "prince", etc...</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ArtisticMotif" title="https://w3id.org/icon/ontology/ArtisticMotif">Artistic Motif</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Image" title="https://w3id.org/icon/ontology/Image">Image</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Role" title="https://w3id.org/icon/ontology/Role">Role</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -4525,6 +4497,34 @@ This link can be created automatically through inference thanks to the super pro
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasRole">
+      <h3>Role<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/icon/ontology/hasRole</p>
+      <div class="comment">
+         <span class="markdown">This property is used to link an artistic motif or an image to one of the (recognized) roles of the elements recognized in those artistic motifs or images. For instance, expressing that the role of the man recognized in a painting is "butcher", "prince", etc...</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ArtisticMotif" title="https://w3id.org/icon/ontology/ArtisticMotif">Artistic Motif</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Image" title="https://w3id.org/icon/ontology/Image">Image</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Role" title="https://w3id.org/icon/ontology/Role">Role</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="takesPartIn">
       <h3>Takes part in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4678,169 +4678,6 @@ This link can be created automatically through inference thanks to the super pro
             </dd>
          </dl>
       </div>
-   </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="annotationproperties">
-   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation">
-            <span>bibliographic citation</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/2001/XMLSchema#citation" title="http://www.w3.org/2001/XMLSchema#citation">
-            <span>citation</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/elements/1.1/contributor" title="http://purl.org/dc/elements/1.1/contributor">
-            <span>contributor</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
-            <span>created</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">
-            <span>issued</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
-            <span>license</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/vocab/vann/preferredNamespacePrefix"
-            title="http://purl.org/vocab/vann/preferredNamespacePrefix">
-            <span>preferred namespace prefix</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
-            <span>preferred namespace uri</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
-            <span>publisher</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source">
-            <span>source</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/2003/06/sw-vocab-status/ns#status"
-            title="http://www.w3.org/2003/06/sw-vocab-status/ns#status">
-            <span>status</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
-            <span>title</span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="http://purl.org/dc/terms/bibliographicCitation">
-      <h3>bibliographic citation<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/bibliographicCitation</p>
-   </div>
-   <div class="entity" id="http://www.w3.org/2001/XMLSchema#citation">
-      <h3>citation<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/2001/XMLSchema#citation</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/elements/1.1/contributor">
-      <h3>contributor<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/contributor</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/created">
-      <h3>created<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/created</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/issued">
-      <h3>issued<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/issued</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/license">
-      <h3>license<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/license</p>
-   </div>
-   <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
-      <h3>preferred namespace prefix<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
-   </div>
-   <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
-      <h3>preferred namespace uri<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/publisher">
-      <h3>publisher<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/publisher</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/source">
-      <h3>source<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/source</p>
-   </div>
-   <div class="entity" id="http://www.w3.org/2003/06/sw-vocab-status/ns#status">
-      <h3>status<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/2003/06/sw-vocab-status/ns#status</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/title">
-      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

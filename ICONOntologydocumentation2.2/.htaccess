@@ -1,7 +1,7 @@
 ############################################################################
 ### THIS FILE SHOULD BE PLACED ON THE PARENT FOLDER OF THE DOCUMENTATION ###
 ### OTHERWISE THE CONTENT NEGOTIATION WILL NOT WORK                      ###
-### THE URL OF YOUR VOCABULARY WILL BE (domain)/ICONOntologydocumentationcurrent2/def    ###
+### THE URL OF YOUR VOCABULARY WILL BE (domain)/ICONOntologDocumentationcurrenty/def    ###
 ############################################################################
 # Turn off MultiViews
 Options -MultiViews
@@ -16,7 +16,7 @@ AddType application/ld+json .jsonld
 # Rewrite engine setup
 RewriteEngine On
 #Change the path to the folder here
-RewriteBase /ICONOntologydocumentation2.2 
+RewriteBase /ICONOntologyDocumentation2.2
 
 # Rewrite rule to serve HTML content from the vocabulary URI if requested
 RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)

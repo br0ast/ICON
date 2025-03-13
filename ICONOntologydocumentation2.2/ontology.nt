@@ -130,8 +130,8 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Image> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/icon/ontology/associatedColor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Color> .
-<https://w3id.org/icon/ontology/associatedColor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link an artistic motif or an image to one of the (recognized) colors of the elements recognized in those artistic motifs or images. For instance, expressing \"red\" in  the artistic motif representing a scarf in a work or art." .
-<https://w3id.org/icon/ontology/associatedColor> <http://www.w3.org/2000/01/rdf-schema#label> "associated Color" .
+<https://w3id.org/icon/ontology/associatedColor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link an artistic motif or an image to one of the (recognized) colors of the elements recognized in those artistic motifs or images. For instance, expressing \"red\" in  the artistic motif representing a scarf in a work or art."@en .
+<https://w3id.org/icon/ontology/associatedColor> <http://www.w3.org/2000/01/rdf-schema#label> "associated Color"@en .
 # 
 # https://w3id.org/icon/ontology/associatedForm
 <https://w3id.org/icon/ontology/associatedForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -139,7 +139,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/icon/ontology/associatedForm> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/isPureFormOf> .
 <https://w3id.org/icon/ontology/associatedForm> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
 <https://w3id.org/icon/ontology/associatedForm> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/PureForm> .
-<https://w3id.org/icon/ontology/associatedForm> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates a Pure Form to the Pre-iconographical Recognition that describes it at the first level of interpretation." .
+<https://w3id.org/icon/ontology/associatedForm> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates a Pure Form to the Pre-iconographical Recognition that describes it at the first level of interpretation."@en .
 <https://w3id.org/icon/ontology/associatedForm> <http://www.w3.org/2000/01/rdf-schema#label> "Associated Form"@en .
 <https://w3id.org/icon/ontology/associatedForm> <http://www.w3.org/2002/07/owl#deprecated> "Since 1.1 version" .
 # 
@@ -156,8 +156,8 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Image> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/icon/ontology/associatedMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Material> .
-<https://w3id.org/icon/ontology/associatedMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link an artistic motif or an image to one of the (recognized) materials of the element that are recognized in those artistic motifs or images. For instance, expressing that the artistic motif representing a crown in a portrait denotes also that the crown is made of bronze. Or that the image of the Thor's Hammer is denoting that the hammer is made of steel." .
-<https://w3id.org/icon/ontology/associatedMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "associated Material" .
+<https://w3id.org/icon/ontology/associatedMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link an artistic motif or an image to one of the (recognized) materials of the element that are recognized in those artistic motifs or images. For instance, expressing that the artistic motif representing a crown in a portrait denotes also that the crown is made of bronze. Or that the image of the Thor's Hammer is denoting that the hammer is made of steel."@en .
+<https://w3id.org/icon/ontology/associatedMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "associated Material"@en .
 # 
 # https://w3id.org/icon/ontology/composedOf
 <https://w3id.org/icon/ontology/composedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -185,9 +185,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Symbol> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/icon/ontology/composedOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This Property links an invenzione with its components, which may vary from Characters, Events, Named Objects, Places to Personifications, Symbols according to the kind of Invenzione is being described."@en .
-<https://w3id.org/icon/ontology/composedOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This Property links an invenzione with its components, which may vary from Characters, Events, Named Objects, Places to Personifications, Symbols according to the kind of Invenzione is being described." .
 <https://w3id.org/icon/ontology/composedOf> <http://www.w3.org/2000/01/rdf-schema#label> "Composed Of"@en .
-<https://w3id.org/icon/ontology/composedOf> <http://www.w3.org/2000/01/rdf-schema#label> "Composed Of" .
 # 
 # https://w3id.org/icon/ontology/hasArtisticMotif
 <https://w3id.org/icon/ontology/hasArtisticMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -203,8 +201,8 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/icon/ontology/hasCharacter> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/isCharacterOf> .
 <https://w3id.org/icon/ontology/hasCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Image> .
 <https://w3id.org/icon/ontology/hasCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Character> .
-<https://w3id.org/icon/ontology/hasCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Character depicted" .
-<https://w3id.org/icon/ontology/hasCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "Has Character" .
+<https://w3id.org/icon/ontology/hasCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Character depicted"@en .
+<https://w3id.org/icon/ontology/hasCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "Has Character"@en .
 # 
 # https://w3id.org/icon/ontology/hasComposition
 <https://w3id.org/icon/ontology/hasComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -219,7 +217,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/icon/ontology/hasCompositionalStructure> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/isCompositionalStructureOf> .
 <https://w3id.org/icon/ontology/hasCompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Composition> .
 <https://w3id.org/icon/ontology/hasCompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/CompositionalStructure> .
-<https://w3id.org/icon/ontology/hasCompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation describes the arrangement of the Artistic Motifs composing the Composition. It is suggested to use it only when they are arranged in a relevant observable structure (e.g. pyramidal, oblique)" .
+<https://w3id.org/icon/ontology/hasCompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation describes the arrangement of the Artistic Motifs composing the Composition. It is suggested to use it only when they are arranged in a relevant observable structure (e.g. pyramidal, oblique)"@en .
 <https://w3id.org/icon/ontology/hasCompositionalStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Has Compositional Structure"@en .
 # 
 # https://w3id.org/icon/ontology/hasCopiedMotif
@@ -235,8 +233,8 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/icon/ontology/hasCopiedMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates to the act of Formal Motif Recognition the Artistic Motif representing the copied visual pattern. To be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item." .
-<https://w3id.org/icon/ontology/hasCopiedMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Has Copied Motif" .
+<https://w3id.org/icon/ontology/hasCopiedMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates to the act of Formal Motif Recognition the Artistic Motif representing the copied visual pattern. To be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item."@en .
+<https://w3id.org/icon/ontology/hasCopiedMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Has Copied Motif"@en .
 # 
 # https://w3id.org/icon/ontology/hasEvent
 <https://w3id.org/icon/ontology/hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -244,8 +242,8 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/hasEvent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/isEventOf> .
 <https://w3id.org/icon/ontology/hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Image> .
 <https://w3id.org/icon/ontology/hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Event> .
-<https://w3id.org/icon/ontology/hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Event depicted" .
-<https://w3id.org/icon/ontology/hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Has Event" .
+<https://w3id.org/icon/ontology/hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Event depicted"@en .
+<https://w3id.org/icon/ontology/hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Has Event"@en .
 # 
 # https://w3id.org/icon/ontology/hasExpressionalMeaning
 <https://w3id.org/icon/ontology/hasExpressionalMeaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -261,8 +259,8 @@ _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/icon/ontology/hasExpressionalMeaning> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/ExpressionalQuality> .
-<https://w3id.org/icon/ontology/hasExpressionalMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links the Expressional Meaning recognized to the Artistic Motif" .
-<https://w3id.org/icon/ontology/hasExpressionalMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Has Expressional Meaning" .
+<https://w3id.org/icon/ontology/hasExpressionalMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links the Expressional Meaning recognized to the Artistic Motif"@en .
+<https://w3id.org/icon/ontology/hasExpressionalMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Has Expressional Meaning"@en .
 # 
 # https://w3id.org/icon/ontology/hasFactualMeaning
 <https://w3id.org/icon/ontology/hasFactualMeaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -286,8 +284,8 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/NaturalElement> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/icon/ontology/hasFactualMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links the Factual Meaning recognized (Actions or Natural Elements) to the Artistic Motif" .
-<https://w3id.org/icon/ontology/hasFactualMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Has Factual Meaning" .
+<https://w3id.org/icon/ontology/hasFactualMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links the Factual Meaning recognized (Actions or Natural Elements) to the Artistic Motif"@en .
+<https://w3id.org/icon/ontology/hasFactualMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Has Factual Meaning"@en .
 # 
 # https://w3id.org/icon/ontology/hasIconographicalSubject
 <https://w3id.org/icon/ontology/hasIconographicalSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -327,8 +325,8 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/isNamedObjectOf> .
 <https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Image> .
 <https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/NamedObject> .
-<https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Named Object depicted" .
-<https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#label> "Has Named Object" .
+<https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Named Object depicted"@en .
+<https://w3id.org/icon/ontology/hasNamedObject> <http://www.w3.org/2000/01/rdf-schema#label> "Has Named Object"@en .
 # 
 # https://w3id.org/icon/ontology/hasPart
 <https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -336,8 +334,8 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/partOf> .
 <https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Composition> .
 <https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/ArtisticMotif> .
-<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links a Composition to the Artistic Motifs of which it consists." .
-<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "Has Part (ICON)" .
+<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links a Composition to the Artistic Motifs of which it consists."@en .
+<https://w3id.org/icon/ontology/hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "Has Part (ICON)"@en .
 # 
 # https://w3id.org/icon/ontology/hasPersonification
 <https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -345,8 +343,8 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/icon/ontology/isPersonificationOf> .
 <https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Image> .
 <https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Personification> .
-<https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Personification depicted" .
-<https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/2000/01/rdf-schema#label> "Has Personification" .
+<https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Personification depicted"@en .
+<https://w3id.org/icon/ontology/hasPersonification> <http://www.w3.org/2000/01/rdf-schema#label> "Has Personification"@en .
 # 
 # https://w3id.org/icon/ontology/hasPlace
 <https://w3id.org/icon/ontology/hasPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -362,8 +360,8 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/icon/ontology/hasPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Place depicted" .
-<https://w3id.org/icon/ontology/hasPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Has Place" .
+<https://w3id.org/icon/ontology/hasPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Place depicted"@en .
+<https://w3id.org/icon/ontology/hasPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Has Place"@en .
 # 
 # https://w3id.org/icon/ontology/hasPreiconographicalSubject
 <https://w3id.org/icon/ontology/hasPreiconographicalSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -386,8 +384,8 @@ _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/Composition> .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/icon/ontology/hasPrototypicalMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates to the act of the Recognition of a formal motif to the artistic motif from which the visual pattern derives. It should be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item." .
-<https://w3id.org/icon/ontology/hasPrototypicalMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Has Prototypical Motif" .
+<https://w3id.org/icon/ontology/hasPrototypicalMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates to the act of the Recognition of a formal motif to the artistic motif from which the visual pattern derives. It should be used when it is affirmed that a specific feature has as a prototype the same feature of a specific visual item."@en .
+<https://w3id.org/icon/ontology/hasPrototypicalMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Has Prototypical Motif"@en .
 # 
 # https://w3id.org/icon/ontology/hasRecAttribute
 <https://w3id.org/icon/ontology/hasRecAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -402,9 +400,7 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/Artwork> .
 <https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Recognition> .
 <https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of aboutWorkOfArt"@en .
-<https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of aboutWorkOfArt" .
 <https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Has Recognition"@en .
-<https://w3id.org/icon/ontology/hasRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Has Recognition" .
 # 
 # https://w3id.org/icon/ontology/hasResponsibleAgent
 <https://w3id.org/icon/ontology/hasResponsibleAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -466,8 +462,8 @@ _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/i
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/icon/ontology/hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Role> .
 <https://w3id.org/icon/ontology/hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link an artistic motif or an image to one of the (recognized) roles of the elements recognized in those artistic motifs or images. For instance, expressing that the role of the man recognized in a painting is \"butcher\", \"prince\", etc..."@en .
+<https://w3id.org/icon/ontology/hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@en .
 <https://w3id.org/icon/ontology/hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "has Role"@en .
-<https://w3id.org/icon/ontology/hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "Role" .
 # 
 # https://w3id.org/icon/ontology/hasSymbol
 <https://w3id.org/icon/ontology/hasSymbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -483,8 +479,8 @@ _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulation> .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/icon/ontology/hasSymbol> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Symbol depicted" .
-<https://w3id.org/icon/ontology/hasSymbol> <http://www.w3.org/2000/01/rdf-schema#label> "Has Symbol" .
+<https://w3id.org/icon/ontology/hasSymbol> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation links an image to the Symbol depicted"@en .
+<https://w3id.org/icon/ontology/hasSymbol> <http://www.w3.org/2000/01/rdf-schema#label> "Has Symbol"@en .
 # 
 # https://w3id.org/icon/ontology/iconographicallyCompliesWith
 <https://w3id.org/icon/ontology/iconographicallyCompliesWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -616,7 +612,7 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/isArtisticMotifOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/icon/ontology/isArtisticMotifOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/ArtisticMotif> .
 <https://w3id.org/icon/ontology/isArtisticMotifOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/IntrinsicMeaning> .
-<https://w3id.org/icon/ontology/isArtisticMotifOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of has artistic motif" .
+<https://w3id.org/icon/ontology/isArtisticMotifOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of has artistic motif"@en .
 <https://w3id.org/icon/ontology/isArtisticMotifOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is artistic motif of"@en .
 # 
 # https://w3id.org/icon/ontology/isCharacterOf
@@ -632,9 +628,7 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/InterpretationDescription> .
 <https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/IconographicalRecognition> .
 <https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of iconographically complies with"@en .
-<https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of iconographically complies with" .
 <https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "is compliant with iconographical recognition"@en .
-<https://w3id.org/icon/ontology/isCompliantWithIconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "is compliant with iconographical recognition" .
 # 
 # https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition
 <https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -642,9 +636,7 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/InterpretationDescription> .
 <https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
 <https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse of iconologically complies with"@en .
-<https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse of iconologically complies with" .
 <https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "is compliant with iconological recognition"@en .
-<https://w3id.org/icon/ontology/isCompliantWithIconologicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "is compliant with iconological recognition" .
 # 
 # https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition
 <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -661,9 +653,7 @@ _:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
 _:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of pre-iconographically complies with"@en .
-<https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of pre-iconographically complies with" .
 <https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "is compliant with pre-iconographical recognition"@en .
-<https://w3id.org/icon/ontology/isCompliantWithPreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "is compliant with pre-iconographical recognition" .
 # 
 # https://w3id.org/icon/ontology/isCompositionOf
 <https://w3id.org/icon/ontology/isCompositionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -994,16 +984,16 @@ _:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/icon/ontology/recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/icon/ontology/recognizedVisualSubject> .
 <https://w3id.org/icon/ontology/recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
 <https://w3id.org/icon/ontology/recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/ArtisticMotif> .
-<https://w3id.org/icon/ontology/recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Artistic Motif to the Pre-iconographical Recognition that recognizes it at the first level of interpretation." .
-<https://w3id.org/icon/ontology/recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Artistic Motif" .
+<https://w3id.org/icon/ontology/recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Artistic Motif to the Pre-iconographical Recognition that recognizes it at the first level of interpretation."@en .
+<https://w3id.org/icon/ontology/recognizedArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Artistic Motif"@en .
 # 
 # https://w3id.org/icon/ontology/recognizedComposition
 <https://w3id.org/icon/ontology/recognizedComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/icon/ontology/recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/icon/ontology/recognizedVisualSubject> .
 <https://w3id.org/icon/ontology/recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
 <https://w3id.org/icon/ontology/recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Composition> .
-<https://w3id.org/icon/ontology/recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation." .
-<https://w3id.org/icon/ontology/recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Composition" .
+<https://w3id.org/icon/ontology/recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Composition to the Pre-iconographical Recognition that recognizes it at the first level of interpretation."@en .
+<https://w3id.org/icon/ontology/recognizedComposition> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Composition"@en .
 # 
 # https://w3id.org/icon/ontology/recognizedConcept
 <https://w3id.org/icon/ontology/recognizedConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1011,9 +1001,7 @@ _:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/icon/ontology/recognizedConcept> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/IntrinsicMeaning> .
 <https://w3id.org/icon/ontology/recognizedConcept> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
 <https://w3id.org/icon/ontology/recognizedConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation expresses the Concept that is related to the Intrinsic Meaning"@en .
-<https://w3id.org/icon/ontology/recognizedConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation expresses the Concept that is related to the Intrinsic Meaning" .
 <https://w3id.org/icon/ontology/recognizedConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Concept"@en .
-<https://w3id.org/icon/ontology/recognizedConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Concept" .
 # 
 # https://w3id.org/icon/ontology/recognizedCulturalPhenomenon
 <https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1021,9 +1009,7 @@ _:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/IntrinsicMeaning> .
 <https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/CulturalPhenomenon> .
 <https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation expresses the Cultural Phenomenon that is related to the Intrinsic Meaning"@en .
-<https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation expresses the Cultural Phenomenon that is related to the Intrinsic Meaning" .
 <https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Cultural Phenomenon"@en .
-<https://w3id.org/icon/ontology/recognizedCulturalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Cultural Phenomenon" .
 # 
 # https://w3id.org/icon/ontology/recognizedGenre
 <https://w3id.org/icon/ontology/recognizedGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1039,8 +1025,8 @@ _:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/icon/ontology/recognizedImage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/icon/ontology/recognizedVisualSubject> .
 <https://w3id.org/icon/ontology/recognizedImage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/IconographicalRecognition> .
 <https://w3id.org/icon/ontology/recognizedImage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Image> .
-<https://w3id.org/icon/ontology/recognizedImage> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Image to the Iconographical Recognition that recognizes it at the second level of interpretation." .
-<https://w3id.org/icon/ontology/recognizedImage> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Image" .
+<https://w3id.org/icon/ontology/recognizedImage> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Image to the Iconographical Recognition that recognizes it at the second level of interpretation."@en .
+<https://w3id.org/icon/ontology/recognizedImage> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Image"@en .
 # 
 # https://w3id.org/icon/ontology/recognizedIntrinsicMeaning
 <https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1048,17 +1034,15 @@ _:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/IconologicalRecognition> .
 <https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/IntrinsicMeaning> .
 <https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Intrinsic Meaning to the Iconological Recognition that recognizes it at the third level of interpretation."@en .
-<https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Intrinsic Meaning to the Iconological Recognition that recognizes it at the third level of interpretation." .
 <https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Intrinsic Meaning"@en .
-<https://w3id.org/icon/ontology/recognizedIntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Intrinsic Meaning" .
 # 
 # https://w3id.org/icon/ontology/recognizedInvenzione
 <https://w3id.org/icon/ontology/recognizedInvenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/icon/ontology/recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://w3id.org/icon/ontology/recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/icon/ontology/IconographicalRecognition> .
 <https://w3id.org/icon/ontology/recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/icon/ontology/Invenzione> .
-<https://w3id.org/icon/ontology/recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Invenzione to the Iconographical Recognition that recognizes it at the second level of interpretation." .
-<https://w3id.org/icon/ontology/recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Invenzione" .
+<https://w3id.org/icon/ontology/recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "This relation associates the Invenzione to the Iconographical Recognition that recognizes it at the second level of interpretation."@en .
+<https://w3id.org/icon/ontology/recognizedInvenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Recognized Invenzione"@en .
 # 
 # https://w3id.org/icon/ontology/recognizedVisualSubject
 <https://w3id.org/icon/ontology/recognizedVisualSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1175,7 +1159,7 @@ _:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 # http://iflastandards.info/ns/fr/frbr/frbroo/F38
 <http://iflastandards.info/ns/fr/frbr/frbroo/F38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iflastandards.info/ns/fr/frbr/frbroo/F38> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/current/E28_Conceptual_Object> .
-<http://iflastandards.info/ns/fr/frbr/frbroo/F38> <http://www.w3.org/2000/01/rdf-schema#label> "Character" .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F38> <http://www.w3.org/2000/01/rdf-schema#label> "Character"@en .
 # 
 # http://purl.org/emmedi/hico/InterpretationAct
 <http://purl.org/emmedi/hico/InterpretationAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1200,8 +1184,8 @@ _:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/icon/ontology/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
 <https://w3id.org/icon/ontology/Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/PreiconographicalSubject> .
-<https://w3id.org/icon/ontology/Action> <http://www.w3.org/2000/01/rdf-schema#comment> "An event as recognized at level 1 of interpretation, e.g. a man who lifts one hand or a man riding a horse. Generally, all the actions should be described by this class.  When an action is identified, it is suggested to create a Composition with all the elements involved in this action" .
-<https://w3id.org/icon/ontology/Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action (ICON)" .
+<https://w3id.org/icon/ontology/Action> <http://www.w3.org/2000/01/rdf-schema#comment> "An event as recognized at level 1 of interpretation, e.g. a man who lifts one hand or a man riding a horse. Generally, all the actions should be described by this class.  When an action is identified, it is suggested to create a Composition with all the elements involved in this action"@en .
+<https://w3id.org/icon/ontology/Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action (ICON)"@en .
 # 
 # https://w3id.org/icon/ontology/Allegory
 <https://w3id.org/icon/ontology/Allegory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1221,8 +1205,8 @@ _:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid146 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
 _:genid146 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/Symbol> .
 _:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/icon/ontology/Allegory> <http://www.w3.org/2000/01/rdf-schema#comment> "An Allegory is a cohese combination of images that represent either symbols of personifications. Allegories are recognized in the context of iconographical recognition; their recognition can be included in an Iconographical Description. This definition of Allegory has been taken from Panofsky's Studies in Iconology (1939). Nevertheless, also a story can have a symbolical meaning. In this case, it is suggested to associate a Story to the images describing its content, an allegory  to the images describing the story and the symbolical meaning associated to it. E.g.: the fall of Phaeton was generally considered as an allegory of the fate of every temerarius (Panofsky 1939, p. 218). Therefore, the image identifying Phaeton is linked both to the Allegory and to the Story." .
-<https://w3id.org/icon/ontology/Allegory> <http://www.w3.org/2000/01/rdf-schema#label> "Allegory" .
+<https://w3id.org/icon/ontology/Allegory> <http://www.w3.org/2000/01/rdf-schema#comment> "An Allegory is a cohese combination of images that represent either symbols of personifications. Allegories are recognized in the context of iconographical recognition; their recognition can be included in an Iconographical Description. This definition of Allegory has been taken from Panofsky's Studies in Iconology (1939). Nevertheless, also a story can have a symbolical meaning. In this case, it is suggested to associate a Story to the images describing its content, an allegory  to the images describing the story and the symbolical meaning associated to it. E.g.: the fall of Phaeton was generally considered as an allegory of the fate of every temerarius (Panofsky 1939, p. 218). Therefore, the image identifying Phaeton is linked both to the Allegory and to the Story."@en .
+<https://w3id.org/icon/ontology/Allegory> <http://www.w3.org/2000/01/rdf-schema#label> "Allegory"@en .
 # 
 # https://w3id.org/icon/ontology/ArtGenre
 <https://w3id.org/icon/ontology/ArtGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1263,14 +1247,14 @@ _:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid157 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf> .
 _:genid157 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid157 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
-<https://w3id.org/icon/ontology/ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "An ArtisticMotif is the output of a Pre Iconographic Recognition. It is a N-ary relationship class linking the physical unique representation depicted in an artwork to the corresponding real world meaning recognized. Each artistic motif describes exactly one meaning among: Natural Element, Action, Expression Quality. Qualities (e.g. colors) can be expressed.\nThe N-ary structure allow first of all to maintain the distinction between the particular representation belonging to the artwork considered and the general meaning of which the representation is an expression. Furthermore, it allows to carefully describe in detail what is represented in the visual representation, since it gives the chance to identify uniquely details of objects and iconographies." .
-<https://w3id.org/icon/ontology/ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Artistic Motif" .
+<https://w3id.org/icon/ontology/ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "An ArtisticMotif is the output of a Pre Iconographic Recognition. It is a N-ary relationship class linking the physical unique representation depicted in an artwork to the corresponding real world meaning recognized. Each artistic motif describes exactly one meaning among: Natural Element, Action, Expression Quality. Qualities (e.g. colors) can be expressed.\nThe N-ary structure allow first of all to maintain the distinction between the particular representation belonging to the artwork considered and the general meaning of which the representation is an expression. Furthermore, it allows to carefully describe in detail what is represented in the visual representation, since it gives the chance to identify uniquely details of objects and iconographies."@en .
+<https://w3id.org/icon/ontology/ArtisticMotif> <http://www.w3.org/2000/01/rdf-schema#label> "Artistic Motif"@en .
 # 
 # https://w3id.org/icon/ontology/Artwork
 <https://w3id.org/icon/ontology/Artwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Artwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> .
-<https://w3id.org/icon/ontology/Artwork> <http://www.w3.org/2000/01/rdf-schema#comment> "The artwork is a visual representation that may be relevant from an iconographical or an iconological point of view, carried by a physical cultural object (dul:InformationRealization) usually created by a person." .
-<https://w3id.org/icon/ontology/Artwork> <http://www.w3.org/2000/01/rdf-schema#label> "Artwork" .
+<https://w3id.org/icon/ontology/Artwork> <http://www.w3.org/2000/01/rdf-schema#comment> "The artwork is a visual representation that may be relevant from an iconographical or an iconological point of view, carried by a physical cultural object (dul:InformationRealization) usually created by a person."@en .
+<https://w3id.org/icon/ontology/Artwork> <http://www.w3.org/2000/01/rdf-schema#label> "Artwork"@en .
 # 
 # https://w3id.org/icon/ontology/Attitude
 <https://w3id.org/icon/ontology/Attitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1287,8 +1271,8 @@ _:genid157 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontolo
 # https://w3id.org/icon/ontology/Character
 <https://w3id.org/icon/ontology/Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/IconographicalSubject> .
-<https://w3id.org/icon/ontology/Character> <http://www.w3.org/2000/01/rdf-schema#comment> "A Character is a real or imaginary being identifiable as a subject in the Iconographical Analysis (level 2 of interpretation)" .
-<https://w3id.org/icon/ontology/Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character" .
+<https://w3id.org/icon/ontology/Character> <http://www.w3.org/2000/01/rdf-schema#comment> "A Character is a real or imaginary being identifiable as a subject in the Iconographical Analysis (level 2 of interpretation)"@en .
+<https://w3id.org/icon/ontology/Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character"@en .
 # 
 # https://w3id.org/icon/ontology/Color
 <https://w3id.org/icon/ontology/Color> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1309,8 +1293,8 @@ _:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid159 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isRecognizedCompositionOf> .
 _:genid159 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid159 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
-<https://w3id.org/icon/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Composition is a jointly of ArtisticMotif having a meaning. It can be recognized as corresponding to the same image at the second level or interpretation, or can explicit groupings of level 1 elements that the descriptor considers significant. Its is suggested to express the level 1 elements involved every time that there is an action (e.g. the action \"lifting\" in the context of \"man lifting a woman\" should be grouped in a composition including the artistic motifs corresponding respectively to \"man\", \"woman, \"lifting\")" .
-<https://w3id.org/icon/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#label> "Composition" .
+<https://w3id.org/icon/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Composition is a jointly of ArtisticMotif having a meaning. It can be recognized as corresponding to the same image at the second level or interpretation, or can explicit groupings of level 1 elements that the descriptor considers significant. Its is suggested to express the level 1 elements involved every time that there is an action (e.g. the action \"lifting\" in the context of \"man lifting a woman\" should be grouped in a composition including the artistic motifs corresponding respectively to \"man\", \"woman, \"lifting\")"@en .
+<https://w3id.org/icon/ontology/Composition> <http://www.w3.org/2000/01/rdf-schema#label> "Composition"@en .
 # 
 # https://w3id.org/icon/ontology/CompositionalStructure
 <https://w3id.org/icon/ontology/CompositionalStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1332,15 +1316,15 @@ _:genid159 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontolo
 # https://w3id.org/icon/ontology/Event
 <https://w3id.org/icon/ontology/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/IconographicalSubject> .
-<https://w3id.org/icon/ontology/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An Event is an action that is depicted as subject by an artwork. It differs from the first level Action since it requires deeper interpretation to be identified. For example, the act of hurling the Trident (Action) held by Neptune in some iconographies is interpreted as the act of calming the storm (Event) provoked by Juno in Virgil's Aeneid book 1. Furthermore, an Event is linked to a icon:Image, and not to a icon:Artistic Motif. This class includes also events having a proper identity, such as historical events (e.g. the Battle of Cascina)." .
-<https://w3id.org/icon/ontology/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+<https://w3id.org/icon/ontology/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An Event is an action that is depicted as subject by an artwork. It differs from the first level Action since it requires deeper interpretation to be identified. For example, the act of hurling the Trident (Action) held by Neptune in some iconographies is interpreted as the act of calming the storm (Event) provoked by Juno in Virgil's Aeneid book 1. Furthermore, an Event is linked to a icon:Image, and not to a icon:Artistic Motif. This class includes also events having a proper identity, such as historical events (e.g. the Battle of Cascina)."@en .
+<https://w3id.org/icon/ontology/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
 # 
 # https://w3id.org/icon/ontology/ExpressionalQuality
 <https://w3id.org/icon/ontology/ExpressionalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/ExpressionalQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
 <https://w3id.org/icon/ontology/ExpressionalQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/PreiconographicalSubject> .
-<https://w3id.org/icon/ontology/ExpressionalQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "An Expression Quality corresponds to the \"expressional subject matter\" described by Panofsky (1939), which belongs, along with the factual ones, to the Primary or natural subject matter of a work of art. Indeed, it individuates, by way of example, emotions, an atmosphere, the character of a person." .
-<https://w3id.org/icon/ontology/ExpressionalQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Expressional Quality" .
+<https://w3id.org/icon/ontology/ExpressionalQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "An Expression Quality corresponds to the \"expressional subject matter\" described by Panofsky (1939), which belongs, along with the factual ones, to the Primary or natural subject matter of a work of art. Indeed, it individuates, by way of example, emotions, an atmosphere, the character of a person."@en .
+<https://w3id.org/icon/ontology/ExpressionalQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Expressional Quality"@en .
 # 
 # https://w3id.org/icon/ontology/FormalMotifRecognition
 <https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1380,9 +1364,7 @@ _:genid167 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www
 _:genid167 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Composition> .
 _:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "The act of recognizing that subjects depicted by different artworks has the same formal motifs although the content represented may be different. The need of the usage of this class emerged from a bottom-up approach, rather than Panofsky's theory. It describes that certain subjects are prototypes of others, including preliminary drawings, but also cases in which another artist copied only the composition or gestures from another artwork. This recognition can link every specific part of a representation to the specific prototypes. The relation is between level 1 objects, i.e. Artistic Motifs and Composition, since it describes a formal aspect. Example of usage: if Hercules carrying the Boar is the prototype for a Christ carrying a deer, symbol of the human souls, it's possible to relate directly the boar represented in the former artwork to the deer represented in the latter."@en .
-<https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "The act of recognizing that subjects depicted by different artworks has the same formal motifs although the content represented may be different. The need of the usage of this class emerged from a bottom-up approach, rather than Panofsky's theory. It describes that certain subjects are prototypes of others, including preliminary drawings, but also cases in which another artist copied only the composition or gestures from another artwork. This recognition can link every specific part of a representation to the specific prototypes. The relation is between level 1 objects, i.e. Artistic Motifs and Composition, since it describes a formal aspect. Example of usage: if Hercules carrying the Boar is the prototype for a Christ carrying a deer, symbol of the human souls, it's possible to relate directly the boar represented in the former artwork to the deer represented in the latter." .
 <https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Formal Motif Recognition"@en .
-<https://w3id.org/icon/ontology/FormalMotifRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Formal Motif Recognition" .
 # 
 # https://w3id.org/icon/ontology/IconographicalDescription
 <https://w3id.org/icon/ontology/IconographicalDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1513,8 +1495,8 @@ _:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid194 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isIconographicallyRecognizedBy> .
 _:genid194 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid194 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/IconographicalRecognition> .
-<https://w3id.org/icon/ontology/Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Image is a reification class linking the identified second level subject (namely: Characters, Events, Places, Named Objects, Symbols and Personifications) to the specific interpretation that recognizes it. It represents the subject depicted as a manifestation in the specific artwork taken into account, in contrast to the second level subjects cited and Invenzione, identifying iconographies from an abstract and general point of view. This distinction between the general subject level and the artwork-specific one is functional to identify the variants of a subject in relation to the specific context." .
-<https://w3id.org/icon/ontology/Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image" .
+<https://w3id.org/icon/ontology/Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Image is a reification class linking the identified second level subject (namely: Characters, Events, Places, Named Objects, Symbols and Personifications) to the specific interpretation that recognizes it. It represents the subject depicted as a manifestation in the specific artwork taken into account, in contrast to the second level subjects cited and Invenzione, identifying iconographies from an abstract and general point of view. This distinction between the general subject level and the artwork-specific one is functional to identify the variants of a subject in relation to the specific context."@en .
+<https://w3id.org/icon/ontology/Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
 # 
 # https://w3id.org/icon/ontology/InterpretationDescription
 <https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1539,8 +1521,8 @@ _:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid199 .
 _:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/icon/ontology/PreiconographicalRecognition> .
 _:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "The Interpretation Description is a class collecting all the triples describing each recognition in each level that shares a unique interpretative perspective. For example, it allows to collect claims agreeing each other or to describe the situation in which an art historian attributes to other art historians some details of the general interpretation he claims. Recognitions in disagree with each other should be documented in different descriptions. For example, the interpretation made in 1699 recognising Regnaudin's statuette as depicting \"Time carrying off the Truth\" is listed in a different description form the interpretation recognising \"The rape of Cybele\" as its subject (Wittkower)." .
-<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretation Description" .
+<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "The Interpretation Description is a class collecting all the triples describing each recognition in each level that shares a unique interpretative perspective. For example, it allows to collect claims agreeing each other or to describe the situation in which an art historian attributes to other art historians some details of the general interpretation he claims. Recognitions in disagree with each other should be documented in different descriptions. For example, the interpretation made in 1699 recognising Regnaudin's statuette as depicting \"Time carrying off the Truth\" is listed in a different description form the interpretation recognising \"The rape of Cybele\" as its subject (Wittkower)."@en .
+<https://w3id.org/icon/ontology/InterpretationDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretation Description"@en .
 # 
 # https://w3id.org/icon/ontology/IntrinsicMeaning
 <https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1591,14 +1573,14 @@ _:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid214 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/isIntrinsicMeaningOf> .
 _:genid214 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid214 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/IconologicalRecognition> .
-<https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "N-ary relatioship class linking the identified cultural phenomenon or deeper meaning to the whole artwork or to the specific part of its representation and to the interpretation that identifies it. From a theoretical point of view, it corresponds to the manifestation in the specific artwork of the concepts and cultural phenomena identified by the iconological analysis. The terminology is taken from Panofsky (1939, 1955)." .
-<https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Intrinsic Meaning" .
+<https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "N-ary relatioship class linking the identified cultural phenomenon or deeper meaning to the whole artwork or to the specific part of its representation and to the interpretation that identifies it. From a theoretical point of view, it corresponds to the manifestation in the specific artwork of the concepts and cultural phenomena identified by the iconological analysis. The terminology is taken from Panofsky (1939, 1955)."@en .
+<https://w3id.org/icon/ontology/IntrinsicMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Intrinsic Meaning"@en .
 # 
 # https://w3id.org/icon/ontology/Invenzione
 <https://w3id.org/icon/ontology/Invenzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Invenzione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/Subject> .
-<https://w3id.org/icon/ontology/Invenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "An Invenzione, term taken from Panofsky's Studies in Iconology (1939), is the subject matter represented by the combination of the single images recognized. The recognition of an Invenzione happens in the context of the iconographical recognition and it is included in the Iconographical Description. This definition slightly differs from the Panofsky's one: while he describes an invenzione as a form expressing the subject, we consider it as an individual belonging to the \"sphere of secondary or conventional subject matter, viz., the world of specific themes or concepts manifested in images [...]\". This new definition has been introduced to allow to formalize and recognize subjects represented in different artworks. Nevertheless, the identity of form and subject is already included in the definition of the class Artwork. Story and Allegory are subclasses of Invenzione." .
-<https://w3id.org/icon/ontology/Invenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Invenzione" .
+<https://w3id.org/icon/ontology/Invenzione> <http://www.w3.org/2000/01/rdf-schema#comment> "An Invenzione, term taken from Panofsky's Studies in Iconology (1939), is the subject matter represented by the combination of the single images recognized. The recognition of an Invenzione happens in the context of the iconographical recognition and it is included in the Iconographical Description. This definition slightly differs from the Panofsky's one: while he describes an invenzione as a form expressing the subject, we consider it as an individual belonging to the \"sphere of secondary or conventional subject matter, viz., the world of specific themes or concepts manifested in images [...]\". This new definition has been introduced to allow to formalize and recognize subjects represented in different artworks. Nevertheless, the identity of form and subject is already included in the definition of the class Artwork. Story and Allegory are subclasses of Invenzione."@en .
+<https://w3id.org/icon/ontology/Invenzione> <http://www.w3.org/2000/01/rdf-schema#label> "Invenzione"@en .
 # 
 # https://w3id.org/icon/ontology/Material
 <https://w3id.org/icon/ontology/Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1609,26 +1591,26 @@ _:genid214 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontolo
 # https://w3id.org/icon/ontology/NamedObject
 <https://w3id.org/icon/ontology/NamedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/NamedObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/IconographicalSubject> .
-<https://w3id.org/icon/ontology/NamedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A named object is a non-living unique element that is often used as an attribute for the recognition of specific characters or as the individuals of a more general concept class. (e.g. Bible for the Book class)" .
-<https://w3id.org/icon/ontology/NamedObject> <http://www.w3.org/2000/01/rdf-schema#label> "Named Object" .
+<https://w3id.org/icon/ontology/NamedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A named object is a non-living unique element that is often used as an attribute for the recognition of specific characters or as the individuals of a more general concept class. (e.g. Bible for the Book class)"@en .
+<https://w3id.org/icon/ontology/NamedObject> <http://www.w3.org/2000/01/rdf-schema#label> "Named Object"@en .
 # 
 # https://w3id.org/icon/ontology/NaturalElement
 <https://w3id.org/icon/ontology/NaturalElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/NaturalElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/PreiconographicalSubject> .
-<https://w3id.org/icon/ontology/NaturalElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Comprises objects, human beings, natural elements that can be experienced. They are recognized at the first level of interpretation." .
-<https://w3id.org/icon/ontology/NaturalElement> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Element" .
+<https://w3id.org/icon/ontology/NaturalElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Comprises objects, human beings, natural elements that can be experienced. They are recognized at the first level of interpretation."@en .
+<https://w3id.org/icon/ontology/NaturalElement> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Element"@en .
 # 
 # https://w3id.org/icon/ontology/Personification
 <https://w3id.org/icon/ontology/Personification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Personification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/IconographicalSubject> .
-<https://w3id.org/icon/ontology/Personification> <http://www.w3.org/2000/01/rdf-schema#comment> "A representation of a concept through a human figure" .
-<https://w3id.org/icon/ontology/Personification> <http://www.w3.org/2000/01/rdf-schema#label> "Personification (ICON)" .
+<https://w3id.org/icon/ontology/Personification> <http://www.w3.org/2000/01/rdf-schema#comment> "A representation of a concept through a human figure"@en .
+<https://w3id.org/icon/ontology/Personification> <http://www.w3.org/2000/01/rdf-schema#label> "Personification (ICON)"@en .
 # 
 # https://w3id.org/icon/ontology/Place
 <https://w3id.org/icon/ontology/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/IconographicalSubject> .
-<https://w3id.org/icon/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "An identified setting, e.g. the city of Bologna, which is recognized as a Level 2 subject. The recognition of a generic city is formally represented by the Natural Element class (level 1)." .
-<https://w3id.org/icon/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place (ICON)" .
+<https://w3id.org/icon/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "An identified setting, e.g. the city of Bologna, which is recognized as a Level 2 subject. The recognition of a generic city is formally represented by the Natural Element class (level 1)."@en .
+<https://w3id.org/icon/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place (ICON)"@en .
 # 
 # https://w3id.org/icon/ontology/PreiconographicalDescription
 <https://w3id.org/icon/ontology/PreiconographicalDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1670,9 +1652,7 @@ _:genid221 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www
 _:genid221 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Composition> .
 _:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/icon/ontology/PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Pre-iconographical recognition is a n-ary relationship class that links the artwork described (and optionally the Pure Forms composing it) to the Artistic Motifs recognized as carrier of meaning at the first level of analysis. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed."@en .
-<https://w3id.org/icon/ontology/PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Pre-iconographical recognition is a n-ary relationship class that links the artwork described (and optionally the Pure Forms composing it) to the Artistic Motifs recognized as carrier of meaning at the first level of analysis. The N-ary structure is necessary in order to include relevant additional information concerning the visual interpretation claimed." .
 <https://w3id.org/icon/ontology/PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Preiconographical Recognition"@en .
-<https://w3id.org/icon/ontology/PreiconographicalRecognition> <http://www.w3.org/2000/01/rdf-schema#label> "Preiconographical Recognition" .
 # 
 # https://w3id.org/icon/ontology/PreiconographicalSubject
 <https://w3id.org/icon/ontology/PreiconographicalSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1683,7 +1663,7 @@ _:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 # https://w3id.org/icon/ontology/PureForm
 <https://w3id.org/icon/ontology/PureForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/PureForm> <http://www.w3.org/2000/01/rdf-schema#comment> "A pure form represents the physical portion of the work of art in which artistic motifs are found. It has been introduced as a way to include the results of analysis performed by computational agents, that are able to classify images and give image coordinates for specific recognition. It is not recommended to be used by manual annotators or in any case in which the coordinates of the image of the work of art are not considered. If available, the Pure form can represent the region of an image identified by IIIF Image API."@en .
-<https://w3id.org/icon/ontology/PureForm> <http://www.w3.org/2000/01/rdf-schema#comment> "Change the definition to the formal representation that can be enclosed in a certain coordinate." .
+<https://w3id.org/icon/ontology/PureForm> <http://www.w3.org/2000/01/rdf-schema#comment> "Change the definition to the formal representation that can be enclosed in a certain coordinate."@en .
 <https://w3id.org/icon/ontology/PureForm> <http://www.w3.org/2000/01/rdf-schema#label> "Pure Form"@en .
 <https://w3id.org/icon/ontology/PureForm> <http://www.w3.org/2002/07/owl#deprecated> "from 1.1 version" .
 # 
@@ -1701,8 +1681,8 @@ _:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid225 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/aboutWorkOfArt> .
 _:genid225 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid225 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/icon/ontology/Artwork> .
-<https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/2000/01/rdf-schema#comment> "A recognition, in the context of this ontology, is an interpretation act made by an agent (biological or electronic being) that links works of arts to something related to their content. More specific recognitions are available as subclasses for specific types of recognition according to the level of interpretation." .
-<https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/2000/01/rdf-schema#label> "Recognition" .
+<https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/2000/01/rdf-schema#comment> "A recognition, in the context of this ontology, is an interpretation act made by an agent (biological or electronic being) that links works of arts to something related to their content. More specific recognitions are available as subclasses for specific types of recognition according to the level of interpretation."@en .
+<https://w3id.org/icon/ontology/Recognition> <http://www.w3.org/2000/01/rdf-schema#label> "Recognition"@en .
 # 
 # https://w3id.org/icon/ontology/Role
 <https://w3id.org/icon/ontology/Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1740,15 +1720,15 @@ _:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid228 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/icon/ontology/composedOf> .
 _:genid228 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/icon/ontology/NamedObject> .
 _:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/icon/ontology/Story> <http://www.w3.org/2000/01/rdf-schema#comment> "A story is a cohese combination of images that represent narrative elements such as Characters, Places, Events, Named Objects. The recognition of a story happens in the context of an Iconographical Recognition, and it is included in an Iconographical Description. As the super class Invenzione, it concerns the word of the subject matter. It is not necessary to have multiple images to compose a story." .
-<https://w3id.org/icon/ontology/Story> <http://www.w3.org/2000/01/rdf-schema#label> "Story" .
+<https://w3id.org/icon/ontology/Story> <http://www.w3.org/2000/01/rdf-schema#comment> "A story is a cohese combination of images that represent narrative elements such as Characters, Places, Events, Named Objects. The recognition of a story happens in the context of an Iconographical Recognition, and it is included in an Iconographical Description. As the super class Invenzione, it concerns the word of the subject matter. It is not necessary to have multiple images to compose a story."@en .
+<https://w3id.org/icon/ontology/Story> <http://www.w3.org/2000/01/rdf-schema#label> "Story"@en .
 # 
 # https://w3id.org/icon/ontology/Symbol
 <https://w3id.org/icon/ontology/Symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/icon/ontology/Symbol> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.w3id.org/simulation/ontology/Simulation> .
 <https://w3id.org/icon/ontology/Symbol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/icon/ontology/IconographicalSubject> .
-<https://w3id.org/icon/ontology/Symbol> <http://www.w3.org/2000/01/rdf-schema#comment> "A Symbol is the class representing the unity of a symbol and its symbolic meaning that can be expressed by an Image. The represented object (Simulacrum) and the symbolical meaning expressed (Reality Counterpart) along with the type of relation linking them if further represented by the Simulation Ontology." .
-<https://w3id.org/icon/ontology/Symbol> <http://www.w3.org/2000/01/rdf-schema#label> "Symbol" .
+<https://w3id.org/icon/ontology/Symbol> <http://www.w3.org/2000/01/rdf-schema#comment> "A Symbol is the class representing the unity of a symbol and its symbolic meaning that can be expressed by an Image. The represented object (Simulacrum) and the symbolical meaning expressed (Reality Counterpart) along with the type of relation linking them if further represented by the Simulation Ontology."@en .
+<https://w3id.org/icon/ontology/Symbol> <http://www.w3.org/2000/01/rdf-schema#label> "Symbol"@en .
 # 
 # https://w3id.org/icon/ontology/Tendency
 <https://w3id.org/icon/ontology/Tendency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

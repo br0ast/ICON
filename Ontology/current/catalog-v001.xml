@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="https://www.w3id.org/simulation/ontology/" uri="file:/C:/Users/Bruno/Documents/GitHub/simulationontology/Ontology/simulationontology.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1741874667719" name="duplicate:https://w3id.org/icon/ontology/" uri="icon.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1741874667719" name="duplicate:https://w3id.org/icon/ontology/" uri="new_version_demo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741874667719" name="duplicate:https://w3id.org/icon/ontology/" uri="ontology.rdf"/>
+    </group>
+</catalog>

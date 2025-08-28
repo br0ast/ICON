@@ -14,7 +14,6 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:2.1.0="https://w3id.org/icon/ontology/2.1.0/"
      xmlns:vocab="https://www.w3.org/1999/xhtml/vocab#"
      xmlns:schema="http://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/"
